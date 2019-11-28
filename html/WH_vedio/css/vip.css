@@ -124,7 +124,6 @@ header .lgin a:first-child{
 .main .mTop .news .scroll{
     width: 450px;
     height: 340px;
-    /* background-color: #e6e6e6; */
     margin-left: 10px;
     overflow: hidden;
     overflow-y: scroll;
