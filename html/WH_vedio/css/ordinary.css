@@ -187,14 +187,171 @@ header .lgin a:first-child{
     margin-top: 10px;
 }
 .main .vedio .left{
-    width: 920px;
+    width: 800px;
 }
 .main .vedio .right{
-    width: 280px;
+    width: 380px;
     /* background-color: bisque; */
 }
-
-
+.main .vedio .left{
+    width: 800px;
+}
+.main .vedio .left .intro{
+    width: 800px;
+    height: 145px;
+}
+.main .vedio .left .intro p:nth-child(1) span{
+    display: inline-block;
+    font-size: 22px;
+}
+.main .vedio .left .intro p:nth-child(1) span:first-child{
+    border-bottom: 2px solid #1273BB;
+}
+.main .vedio .left .intro p:nth-child(1) span:last-child{
+    width: 712px;
+    height: 27px;
+    vertical-align: middle;
+    border-bottom: 2px solid #cccccc;
+}
+.main .vedio .left .intro p:nth-child(2) a{
+    display: inline-block;
+    width: 800px;
+    height: 110px;
+    overflow: hidden;
+    font-size: 16px;
+    /* font-weight: bold; */
+    text-indent: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+/* 猜你喜欢 */
+.main .vedio .left .like{
+    widows: 800px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.main .vedio .left .like .gess{
+    width: 400px;
+    overflow: hidden;
+}
+.main .vedio .left .like .see{
+    width: 400px;
+    overflow: hidden;
+    padding-left: 35px;
+}
+.main .vedio .left .like .gess p:nth-child(1) span{
+    display: inline-block;
+    font-size: 22px;
+}
+.main .vedio .left .like .gess p:nth-child(1) span:nth-child(1){
+    border-bottom: 2px solid #1273BB;
+    color: #1273BB;
+}
+.main .vedio .left .like .gess p:nth-child(1) span:nth-child(2){
+    border-bottom: 2px solid #cccccc;
+    width: 280px;
+    height: 27px;
+    vertical-align: middle;
+}
+.main .vedio .left .like .gess ul li{
+    margin-top: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.main .vedio .left .like .gess ul li a{
+    display: inline-block;
+    width: 380px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* 看过的人还看过 */
+.main .vedio .left .like .see p:nth-child(1) span{
+    display: inline-block;
+    font-size: 22px;
+    /* padding-left: 30px; */
+}
+.main .vedio .left .like .see p:nth-child(1) span:nth-child(1){
+    border-bottom: 2px solid #1273BB;
+    color: #1273BB;
+}
+.main .vedio .left .like .see p:nth-child(1) span:nth-child(2){
+    border-bottom: 2px solid #cccccc;
+    width: 210px;
+    height: 27px;
+    vertical-align: middle;
+}
+.main .vedio .left .like .see ul li{
+    margin-top: 10px;
+    height: 20px;
+    line-height: 20px;
+}
+.main .vedio .left .like .see ul li a{
+    display: inline-block;
+    width: 380px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.main .vedio .right{
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.main .vedio .right .bkast{
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
+    background-color: #E6E6E6;
+    border-bottom: 1px solid #ccc;
+    padding-left: 5px;
+}
+.main .vedio .right .lists{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.main .vedio .right .lists ul li{
+    width: 365px;
+    height: 20px;
+    margin-top: 15px;
+}
+.main .vedio .right .lists ul li:first-child{
+    margin-top: 5px;
+}
+.main .vedio .right .lists ul li a{
+    display: inline-block;
+    width: 365px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.main .vedio .right .lists ul li a span:first-child{
+    display: inline-block;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+}
+.main .vedio .right .lists ul li:nth-child(1) a span:first-child{
+    color: #fff;
+    background-color: #F20002;
+}
+.main .vedio .right .lists ul li:nth-child(2) a span:first-child{
+    color: #fff;
+    background-color: #DD5855;
+}
+.main .vedio .right .lists ul li:nth-child(3) a span:first-child{
+    color: #fff;
+    background-color: #F1969A;
+}
 /* main主体结束 */
 
 /* footer开始 */
