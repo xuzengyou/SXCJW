@@ -1,0 +1,840 @@
+﻿/* header头部开始 */
+header{
+    width: 1000px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 115px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 15px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏底部 */
+.nav .navBot{
+    width: 1000px;
+    display: flex;
+    margin-top: 10px;
+}
+.nav .navBot .navBotl{
+    width: 686px;
+}
+.nav .navBot .navBotl .navBotlo{
+    display: flex;
+    justify-content: space-between;
+}
+.nav .navBot .navBotl .navBotlo .navBotloo span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav .navBot .navBotl .navBotlo .navBotloo span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -79px -448px;
+    width: 25px;
+    height: 30px
+}
+.nav .navBot .navBotl .navBotlo .navBotloo span:last-child{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 日历插件引入部分 */
+.demo1,.demo2,.demo3,.demo4,.demo5,.demo6{
+    margin:0px 0;
+}
+.layinput{
+    height: 22px;
+    line-height: 22px;width: 350px;
+    margin: 0;
+}
+.laydate_body .laydate_top{
+    height: 31px!important;
+}
+.laydate_body .laydate_bottom{
+    height: 30px!important;
+}
+
+/* 手动轮播 */
+.nav .navBot .navBotl .navBotlt{
+    width: 693px;height: 50px;
+    /* background-color: #c30d23; */
+    display: flex;
+
+}
+.nav .navBot .navBotl .navBotlt .navBotlto{
+    width: 10px;
+    line-height: 50px;
+    background-color: #DEEFFE;
+    border-radius: 3px 0 0 3px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.nav .navBot .navBotl .navBotlt .navBotltt{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.nav .navBot .navBotl .navBotlt .navBotltt div{
+    background-color: #DEEFFE;
+    width: 84px;
+    line-height: 50px;
+    margin-right: 10px;
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.nav .navBot .navBotl .navBotlt .navBotlto:hover{
+    background-color: #fff;
+    border: 1px solid #3181F2;
+}
+.nav .navBot .navBotl .navBotlt .navBotltth:hover{
+    background-color: #fff;
+    border: 1px solid #3181F2;
+    
+}
+.nav .navBot .navBotl .navBotlt .navBotltt .navBotltto:hover{
+    background-color: #fff;
+    border: 1px solid #3181F2;
+    /* position: relative; */
+}
+.nav .navBot .navBotl .navBotlt .navBotltt .navBotltto span{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -160px -448px;
+    width: 25px;
+    height: 30px;
+    float: right;
+    position: relative;
+    left: 2px;
+    top: -21px;
+    display: none;
+}
+.nav .navBot .navBotl .navBotlt .navBotltt .navBotltto:hover span{
+    display: block;
+}
+.nav .navBot .navBotl .navBotlt .navBotltt div.ac{
+    background-color: #fff;
+    border: 1px solid #3181F2;
+}
+.nav .navBot .navBotl .navBotlt .navBotltt div.ac span{
+    display: block;
+}
+
+.nav .navBot .navBotl .navBotlt .navBotltt div p{
+    line-height: 20px;
+    text-align: center;
+}
+.nav .navBot .navBotl .navBotlt .navBotltth{
+    width: 10px;
+    line-height: 50px;
+    background-color: #DEEFFE;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav .navBot .navBotr{
+    width: 294px;height: 79px;
+    margin-left: 10px;
+}
+.nav .navBot .navBotr img{
+    width: 100%;height: 100%;
+}
+/* nav导航栏结束 */
+
+/* main主体部分开始 */
+.main{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 财经数据第一部分 */
+.main .mainO .mainOo span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainO .mainOo span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -79px -448px;
+    width: 25px;
+    height: 30px
+}
+.main .mainO .mainOo span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainO .mainOo span:nth-child(3){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -253px -489px;
+    width: 25px;
+    height: 30px
+}
+.main .mainO .mainOo span:nth-child(4){
+    font-size: 18px;
+    font-weight: bold;
+    color: green;
+}
+.main .mainO table tr.red td{
+    color: #c30d23;
+    font-weight: bold;
+}
+.main .mainO table thead{
+    line-height: 44px;
+}
+.main .mainO table thead td{
+    background-color: #a3ceff;
+    border: 1px solid #3181F2;
+    text-align: center;
+}
+.main .mainO table thead td:first-child{
+    width: 60px;
+}
+.main .mainO table thead td:nth-child(2){
+    width: 60px;
+}
+.main .mainO table thead td:nth-child(3){
+    width: 410px;
+}
+.main .mainO table thead td:nth-child(4){
+    width: 60px;
+}
+.main .mainO table thead td:nth-child(5){
+    width: 75px;
+}
+.main .mainO table thead td:nth-child(6){
+    width: 75px;
+}
+.main .mainO table thead td:nth-child(7){
+    width: 65px;
+}
+.main .mainO table thead td:nth-child(8){
+    width: 135px;
+}
+.main .mainO table thead td:nth-child(9){
+    width: 50px;
+}
+
+.main .mainO table tbody td{
+    border: 1px solid #3181F2;
+    line-height: 32px;
+    text-align: center;
+}
+.main .mainO table tbody tr td.ac{
+    background-color: #eec9c9;
+}
+/* .main .mainO table tbody tr:first-child td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+} */
+/* .main .mainO table tbody tr:first-child td:nth-child(2) span img{
+    width: 100%;height: 100%;
+} */
+.main .mainO table tbody tr td img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+/* .main .mainO table tbody tr:nth-child(4) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(6) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(10) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(14) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(15) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(17) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(18) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(19) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(22) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(24) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+}
+.main .mainO table tbody tr:nth-child(29) td:nth-child(2) img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px
+} */
+.main .mainO table tbody p{
+    text-align: left;
+    line-height: 20px;
+}
+.main .mainO table tbody p span{
+    margin-right: 3px;
+}
+/* .main .mainO table tbody tr:last-child td{
+    cursor: pointer;
+} */
+/* .main .mainO table tfoot{
+    display: none;
+} */
+.main .mainO table tfoot{
+    /* display: none; */
+}
+.main .mainO table tfoot td{
+    border: 1px solid #3181F2;
+    line-height: 32px;
+    text-align: center;
+}
+.main .mainO table tfoot tr:nth-child(2) td{
+    text-align: left;
+    color: #3181F2;
+}
+.main .mainO table tfoot tr:nth-child(3) td:nth-child(2) span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom:2px;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -38px -403px;
+    width: 32px;
+    height: 31px
+}
+/* 国际假期预告第二部分 */
+.main .mainT{
+    margin-top: 10px;
+}
+.main .mainT .mainTo span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainT .mainTo span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -35px -482px;
+    width: 25px;
+    height: 30px
+}
+.main .mainT .mainTo span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainT .mainTo span:nth-child(3){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -133px -517px;
+    width: 25px;
+    height: 30px
+}
+.main .mainT .mainTo span:nth-child(4){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainT .mainTt{
+    /* border: 1px solid #3181F2; */
+    width: 990px;
+}
+.main .mainT .mainTt table{
+    width: 1000px;
+    border: 1px solid #3181F2;
+}
+.main .mainT .mainTt table thead td{
+    background-color: #a3ceff;
+    border: 1px solid #3181F2;
+    text-align: center;
+    line-height: 44px;
+}
+.main .mainT .mainTt table thead td:first-child{
+    width: 100px;
+}
+.main .mainT .mainTt table thead td:nth-child(2){
+    width: 100px;
+}
+.main .mainT .mainTt table thead td:nth-child(3){
+    width: 100px;
+}
+.main .mainT .mainTt table thead td:nth-child(4){
+    width: 680px;
+}
+.main .mainT .mainTt table tbody td{
+    border: 1px solid #3181F2;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+
+/* 财经大事件第三部分 */
+.main .mainTh{
+    margin-top: 10px;
+}
+.main .mainTh .mainTho span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainTh .mainTho span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -80px -485px;
+    width: 25px;
+    height: 30px
+}
+.main .mainTh .mainTho span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainTh .mainTho span:nth-child(3){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -133px -517px;
+    width: 25px;
+    height: 30px
+}
+.main .mainTh .mainTho span:nth-child(4){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainTh .mainTht table{
+    width: 1000px;
+}
+.main .mainTh .mainTht table thead{
+    line-height: 44px;
+}
+.main .mainTh .mainTht table thead td{
+    background-color: #a3ceff;
+    border: 1px solid #3181F2;
+    text-align: center;
+}
+.main .mainTh .mainTht table thead td:first-child{
+    width: 100px;
+}
+.main .mainTh .mainTht table thead td:nth-child(2){
+    width: 130px;
+}
+.main .mainTh .mainTht table thead td:nth-child(3){
+    width: 100px;
+}
+.main .mainTh .mainTht table thead td:nth-child(4){
+    width: 90px;
+}
+.main .mainTh .mainTht table thead td:nth-child(5){
+    width: 570px;
+}
+.main .mainTh .mainTht table tbody td{
+    border: 1px solid #3181F2;
+    line-height: 40px;
+    text-align: center;
+}
+.main .mainTh .mainTht table tbody tr td:nth-child(2){
+    text-align: left;
+}
+.main .mainTh .mainTht table tbody tr td:nth-child(2) img{
+    margin-left: 5px;
+ }
+.main .mainTh .mainTht table tbody tr td:nth-child(2) span{
+   margin-left: 5px;
+}
+.main .mainTh .mainTht table tbody tr td:nth-child(2) span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainTh .mainTht table tbody tr td img{
+    display: inline-block;
+    background-color: red;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+.main .mainTh .mainTht table tbody tr td:nth-child(4) span{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -144px -478px;
+    width: 63px;
+    height: 34px
+}
+.main .mainTh .mainTht table tbody tr td:last-child a{
+    display: inline-block;
+    width: 600px;height: 30px;
+    overflow: hidden;
+    text-align: left;
+}
+.main .mainTh .mainTht table tbody tr:last-child td span{
+    /* color: #3181F2; */
+    cursor: pointer;
+}
+.main .mainTh .mainTht table tfoot td{
+    border: 1px solid #3181F2;
+    line-height: 40px;
+    text-align: center;
+}
+.main .mainTh .mainTht table tfoot tr:first-child td{
+    text-align: left;
+    color: #3181F2;
+}
+.main .mainTh .mainTht table tfoot tr td:nth-child(2) span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainTh .mainTht table tfoot tr td:nth-child(2) span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -37px -404px;
+    width: 32px;
+    height: 34px
+}
+.main .mainTh .mainTht table tfoot tr td:nth-child(4) span{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -144px -478px;
+    width: 67px;
+    height: 34px
+}
+.main .mainTh .mainTht table tfoot tr td:last-child a{
+    display: inline-block;
+    width: 600px;height: 30px;
+    overflow: hidden;
+    text-align: left;
+}
+/* 央行动态数据第四部分 */
+.main .mainF{
+    margin-top: 10px;
+}
+.main .mainF .mainFo span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainF .mainFo span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -119px -487px;
+    width: 25px;
+    height: 30px
+}
+.main .mainF .mainFo span:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainF .mainFt table{
+    width: 1000px;
+}
+.main .mainF .mainFt table thead{
+    line-height: 44px;
+}
+.main .mainF .mainFt table thead td{
+    background-color: #a3ceff;
+    border: 1px solid #3181F2;
+    text-align: center;
+    font-weight: bold;
+}
+.main .mainF .mainFt table thead td:first-child{
+    width: 78px;
+}
+.main .mainF .mainFt table thead td:nth-child(2){
+    width: 115px;
+}
+.main .mainF .mainFt table thead td:nth-child(3){
+    width: 85px;
+}
+.main .mainF .mainFt table thead td:nth-child(4){
+    width: 85px;
+}
+.main .mainF .mainFt table thead td:nth-child(5){
+    width: 160px;
+}
+.main .mainF .mainFt table thead td:nth-child(6){
+    width: 100px;
+}
+.main .mainF .mainFt table thead td:nth-child(7){
+    width: 100px;
+}
+.main .mainF .mainFt table thead td:nth-child(8){
+    width: 120px;
+}
+.main .mainF .mainFt table thead td:nth-child(9){
+    width: 150px;
+}
+
+.main .mainF .mainFt table tbody td{
+    border: 1px solid #3181F2;
+    line-height: 32px;
+    text-align: center;
+}
+.main .mainF .mainFt table p{
+    line-height: 20px;
+}
+.main .mainF .mainFt table tbody tr td p:last-child{
+    color: #a39f9f;
+}
+.main .mainF .mainFth{
+    width: 990px;
+}
+.main .mainF .mainFth a{
+    display: block;
+    margin-left: 840px;
+}
+/* 页面右侧固定导航栏第五部分 */
+.main .mainV{
+    height: 210px;
+    /* width: 90px; */
+    
+    position: fixed;
+    left: 1450px;
+    top: 500px;
+}
+.main .mainV div{
+    /* width: 100%; */
+    background-color: #a3ceff;
+    height: 35px;
+    vertical-align: middle;
+}
+.main .mainV div:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.main .mainV div span{
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    /* border: #3181F2 1px solid; */
+}
+.main .mainV div span:first-child{
+    width: 44px;
+    height: 30px;
+    margin-top: 7px;
+    text-align: center;
+    /* margin-left: 920px; */
+    /* display: none; */
+    /* opacity: 0; */
+}
+/* .main .mainV div span:last-child{
+    float: right;
+} */
+.main .mainV .mianVo span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -359px -453px;
+    width: 25px;
+    height: 30px
+}
+.main .mainV .mianVt span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -201px -453px;
+    width: 25px;
+    height: 30px
+}
+.main .mainV .mianVth span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -233px -452px;
+    width: 25px;
+    height: 30px
+}
+.main .mainV .mianVf span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -266px -449px;
+    width: 25px;
+    height: 30px
+}
+.main .mainV .mianVv span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -297px -452px;
+    width: 25px;
+    height: 30px
+}
+.main .mainV .mianVs span:nth-child(2){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -326px -455px;
+    width: 25px;
+    height: 30px
+}
+/* main主体部分结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 5px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

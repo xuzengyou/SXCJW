@@ -1,0 +1,629 @@
+﻿html,
+body,
+div,
+span,
+button,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+big,
+cite,
+code,
+del,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+textarea,
+input {
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+address,
+em,
+i {
+    font-style: normal;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: 'Microsoft YaHei', 'Heiti SC', 'tahoma', 'arial', 'Hiragino Sans GB', 'sans-serif';
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+}
+input,
+button{
+    outline:none;
+    border: 0;  
+}
+
+a,
+img {
+    -webkit-touch-callout: none;
+}
+a:active,
+a:focus,
+a{
+    color: #000;
+    text-decoration: none;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #c30d23;
+    /* padding-left: 10px; */
+}
+
+
+textarea {
+    resize: none;
+    outline: 0;
+    -webkit-appearance: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #fff
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+:focus {
+    outline: none;
+}
+/* .clearfix {
+    *zoom: 1
+}
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+} */
+.w{
+    width: 1000px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+/* 登录 */
+.BoxLogin{
+    position: fixed;
+    width: 530px;
+    height: 379px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -217px 0 0 -265px;
+    z-index: 99;
+    overflow: auto;
+    border-radius: 6px;
+}
+.BoxLogin .close-us{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.BoxLogin .loginTab{
+     width: 300px;
+     height: 40px;
+     margin: auto;
+}
+.BoxLogin .loginTab ul{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cdcdcd;
+    margin-top: 20px;
+}
+.BoxLogin .loginTab ul li{
+    float: left;
+    width: 150px;
+    font-size: 16px;
+    line-height: 40px;
+    text-align: center;
+    color: #999;
+    cursor: pointer;
+}
+.BoxLogin .loginTab ul li.active{
+    color: #000;
+    height: 40px;
+    border-bottom: 3px solid #c30d23;
+}
+ .err-info{
+     color: #c30d23;
+    font-size: 14px;
+    line-height: 1;
+    padding-top: 14px;
+ }
+
+.BoxLogin .loginCon{
+    width: 300px;
+    height: 250px;
+    margin: 10px auto;
+}
+.BoxLogin .loginCon .boxUser{
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.BoxLogin .loginCon .boxUser form{
+    height: 135px;
+    width: 100%;
+}
+.BoxLogin .loginCon .boxUser li {
+    height: 47px;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  .BoxLogin .loginCon .boxUser li input{
+    width: 299px;
+    font-size: 16px;
+    line-height: 45px;
+    color: #B0B0B0;
+    background: #fff;
+    vertical-align: top;
+    height: 43px;
+    padding-left: 10px;
+    float: left;
+    border-radius: 6px;
+    border: 1px #E7E7E7 solid;
+  }
+  .BoxLogin .loginCon .boxUser li input:focus {
+    border-color: #c30d23;
+    color: #191919;
+  }
+.BoxLogin .loginCon .boxMobile{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.BoxLogin .loginCon .boxMobile ul{
+     height: 135px;
+     width: 100%;
+}
+.BoxLogin .loginCon .boxMobile ul li {
+    height: 47px;
+    margin-top: 20px;
+    position: relative;
+    float: left;
+    width: 100%;
+  }
+  .BoxLogin .loginCon .boxMobile ul li input:focus {
+    border-color: #c30d23;
+    color: #191919;
+  }
+ .loginCon .boxMobile ul li .user_input{
+    width: 299px;
+    font-size: 16px;
+    line-height: 45px;
+    color: #B0B0B0;
+    background: #fff;
+    vertical-align: top;
+    height: 43px;
+    padding-left: 10px;
+    float: left;
+    border-radius: 6px;
+    border: 1px #E7E7E7 solid;
+ }
+ .loginCon .boxMobile ul .dy_code .dy_input{
+    width: 180px;  
+    font-size: 16px;
+    line-height: 45px;
+    color: #B0B0B0;
+    background: #fff;
+    vertical-align: top;
+    height: 43px;
+    padding-left: 10px;
+    float: left;
+    border-radius: 6px;
+    border: 1px #E7E7E7 solid;
+ }
+ .loginCon .boxMobile ul .dy_code .dy_btn{
+    background: #c30d23;
+    color: #333;
+    pointer-events: auto;
+    width: 110px;
+    height: 45px;
+    display: block;
+    float: right;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+ }
+ .loginCon .boxMobile ul .dy_code .dy_btn:hover{
+    background:#a20014;
+ }
+  .auto-login{
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    height: 16px;
+ }
+ .auto-login .radio-btn{
+    float: left;
+    cursor: pointer;
+ }
+.auto-login .radio-btn .radio-icon{
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -116px -731px;
+ }
+ .auto-login .radio-btn .radio-icon-sel{
+    background-position:-137px -731px;
+ }
+ .auto-login .radio-btn .radio-icon input{
+     opacity: 0;
+     margin: 4px 0 0;
+ }
+
+ .auto-login .back-link{
+    float: right;
+    color: #333;
+ }
+  .auto-login .back-link:hover{
+     color: #a20014;
+ }
+ .login-btn{
+    margin-top: 22px;
+ }
+ .login-btn .login-input{
+    width: 100%;
+    height: 45px;
+    font-size: 18px;
+    color: #FFF;
+    background: #c30d23;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: top;
+    border: 0;
+ }
+ .login-btn .login-input:hover{
+    background:#a20014;
+ }
+ .login-oper{
+    font-size: 14px;
+    text-align: right;
+    margin: 6px auto 0;
+    line-height: 20px;
+ }
+ .reg-link{
+   color: #333;
+ }
+ .reg-link:hover{
+    color: #c30d23;
+ }
+
+ /* 登录注册 开始*/
+ /* 遮罩层 */
+.zzc{
+    background: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    filter: alpha(opacity=30);
+    opacity: .3;
+    display: none;
+    z-index: 2;
+    }
+    /* 登录注册 */
+    div.yinc{
+      display: none;
+    }
+    .logIn{
+      width: 467px;height: 360px;
+      background-color: #fff;
+      position: fixed;
+      top: 35%;
+      left: 36%;
+      padding-top: 5px;
+      font-size: 18px;
+      border-radius: 5px;
+      z-index: 300;
+    }
+    .logIn .close-us{
+      font-size: 16px;
+      font-weight: bold;
+      margin-left: 444px;
+    }
+    .logIn>div{
+      margin: auto;
+      width: 370px;
+    }
+    .logIn .logTab{
+      line-height: 30px;
+      /* border-bottom: 1px solid #ccc; */
+    }
+    .logIn .logTab span{
+      color: #ccc;
+      display: inline-block;
+      width: 49%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .logIn .logTab span.ac{
+      color: #000;
+      border-bottom: 2px solid #c30d23;
+    }
+    /* 用户登录开始 */
+    
+    .logIn .loginCon .boxUser form .user{
+      display: inline-block;
+      width: 366px;
+      height: 40px;
+      border: 1px solid #c30d23;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+    .logIn .loginCon .boxUser form input::-webkit-input-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .boxUser form input:-moz-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .boxUser form input::-moz-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .boxUser form input:-ms-input-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .boxUser form .pswd{
+      display: inline-block;
+      width: 366px;
+      height: 40px;
+      border: 1px solid #c30d23;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+    .logIn .loginCon .boxUser .tPcode{
+        width: 366px;
+        height: 50px;
+        /* border: 1px solid #c30d23; */
+        margin-top: 10px;
+        overflow: hidden;
+        display: flex;
+        display: none;
+    }
+    .logIn .loginCon .boxUser div.ac{
+      display: block;
+      display: flex;
+    }
+    .logIn .loginCon .boxUser .tPcode input{
+      width: 200px;
+      height: 35px;
+      border: 1px solid #c30d23;
+      padding-left: 5px;
+      vertical-align: middle;
+      border-radius: 3px;
+    }
+    .logIn .loginCon .boxUser .tPcode .tPimg{
+      width: 150px;
+      height: 50px;
+      overflow: hidden;
+      margin-left: 20px;
+    }
+
+
+
+
+    .logIn .loginCon .boxUser .aulog{
+      height: 40px;
+      margin-top: 5px;
+    }
+    .logIn .loginCon .boxUser .aulog label{
+      font-weight: normal;
+      cursor: pointer;
+    }
+    .logIn .loginCon .boxUser .aulog a{
+      margin-left: 144px;
+    }
+    .logIn .loginCon .boxUser .tjiao{
+      height: 40px;
+    }
+    .logIn .loginCon .boxUser .tjiao button{
+      display: inline-block;
+      width: 370px;
+      height: 40px;
+      background-color:#c30d23;
+      border-radius: 5px;
+      color: #fff;
+    }
+    .logIn .loginCon .boxUser .reges{
+      height: 30px;
+    }
+    .logIn .loginCon .boxUser .reges a{
+      margin-left: 307px;
+    }
+    .boxUser{
+      display: none;
+    }
+    .Mobile{
+      display: none;
+    }
+    .acc{
+      display: block;
+    }
+    /* 用户登录结束 */
+    
+    /* 手机动态登录开始 */
+    .logIn .loginCon .Mobile .errInfo{
+      color: #c30d23;
+      font-size: 12px;
+    }
+    .yc{
+      display: none;
+    }
+    .logIn .loginCon .Mobile .puser{
+      display: inline-block;
+      width: 366px;
+      height: 40px;
+      border: 1px solid #c30d23;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+    .logIn .loginCon .Mobile input::-webkit-input-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .Mobile input:-moz-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .Mobile input::-moz-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .Mobile input:-ms-input-placeholder{
+      color:#DCDCDC;
+    }
+    .logIn .loginCon .Mobile .yzm{
+      display: inline-block;
+      width: 220px;
+      height: 40px;
+      border: 1px solid #c30d23;
+      margin-top: 20px;
+      border-radius: 5px;
+      padding-left: 10px;
+    }
+    .logIn .loginCon .Mobile .Getpw{
+      display: inline-block;
+      width: 123px;
+      line-height: 40px;
+      background-color: #c30d23;
+      color: #fff;
+      border-radius: 5px;
+    }
+    .logIn .loginCon .Mobile .hui{
+      background-color: #ccc;
+    }
+    .logIn .loginCon .Mobile .aulog{
+      height: 40px;
+      margin-top: 5px;
+    }
+    .logIn .loginCon .Mobile .aulog label{
+      font-weight: normal;
+      cursor: pointer;
+    }
+    .logIn .loginCon .Mobile .aulog a{
+      margin-left: 144px;
+    }
+    .logIn .loginCon .Mobile .tjiao{
+      height: 40px;
+    }
+    .logIn .loginCon .Mobile .tjiao button{
+      display: inline-block;
+      width: 370px;
+      height: 40px;
+      overflow: hidden;
+      background-color:#c30d23;
+      border-radius: 5px;
+      color: #fff;
+    
+    }
+    .logIn .loginCon .Mobile .reges{
+      height: 30px;
+    }
+    .logIn .loginCon .Mobile .reges a{
+      margin-left: 307px;
+    }
+    div.lgin *{
+      margin-right: 5px;
+      vertical-align: middle;
+    }
+    div.lgin a.yh{
+      display: inline-block;
+      width: 55px;
+      height: 23px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      white-space: nowrap;
+    }
+    div.lgin a.tchu{
+      cursor: pointer;
+    }
+    /* 手机动态登录结束 */
+    /* 登录注册结束 */

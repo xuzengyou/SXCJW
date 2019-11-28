@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>财经日历|10讯网</title>
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="10讯财经,股票,外汇,基金,黄金,财经评论,新股,港股。" />
+    <meta name="description" content="10讯财经网,做专业财经资讯领跑者，实时股票行情，提供宏观、股票、外汇等财经领域的报道；讯息快、内容全、角度丰富并怀有全球视野。" />
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="http://img.10xunc.com/备用件/css/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/common.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/cjrili.css">
+    <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
+    <!-- DOM节点加载完后执行 -->
+    <script src="http://img.10xunc.com/备用件/js/cjrili.js" type="text/javascript" charset="utf-8"></script>
+    <!-- 日历插件 -->
+    <script type="text/javascript" src="http://img.10xunc.com/备用件/js/laydate.js"></script>
+    <base target="_blank">
+</head>
+<body>
+    <div class="w">
+        <!-- header开始 -->
+        <header>
+            <div class="logo">
+                <a href="http://img.10xunc.com/备用件/html/index.html">
+                    <img src="http://img.10xunc.com/备用件/img/waihui.png" alt="">
+                </a>
+            </div>
+            <div class="search">
+                <i class="glyphicon glyphicon-search"></i>
+                <input id="q" name="q" class="query" placeholder="输入代码/名称/拼音">
+                <button class="btn1" href="#">
+                    行情查询
+                </button>
+            </div>
+            <div class="lgin">
+                <a class="dl" style="cursor:pointer">登录</a>
+                <span>|</span>
+                <a href="http://img.10xunc.com/备用件/html/register.html?http://img.10xunc.com/备用件/html/cjrili.html">注册</a>
+            </div>
+        </header>
+        <!-- header结束 -->
+
+        <!-- nav导航栏开始 -->
+        <div class="nav">
+            <!-- 导航栏头部 -->
+            <div class="navTop">
+                <ul>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihui.html">外汇首页</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihiuyw.html">外汇要闻</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuikx.html">7*24快讯</a></li>
+                    <li class="active"><a href="http://img.10xunc.com/备用件/html/cjrili.html">财经日历</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuihqzx.html">行情中心</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuihj.html">黄金</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuisy.html">石油</a></li>
+                    <li><a href="#">直播室</a></li>
+                    <li><a href="#">博主</a></li>
+                    <li><a href="#">新手学习</a></li>
+                </ul>
+            </div>
+            <!-- 导航栏底部 -->
+            <div class="navBot">
+                <div class="navBotl">
+                    <div class="navBotlo">
+                        <div class="navBotloo">
+                            <span></span>
+                            <span>按日期查询</span>
+                        </div>
+                        <div class="navBotlot">
+                            <div class="box">
+                                <div class="demo4">
+                                    <!-- <h3>演示四（自定义日期格式）</h3> -->
+                                    <div id="test1" class="inline laydate-icon" style="width:150px;height: 25px;">
+                                        <span style="color: grey;cursor: pointer;margin-left: 10px;">点击选择日期</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navBotlt">
+                        <div class="navBotlto" id="last-week">&lt;</div>
+                        <div class="navBotltt" id="monitor">
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                            <div class="navBotltto"></div>
+                        </div>
+                        <div class="navBotltth" id="next-week">&gt;</div>
+                    </div>
+                </div>
+                <div class="navBotr">
+                    <img src="" class="rlo">
+                </div>
+            </div>
+        </div>
+        <!-- nav导航栏结束 -->
+
+        <!-- main主体部分开始 -->
+        <div class="main">
+            <!-- 财经数据第一部分 -->
+            <div class="mainO">
+                <div class="mainOo">
+                    <span></span>
+                    <span>财经数据</span>
+                    <span></span>
+                    <span>(自动更新)</span>
+                </div>
+                <table style="width: 1000px;">
+                    <thead>
+                        <tr>
+                            <td>时间</td>
+                            <td>区域</td>
+                            <td>指标</td>
+                            <td>前值</td>
+                            <td>预测值</td>
+                            <td>公布值</td>
+                            <td>重要性</td>
+                            <td>利多 利空</td>
+                            <td>解读</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                
+            </div>
+
+            <!-- 国际假期预告第二部分 -->
+            <div class="mainT">
+                <div class="mainTo">
+                    <span></span>
+                    <span>国际假期预告</span>
+                    <span></span>
+                    <span id="time">2019-07-19星期五</span>
+                </div>
+                <div class="mainTt">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td style="width: 50px;">时间</td>
+                                <td>国家地区</td>
+                                <td>地点</td>
+                                <td>事件</td>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 财经大事件第三部分 -->
+            <div class="mainTh">
+                <div class="mainTho">
+                    <span></span>
+                    <span>财经大事件</span>
+                    <span></span>
+                    <span id="time">2019-07-19星期五</span>
+                </div>
+                <div class="mainTht">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>时间</td>
+                                <td>国家地区</td>
+                                <td>地点</td>
+                                <td>重要性</td>
+                                <td>事件</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 央行动态数据第四部分 -->
+            <div class="mainF">
+                <div class="mainFo">
+                    <span></span>
+                    <span>央行动态数据</span>
+                </div>
+                <div class="mainFt">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>央行</td>
+                                <td>利率名称</td>
+                                <td>当前值</td>
+                                <td>前次值</td>
+                                <td>最近非0变动基点</td>
+                                <td>历史峰值</td>
+                                <td>历史最低</td>
+                                <td>下次预测值</td>
+                                <td>CPI最小值</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="mainFth">
+                    <a href="#">【查看历史财经日历】</a>
+                </div>
+            </div>
+
+            <!-- 页面右侧固定导航栏第五部分  -->
+            <div class="mainV">
+                <div class="mianVo QZ-up" style="display: none">
+                    <span>回顶部</span>
+                    <span></span>
+                </div>
+                <div class="mianVt">
+                    <span>全部</span>
+                    <span></span>
+                </div>
+                <div class="mianVth">
+                    <span>重要</span>
+                    <span></span>
+                </div>
+                <div class="mianVf">
+                    <span>已公布</span>
+                    <span></span>
+                </div>
+                <div class="mianVv">
+                    <span>未公布</span>
+                    <span></span>
+                </div>
+                <!-- <div class="mianVs">
+                    <span>实时</span>
+                    <span></span>
+                </div> -->
+            </div>
+        </div>
+        <!-- main主体部分结束 -->
+
+        <!-- footer开始 -->
+        <footer>
+            <p style="text-align: left;">
+                <span class="fs">
+                    免责声明：沪深股票、基金、债券、港股、美股、国内期货、外汇、黄金等行情，除有特别标明外，均为实时行情；
+                    其他行情至少延时15分钟.10讯财经免费提供的行情数据以及其他资料均来自互联网采集或合作方，仅作为用户获取信息之目的，
+                    并不构成投资建议.10讯财经以及其合作机构不为本页面提供的信息错误、残缺、延时或因依靠此信息所采取的任何行动负责.市场有风险，投资需谨慎
+                </span>
+            </p>
+            <p>
+                <span>Copyright © 2017 10讯财经 版权所有 </span>
+                <span>粤ICP备17093768号-1</span>
+                <a href="http://img.10xunc.com/备用件/img/网络文化许可副本.jpg">粤网文(2017)8215-2007号</a>
+                <span>联系邮箱：weisihudong@163.com</span>
+            </p>
+            <p>
+                <a href="http://img.10xunc.com/备用件/img/增值电信业务经营许可证.jpg">增值电信业务经营许可证粤B2-20171195</a>&nbsp;
+                <a href="http://img.10xunc.com/备用件/img/广播电视节目许可证.jpg">广播电视节目制作经营许可证(粤)字第03379号</a>
+                <span>粤公网安备 44030702001623号</span>
+            </p>
+            <p>
+                <span>本网站部分内容来源于互联网，如有侵犯请来信告知，我们将立即处理！</span>
+            </p>
+        </footer>
+        <!-- footer结束 -->
+
+    </div>
+<!-- 登录注册 -->
+<!-- 遮罩层 -->
+<div class="zzc"></div>
+<!-- 登录 -->
+<div class="logIn yinc">
+    <a style="cursor: pointer" class="close-us">X</a>
+    <div class="logTab">
+        <span class="ac" data-id="#one">账号密码登录</span>
+        <span data-id="#two">手机动态码登录</span>
+    </div>
+
+    <div class="loginCon">
+        <!-- 用户名登录 -->
+        <div class="boxUser acc" id="one">
+            <form>
+                <ul>
+                    <li>
+                        <input type="text" class="user" placeholder="请输入用户名" autofocus>
+                    </li>
+                    <li>
+                        <input type="password" class="pswd" placeholder="请输入密码">
+                    </li>
+                </ul>
+            </form>
+            <div class="tPcode">
+                <input type="text" name="" id="" class="tPcodev" placeholder="请输入验证码">
+                <div class="tPimg">
+                    <img src="" class="imgcode"  width="85%"/>
+                </div>
+            </div>
+            <div class="aulog">
+                <input type="radio" name="" id="xc" class="xc">
+                <label for="xc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/cjrili.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="yhdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+        <!-- 手机号登录 -->
+        <div class="Mobile" id="two">
+            <div class="errInfo yc">请输入正确的手机号</div>
+            <ul>
+                <li>
+                    <input id='Phone' type="text" class="puser" placeholder="请输入手机号" />
+                </li>
+                <li class="yzhenCode">
+                    <input type="text" class="yzm" placeholder="请输入验证码">
+                    <button class="Getpw">获取验证码</button>
+                </li>
+            </ul>
+            <div class="aulog">
+                <input type="radio" name="" id="xcc" class="xcc">
+                <label for="xcc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/cjrili.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="sjdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+    </div>
+</div>  
+<script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
+    <script>
+    $(function(){
+        //广告图片开始
+    $.ajax({
+            type:"post",
+            url:"http://www.10xunc.com/WSHD/jiekou7/getADImage",
+            dataType:"JSON",
+            data:{
+                style:3,
+                id:18
+            },
+            success:function(res){
+                $("img.rlo").attr("src",res.data.imageUrl);
+            }
+    });
+
+    })
+    </script>
+    <script type="text/javascript">
+
+        !function(){
+        
+            laydate.skin('dahong');//切换皮肤，请查看skins下面皮肤库
+        
+            laydate({elem: '#demo'});//绑定元素
+        
+        }();
+        
+        
+        //自定义日期格式
+        
+        laydate({
+        
+            elem: '#test1',
+        
+            format: 'YYYY/MM/DD',
+            // YYYY年MM月DD日
+        
+            festival: true, //显示节日
+        
+            choose: function(datas){ //选择日期完毕的回调
+                console.log(datas);
+                console.log(datas.slice(6));
+                console.log(new Date(datas).getDay());
+                var rqzNum=new Date(datas).getDay();
+                $("span#time").html(datas);
+
+                //日历点击今天刷新页面
+                $("#laydate_today").click(function(){
+                    window.location.reload();
+                    });
+                
+                //日历与轮播日历联动
+                if(rqzNum>0){
+                    //获取td集合
+                    var cells = document.getElementById('monitor').getElementsByClassName('navBotltto');
+                    //td集合长度7
+                    var clen = cells.length;
+                    var currentFirstDate;
+                    var formatDate = function(date){
+                        var year = date.getFullYear()+'年';
+                        var year1=date.getFullYear();
+                        var month = (date.getMonth()+1)+'/';
+                        var month1=(date.getMonth())>10?(date.getMonth()):"0"+(date.getMonth()+1);
+                        //获取1~31日
+                        var day = date.getDate();
+                        var day1=(date.getDate()+1)>10?(date.getDate()):"0"+(date.getDate());
+                        var week = ['星期天','星期一','星期二','星期三','星期四','星期五','星期六'][date.getDay()];
+                        return '<p>'+week+'</p>'+'<p class="riqi">'+month+day+'</p>'+'<span>'+'</span>'+'<p>'+year1+month1+day1+'</p>'
+                        +'<p>'+year1+'-'+month1+'-'+day1+'</p>';
+                    };
+                    var addDate= function(date,n){       
+                        date.setDate(date.getDate()+n);        
+                        return date;
+                    };
+                    var setDate = function(date){
+                        var week = date.getDay()-1;
+                        date = addDate(date,week*-1);
+                        currentFirstDate = new Date(date);
+                        for(var i = 0;i<clen;i++){
+                            cells[i].innerHTML = formatDate(i==0 ? date : addDate(date,1));
+                        }
+                    };
+                    setDate(new Date(datas));
+                    $("div.navBotltt").children().eq(rqzNum-1).addClass("ac").siblings().removeClass("ac");
+                    console.log($("div.navBotltt").children().eq(rqzNum-1).children().eq(3).html());
+                    var date=$("div.navBotltt").children().eq(rqzNum-1).children().eq(3).html();
+                    $.ajax({
+                        type: "get",
+                        url: "http://www.10xunc.com/WSHD/jiekou/calendar?page=0&num=60&id=1",
+                        data: {
+                            date:date
+                            
+                        },
+                        dataType: "JSON",
+                        success: function (res) {
+                    
+                            console.log(res)
+                        var html="",html2="",html3="",html4="";
+                        for(var i in res.data.li1){
+                        if(res.data.li1[i].length==2){
+                            
+                            var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;",
+                            clas1=res.data.li1[i][1].importance==''?'black':'red';
+                            var ac="ac";
+                            console.log(clas+clas1);
+                            console.log(styc)
+                            html+="<tr class="+clas+">";
+                                html+="<td rowspan="+2+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                html+="<td rowspan="+2+">";
+                                    html+="<img src="+""+">";
+                                html+="</td>";
+                                html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                html+="<td>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                    html+="</p>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                    html+="</p>";
+                                html+="</td>";
+                                html+="<td></td>";
+                            html+="</tr>";
+                            html+="<tr class="+clas1+">";
+                                html+="<td>"+res.data.li1[i][1].indicator+"</td>";
+                                html+="<td>"+res.data.li1[i][1].prevalue+"</td>";
+                                html+="<td>"+res.data.li1[i][1].predictvalue+"</td>";
+                                html+="<td class="+ac+">"+res.data.li1[i][1].reportvalue+"</td>";
+                                html+="<td>"+res.data.li1[i][1].importance+"</td>";
+                                html+="<td>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][1].influenceDuo+"</span>";
+                                    html+="</p>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][1].influenceKong+"</span>";
+                                    html+="</p>";
+                                html+="</td>";
+                                html+="<td></td>";
+                            html+="</tr>";
+                            
+                            }
+                            else if(res.data.li1[i].length==1){
+                                var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;";
+                            var ac="ac";
+                            console.log(clas+clas1);
+                            console.log(styc)
+                            html+="<tr class="+clas+">";
+                                html+="<td rowspan="+1+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                html+="<td rowspan="+1+">";
+                                    html+="<img src="+""+">";
+                                html+="</td>";
+                                html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                html+="<td>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                    html+="</p>";
+                                    html+="<p>";
+                                        html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                    html+="</p>";
+                                html+="</td>";
+                                html+="<td></td>";
+                            html+="</tr>";
+                            }
+                            else if(res.data.li1[i].length==3){
+                                var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;",
+                                clas1=res.data.li1[i][1].importance==''?'black':'red',clas2=res.data.li1[i][2].importance==''?'black':'red';
+                                var ac="ac";
+                                console.log(clas+clas1);
+                                console.log(styc)
+                                html+="<tr class="+clas+">";
+                                    html+="<td rowspan="+3+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                    html+="<td rowspan="+3+">";
+                                        html+="<img src="+""+">";
+                                    html+="</td>";
+                                    html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas1+">";
+                                    html+="<td>"+res.data.li1[i][1].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][1].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas2+">";
+                                    html+="<td>"+res.data.li1[i][2].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][2].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+        
+                            }else if(res.data.li1[i].length==4){
+                                var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;",
+                                clas1=res.data.li1[i][1].importance==''?'black':'red',clas2=res.data.li1[i][2].importance==''?'black':'red',
+                                clas3=res.data.li1[i][3].importance==''?'black':'red';
+                                var ac="ac";
+                                console.log(clas+clas1);
+                                console.log(styc)
+                                html+="<tr class="+clas+">";
+                                    html+="<td rowspan="+4+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                    html+="<td rowspan="+4+">";
+                                        html+="<img src="+""+">";
+                                    html+="</td>";
+                                    html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas1+">";
+                                    html+="<td>"+res.data.li1[i][1].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][1].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas2+">";
+                                    html+="<td>"+res.data.li1[i][2].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][2].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas3+">";
+                                    html+="<td>"+res.data.li1[i][3].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][3].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+        
+                            }else if(res.data.li1[i].length==5){
+                                var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;",
+                                clas1=res.data.li1[i][1].importance==''?'black':'red',clas2=res.data.li1[i][2].importance==''?'black':'red',
+                                clas3=res.data.li1[i][3].importance==''?'black':'red',clas4=res.data.li1[i][4].importance==''?'black':'red';
+                                var ac="ac";
+                                console.log(clas+clas1);
+                                console.log(styc)
+                                html+="<tr class="+clas+">";
+                                    html+="<td rowspan="+5+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                    html+="<td rowspan="+5+">";
+                                        html+="<img src="+""+">";
+                                    html+="</td>";
+                                    html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas1+">";
+                                    html+="<td>"+res.data.li1[i][1].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][1].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas2+">";
+                                    html+="<td>"+res.data.li1[i][2].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][2].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas3+">";
+                                    html+="<td>"+res.data.li1[i][3].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][3].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas4+">";
+                                    html+="<td>"+res.data.li1[i][4].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][4].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][4].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][4].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+        
+                            }else if(res.data.li1[i].length==6){
+                                var clas=res.data.li1[i][0].importance==''?'black':'red',styc="black;",styf="normal;",
+                                clas1=res.data.li1[i][1].importance==''?'black':'red',clas2=res.data.li1[i][2].importance==''?'black':'red',
+                                clas3=res.data.li1[i][3].importance==''?'black':'red',clas4=res.data.li1[i][4].importance==''?'black':'red',
+                                clas5=res.data.li1[i][5].importance==''?'black':'red';
+                                var ac="ac";
+                                console.log(clas+clas1);
+                                console.log(styc)
+                                html+="<tr class="+clas+">";
+                                    html+="<td rowspan="+6+" style=color:"+styc+"font-weight:"+styf+">"+res.data.li1[i][0].time+"</td>";
+                                    html+="<td rowspan="+6+">";
+                                        html+="<img src="+""+">";
+                                    html+="</td>";
+                                    html+="<td>"+res.data.li1[i][0].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][0].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][0].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][0].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas1+">";
+                                    html+="<td>"+res.data.li1[i][1].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][1].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][1].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][1].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas2+">";
+                                    html+="<td>"+res.data.li1[i][2].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][2].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][2].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][2].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>";
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas3+">";
+                                    html+="<td>"+res.data.li1[i][3].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][3].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][3].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][3].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas4+">";
+                                    html+="<td>"+res.data.li1[i][4].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][4].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][4].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][4].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][4].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+                                html+="<tr class="+clas5+">";
+                                    html+="<td>"+res.data.li1[i][5].indicator+"</td>";
+                                    html+="<td>"+res.data.li1[i][5].prevalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][5].predictvalue+"</td>";
+                                    html+="<td class="+ac+">"+res.data.li1[i][5].reportvalue+"</td>";
+                                    html+="<td>"+res.data.li1[i][5].importance+"</td>";
+                                    html+="<td>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][5].influenceDuo+"</span>";
+                                        html+="</p>";
+                                        html+="<p>";
+                                            html+="<span>"+res.data.li1[i][5].influenceKong+"</span>";
+                                        html+="</p>";
+                                    html+="</td>"
+                                    html+="<td></td>";
+                                html+="</tr>";
+        
+                            }
+                            
+                                            
+                            };//for
+                            $("div.mainO table tbody").html(html);
+                            
+                            for(var i in res.data.li2){
+                                
+                                html2+="<tr>";
+                                    html2+="<td>"+res.data.li2[i].time+"</td>";
+                                    html2+="<td>";
+                                        html+="<img src="+""+">";
+                                        html+="<span>"+res.data.li2[i].country+"</span>";
+                                    html+="</td>";
+                                    html2+="<td>"+res.data.li2[i].region+"</td>";
+                                    html2+="<td>"+res.data.li2[i].event+"</td>";
+                                html2+="</tr>";
+                                
+                                $("div.mainTt table tbody").html(html2);
+                            };
+                            for(var i in res.data.li3){
+                                var clo="#c30d23";
+                                html3+="<tr>";
+                                    html3+="<td>"+res.data.li3[i].daytime+"</td>";
+                                    html3+="<td>";
+                                        html3+="<img src="+">";
+                                        html3+="<span>"+res.data.li3[i].country+"</span>";
+                                    html3+="</td>";
+                                    html3+="<td>"+res.data.li3[i].region+"</td>";
+                                    html3+="<td>";
+                                        html3+="<span></span>";
+                                    html3+="</td>";
+                                    html3+="<td>";
+                                        html3+="<a style=color:"+clo+">"+res.data.li3[i].event+"</a>";
+                                    html3+="</td>";
+                                html3+="</tr>";
+    
+                                $("div.mainTht table tbody").html(html3);
+                            };
+                            for(var i in res.data.li4){
+                                html4+="<tr>";
+                                    html4+="<td>"+res.data.li4[i].centralbank+"</td>";
+                                    html4+="<td>"+res.data.li4[i].interestrate+"</td>";
+                                    html4+="<td>";
+                                        html4+="<p>"+res.data.li4[i].lastprice.split(" ")[0]+"</p>";
+                                        html4+="<p>"+res.data.li4[i].lastprice.split(" ")[1]+"</p>";
+                                    html4+="</td>";
+                                    html4+="<td>"+res.data.li4[i].preprice+"</td>";
+                                    html4+="<td>";
+                                        html4+="<p>"+res.data.li4[i].basispoints.split(" ")[0]+"</p>";
+                                        html4+="<p>"+res.data.li4[i].basispoints.split(" ")[1]+"</p>";
+                                    html4+="</td>";
+                                    html4+="<td>";
+                                        html4+="<p>"+res.data.li4[i].historichighs.split(" ")[0]+"</p>";
+                                        html4+="<p>"+res.data.li4[i].historichighs.split(" ")[1]+"</p>";
+                                    html4+="</td>";
+                                    html4+="<td>";
+                                        html4+="<p>"+res.data.li4[i].historiclows.split(" ")[0]+"</p>";
+                                        html4+="<p>"+res.data.li4[i].historiclows.split(" ")[1]+"</p>";
+                                    html4+="</td>";
+                                    html4+="<td>";
+                                        html4+="<p>"+res.data.li4[i].nextprice.split(" ")[0]+"</p>";
+                                        html4+="<p>"+res.data.li4[i].nextprice.split(" ")[1]+"</p>";
+                                    html4+="</td>";
+                                    html4+="<td>"+res.data.li4[i].newcpi+"</td>";
+                                html4+="";
+    
+    
+                                $("div.mainFt table tbody").html(html4);
+                            };
+                    }//success
+                });
+                }else if(rqzNum==0){
+                    alert("周日休息日无数据查看")
+                    // $("div.navBotltt").children(":last-child").addClass("ac").siblings().removeClass("ac");
+                    // console.log($("div.navBotltt").children().eq(rqzNum-1).children().eq(3).html());
+                    var date2=$("div.navBotltt").children().eq(rqzNum-1).children().eq(3).html();
+                    $("div.mainO table tbody").html("")
+                    $("div.mainTt table tbody").html("");
+                    $("div.mainTht table tbody").html("");
+                    $("div.mainFt table tbody").html("");
+                
+                        }
+
+                
+                
+        
+            }
+        
+        });
+        
+        </script>
+</body>
+</html>

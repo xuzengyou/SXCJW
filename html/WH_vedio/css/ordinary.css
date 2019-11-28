@@ -1,0 +1,225 @@
+﻿.w{
+    width: 1200px !important;
+}
+/* header头部开始 */
+header{
+    width: 1200px;
+    height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 300px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1200px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 38px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏结束 */
+
+/* main主体开始 */
+.main{
+    width: 1200px;
+    margin-top: 10px;
+}
+.main .mTop{
+    width: 1200px;
+    height: 460px;
+    background-color: #2B2A30;
+    padding-top: 10px;
+    padding-left: 15px;
+    display: flex;
+}
+/* 轮播图引入部分 */
+.main .mTop .slider video{
+    width: 100%;
+    height: 100%;
+}
+
+/* 轮播图引入结束 */
+.main .mTop .news{
+    width: 450px;
+    height: 440px;
+    /* background-color: #e6e6e6; */
+    margin-left: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+/*定义滚动条样式（高宽及背景）*/ 
+.news::-webkit-scrollbar { 
+    width: 6px;   /* 滚动条宽度， width：对应竖滚动条的宽度  height：对应横滚动条的高度*/
+    background: #fff;
+    cursor: pointer;
+}
+/*定义滑块 样式*/ 
+.news::-webkit-scrollbar-thumb { 
+    border-radius: 3px; 
+    height: 100px;    /* 滚动条滑块长度 */
+    background-color: #000;
+    cursor: pointer;
+}
+ /*定义滚动条轨道（凹槽）样式*/ 
+ .news::-webkit-scrollbar-track { 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);    /* 较少使用 */
+    border-radius: 3px;
+    cursor: pointer;
+}
+.main .mTop .news .new{
+    height: 110px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.main .mTop .news .new img{
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+}
+.main .mTop .news .new a:nth-child(2){
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -8px -832px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 45px;
+}
+.main .mTop .news .new a:nth-child(3){
+    margin-left: 10px;
+    width: 280px;
+    height: 110px;
+    overflow: hidden;
+    font-size: 16px;
+    color: #fff;
+}
+/* 视频区开始 */
+.main .vedio{
+    width: 1200px;
+    display: flex;
+    margin-top: 10px;
+}
+.main .vedio .left{
+    width: 920px;
+}
+.main .vedio .right{
+    width: 280px;
+    /* background-color: bisque; */
+}
+
+
+/* main主体结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

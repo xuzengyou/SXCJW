@@ -1,0 +1,657 @@
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+body{
+    /* background-color: #ececec; */
+}
+.w{
+    width: 1200px !important;
+    
+}
+/* header头部开始 */
+header{
+    width: 1200px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex;
+    /* background-color: #ececec; */
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 300px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 459px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   width: 25px;
+   height: 30px;
+   background-image: url(../../../img/tpjh2.png);
+   background-repeat: no-repeat;
+   background-position: -8px -647px;
+   float: left;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 344px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    cursor: pointer;
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.w .nav{
+    width: 1200px;
+    height: 30px;
+    margin-top: 10px;
+}
+.w .nav ul{
+    display: flex;
+}
+.w .nav ul li{
+    font-size: 24px;
+    margin-right: 50px;
+}
+.w .nav ul li:last-child{
+    margin-right: 0;
+}
+.w .nav ul li.active a{
+    color: #c30d23;
+}
+/* nav导航结束 */
+
+/* main开始 */
+/* main第一部分开始 */
+.w .main .mainO{
+    border: 1px solid #ccc;
+    width: 1200px;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+}
+.w .main .mainO .mainOo{
+    width: 100px;
+    height: 58px;
+}
+.w .main .mainO .mainOo a{
+    display: inline-block;
+    width: 100px;
+    line-height: 58px;
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    background-color: #c30d23;
+}
+.w .main .mainO .mainOt a{
+    display: inline-block;
+    width: 100px;
+    line-height: 58px;
+    /* color: #fff; */
+    text-align: center;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.w .main .mainO .mainOt a:first-child{
+    
+}
+.w .main .mainO .mainOth{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 14px 0 0 660px;
+}
+.w .main .mainO .mainOth input{
+    display: inline-block;
+    width: 255px;
+    height: 28px;
+    font-size: 16px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.w .main .mainO .mainOth span{
+    display: inline-block;
+    width: 25px;
+    height: 28px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -11px -647px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* main第一部分结束 */
+/* main第二部分开始 */
+.w .main .mainT{
+    width: 1200px;
+    /* height: 360px;     */
+    display: flex;
+    margin-top: 10px;
+    background-color: #F1F3F4;
+}
+.w .main .mainT .mainTl{
+    width: 1200px;
+    height: 185px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    /* border-right: 1px solid #ccc; */
+}
+.w .main .mainT .mainTl img{
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.w .main .mainT .mainTl ul{
+    width: 650px;
+    overflow: hidden;
+}
+.w .main .mainT .mainTl ul li:first-child{
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.w .main .mainT .mainTl ul li:first-child span:first-child{
+    font-size: 18px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(2){
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 1px solid #c30d23;
+    border-radius: 3px;
+    color: #c30d23;
+    margin-right: 30px;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(3){
+    color: #c30d23;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(5){
+    color: #c30d23;
+    margin-right: 25px;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(6){
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -44px -795px;
+    vertical-align: middle;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(8){
+    color: #c30d23;
+    margin-right: 25px;
+}
+.w .main .mainT .mainTl ul li:first-child span:nth-child(9){
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -69px -796px;
+    vertical-align: middle;
+}
+.w .main .mainT .mainTl ul li:nth-child(2){
+    margin-bottom: 5px;
+}
+.w .main .mainT .mainTl ul li:nth-child(2) span{
+    color: #c30d23;
+}
+.w .main .mainT .mainTl .Person{
+    border-left: 2px solid #ccc;
+    height: 125px;
+    padding-left: 10px;
+}
+.w .main .mainT .mainTl .Person p:nth-child(1){
+    margin-bottom: 5px;
+    margin-top: 7px;
+}
+.w .main .mainT .mainTl .Person p:nth-child(2){
+    margin-top: 10px;
+}
+.w .main .mainT .mainTl .Person p:nth-child(2) span:nth-child(1){
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #c30d23;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+
+}
+.w .main .mainT .mainTl .Person p:nth-child(2) span:nth-child(2){
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -93px -796px;
+    vertical-align: middle;
+}
+.w .main .mainT .mainTl .Person p:nth-child(2) span:nth-child(3){
+    display: inline-block;
+    width: 155px;
+    height: 20px;
+    line-height: 17px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.w .main .mainT .mainTl .Person p:nth-child(3){
+    margin-top: 10px;
+}
+.w .main .mainT .mainTl .Person p:nth-child(3) span:nth-child(1){
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #0370BC;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+
+}
+.w .main .mainT .mainTl .Person p:nth-child(3) span:nth-child(2){
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -114px -796px;
+    vertical-align: middle;
+}
+.w .main .mainT .mainTl .Person p:nth-child(3) span:nth-child(3){
+    display: inline-block;
+    width: 155px;
+    height: 20px;
+    line-height: 17px;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+/* main第二部分结束 */
+/* main第三部分开始 */
+.w .main .mainTh{
+    width: 1200px;
+    margin-top: 40px;
+    display: flex;
+}
+.w .main .mainTh .mainThl{
+    width: 800px;
+    overflow: hidden;
+    /* background-color: #F1F3F4; */
+}
+.w .main .mainTh .mainThl>p{
+    line-height: 25px;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+.w .main .mainTh .mainThl>p span:first-child{
+    font-size: 22px;
+}
+.w .main .mainTh .mainThl .liveShow{
+    background-color: #F1F3F4;
+}
+.w .main .mainTh .mainThl .liveShow .lso{
+    display: flex;
+    height: 60px;
+    line-height: 60px;
+}
+.w .main .mainTh .mainThl .liveShow .lso span{
+    display: inline-block;
+
+}
+.w .main .mainTh .mainThl .liveShow .lso span:nth-child(1){
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    margin-right: 20px;
+    background-color: #c30d23;
+    color: #ccc;
+    text-align: center;
+    font-size: 16px;
+}
+.w .main .mainTh .mainThl .liveShow .lso span:nth-child(2){
+    font-size: 20px;
+    margin-right: 370px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts{
+    width: 800px;
+    border-left: 1px solid #2c9eff;
+    margin-left: 20px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst{
+    border-top: 1px dashed #ccc;
+    
+    margin-left: 10px;
+    padding-top: 30px;
+    height: 148px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst:last-child{
+    border-bottom: 1px solid #ccc;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst>p:nth-child(1){
+    margin-bottom: 10px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst>p:nth-child(1) span{
+    color: #2c9eff;
+    font-size: 14px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst>p:nth-child(1) span::after{
+    content: '';
+    display: block;
+    float: left;
+    margin-left: -18px;
+    margin-top: 2px;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+    background: #2c9eff;
+    border: 3px solid #fff;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain{
+    width: 770px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain p:nth-child(1){
+    margin-bottom: 3px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain p:nth-child(1) span:nth-child(1){
+    color: #2c9eff;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain p:nth-child(1) span:nth-child(2){
+    font-size: 14px;
+    display: inline-block;
+    width: 680px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    vertical-align: text-top;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain p:nth-child(2) span:nth-child(1){
+    color: #2c9eff;
+    font-size: 14px;
+}
+.w .main .mainTh .mainThl .liveShow .lsts .lst .contain p:nth-child(2) span:nth-child(2){
+    font-size: 14px;
+    display: inline-block;
+    width: 680px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: text-top;
+}
+/* main第三部分左边结束 */
+/* 第三部分右边开始 */
+.w .main .mainTh .mainThr{
+    width: 380px;
+    margin-left: 20px;
+    background-color: #F1F3F4;
+    margin-top: 35px;
+}
+.w .main .mainTh .mainThr .title{
+    width: 380px;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+.w .main .mainTh .mainThr .title span{
+   font-size: 16px;
+   display: inline-block;
+   vertical-align: middle;
+   font-weight: bold;
+   cursor: pointer;
+}
+.w .main .mainTh .mainThr .title span.ac{
+    color: #c30d23;
+}
+.w .main .mainTh .mainThr .title span:first-child{
+    margin-left: 60px;
+    margin-right: 125px;
+}
+.w .main .mainTh .mainThr .con{
+    width: 380px;
+    height: 435px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid #ccc;
+}
+.w .main .mainTh .mainThr .con .all{
+    width: 380px;
+
+}
+.w .main .mainTh .mainThr .con .all .reCard{
+    width: 380px;
+    /* height: 130px; */
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+}
+.w .main .mainTh .mainThr .con .all .reCard .tech{
+    display: flex;
+    /* height: 60px; */
+    align-items: top;
+    overflow: hidden;
+
+}
+.w .main .mainTh .mainThr .con .all .reCard .tech img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.w .main .mainTh .mainThr .con .all .reCard .tech ul{
+    /* height: 60px; */
+    overflow: hidden;
+    padding-right: 20px;
+    margin-top: 5px;
+    /* padding-top: 5px; */
+}
+.w .main .mainTh .mainThr .con .all .reCard .tech ul li:first-child span:first-child{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 110px;
+    color: #c30d23;
+}
+.w .main .mainTh .mainThr .con .all .reCard .tech ul li:first-child span:last-child{
+    color: #A8A8A8;
+}
+.w .main .mainTh .mainThr .con .all .reCard .student{
+    display: flex;
+    align-items: top;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* background-color: #fff; */
+}
+.w .main .mainTh .mainThr .con .all .reCard .student img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.w .main .mainTh .mainThr .con .all .reCard .student ul{
+    /* height: 60px; */
+    overflow: hidden;
+    padding-right: 20px;
+    /* padding-top: 5px; */
+}
+.w .main .mainTh .mainThr .con .all .reCard .student ul li:first-child span:first-child{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 110px;
+}
+.w .main .mainTh .mainThr .con .all .reCard .student ul li:first-child span:last-child{
+    color: #A8A8A8;
+}
+/* 个人问答 */
+.w .main .mainTh .mainThr .con .pson{
+    width: 380px;
+
+}
+.w .main .mainTh .mainThr .con .pson .psCon{
+    width: 380px;
+    /* height: 130px; */
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    padding-left: 20px;
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Ptech{
+    display: flex;
+    /* height: 60px; */
+    align-items: top;
+    overflow: hidden;
+
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Ptech img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Ptech ul{
+    /* height: 60px; */
+    overflow: hidden;
+    padding-right: 20px;
+    /* padding-top: 5px; */
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Ptech ul li:first-child span:first-child{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 110px;
+    color: #c30d23;
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Ptech ul li:first-child span:last-child{
+    color: #A8A8A8;
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Pstudent{
+    display: flex;
+    align-items: top;
+    overflow: hidden;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* background-color: #fff; */
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Pstudent img{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Pstudent ul{
+    /* height: 60px; */
+    overflow: hidden;
+    padding-right: 20px;
+    /* padding-top: 5px; */
+}
+.w .main .mainTh .mainThr .con .pson .psCon .Pstudent ul li:first-child span:first-child{
+    display: inline-block;
+    width: 110px;
+    height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 110px;
+}
+.w .main .mainTh .mainThr .con pson .psCon .Pstudent ul li:first-child span:last-child{
+    color: #A8A8A8;
+}
+.w .main .mainTh .mainThr .request{
+    width: 380px;
+
+}
+.w .main .mainTh .mainThr .request textarea{
+    width: 330px;
+    height: 80px;
+    background-color: #F1F3F4;
+    margin-top: 30px;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.w .main .mainTh .mainThr .request button{
+    display: inline-block;
+    margin-top: 5px;
+    width: 40px;
+    height: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 310px;
+}
+.w .main .mainTh .mainThr .con .all{
+    display: none;
+}
+.w .main .mainTh .mainThr .con .pson{
+    display: none;
+}
+.w .main .mainTh .mainThr .con div.act{
+    display: block;
+}
+/* 第三部分右边结束 */
+/* main第三部分结束 */
+
+/* main结束 */

@@ -1,0 +1,581 @@
+*{
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+}
+body{
+    /* background-color: #ececec; */
+}
+.w{
+    width: 1200px !important;
+    
+}
+/* header头部开始 */
+header{
+    width: 1200px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex;
+    /* background-color: #ececec; */
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 300px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 459px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   width: 25px;
+   height: 30px;
+   background-image: url(../../../img/tpjh2.png);
+   background-repeat: no-repeat;
+   background-position: -8px -647px;
+   float: left;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 344px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    cursor: pointer;
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.w .nav{
+    width: 1200px;
+    height: 30px;
+    margin-top: 10px;
+}
+.w .nav ul{
+    display: flex;
+}
+.w .nav ul li{
+    font-size: 24px;
+    margin-right: 50px;
+}
+.w .nav ul li:last-child{
+    margin-right: 0;
+}
+.w .nav ul li.active a{
+    color: #c30d23;
+}
+/* nav导航结束 */
+
+/* main开始 */
+/* main第一部分开始 */
+.w .main .mainO{
+    border: 1px solid #ccc;
+    width: 1200px;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+}
+.w .main .mainO .mainOo{
+    width: 100px;
+    height: 58px;
+}
+.w .main .mainO .mainOo a{
+    display: inline-block;
+    width: 100px;
+    line-height: 58px;
+    background-color: #c30d23;
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+
+}
+.w .main .mainO .mainOt a{
+    display: inline-block;
+    width: 100px;
+    line-height: 58px;
+    /* background-color: #c30d23; */
+    /* color: #fff; */
+    text-align: center;
+    font-size: 24px;
+    margin-left: 10px;
+    color: #000;
+}
+.w .main .mainO .mainOth{
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 14px 0 0 660px;
+}
+.w .main .mainO .mainOth input{
+    display: inline-block;
+    width: 255px;
+    height: 28px;
+    font-size: 16px;
+    padding-left: 5px;
+    vertical-align: middle;
+}
+.w .main .mainO .mainOth span{
+    display: inline-block;
+    width: 25px;
+    height: 28px;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -11px -647px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* main第一部分结束 */
+/* main第二部分开始 */
+.w .main .mainT{
+    width: 1200px;
+    height: 350px;
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.w .main .mainT .mainTl{
+    width: 700px;
+    height: 350px;
+    /* background-color: aquamarine; */
+}
+.w .main .mainT .mainTr{
+    width: 500px;
+    height: 350px;
+    background-color: bisque;
+}
+/* 轮播图引入部分 */
+.img a:first-child{
+    position: absolute;
+    display: inline-block;
+    color: #fff;
+    width: 700px;
+    line-height: 44px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: normal;
+    margin-top: 306px;
+    /* margin-left: 56px; */
+    padding-left: 56px;
+    background-color: #9F9F9F;
+    opacity: .5;
+    padding-right: 120px;
+}
+.img a:last-child{
+    display: inline-block;
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+}
+.img a:last-child img{
+    display: inline-block;
+    width: 700px;
+    height: 350px;
+    overflow: hidden;
+}
+.flexslider{
+    position:relative;
+    width:700px;height:350px;
+    overflow:hidden;zoom:1;
+}
+.flex-viewport{
+    max-height:2000px;
+    -webkit-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    transition:all 1s ease;
+}
+.flexslider .slides{
+    zoom:1;
+}
+.flex-direction-nav a{
+    width:60px;height:90px;
+    line-height:99em;
+    overflow:hidden;
+    margin:-60px 0 0;
+    display:block;
+    background:url(http://img.10xunc.com/备用件/img/ad_ctr.png) no-repeat;
+    position:absolute;
+    top:55%;
+    z-index:10;
+    cursor:pointer;
+    opacity:0;
+    filter:alpha(opacity=0);
+    -webkit-transition:all .3s ease;
+}
+.flex-direction-nav .flex-next{
+    background-position:0 -90px;
+    right:0;
+}
+.flex-direction-nav .flex-prev{
+    left:0;
+}
+.flexslider:hover .flex-next{
+    opacity:0.8;
+    filter:alpha(opacity=25);
+}
+.flexslider:hover .flex-prev{
+    opacity:0.8;
+    filter:alpha(opacity=25);
+}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover{
+    opacity:1;
+    filter:alpha(opacity=50);
+}
+.flex-control-nav{
+    width:100px;
+    position:absolute;
+    bottom:10px;
+    margin-left: 600px;
+    opacity: .5;
+}
+.flex-control-nav li{
+    margin:0 5px;
+    display:inline-block;
+    zoom:1;
+    *display:inline;
+}
+.flex-control-paging li a{
+    background:url(http://img.10xunc.com/备用件/img/dot.png) no-repeat 0 -16px;
+    display:block;
+    height:16px;overflow:hidden;
+    text-indent:-99em;
+    width:16px;
+    cursor:pointer;
+}
+.flex-control-paging li a.flex-active{
+    background-position:0 0;
+}
+/* 轮播图引入结束 */
+.w .main .mainT .mainTr ul li{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    width: 500px;
+    background-color: #737373;
+}
+.w .main .mainT .mainTr ul li:nth-child(2n){
+    background-color: #565656;
+}
+.w .main .mainT .mainTr ul li a:first-child{
+    display: inline-block;
+    line-height: 50px;
+    width: 345px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #fff;
+}
+.w .main .mainT .mainTr ul li a:last-child{
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #C11424;
+    color: #fff;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 3px;
+    /* vertical-align: middle; */
+}
+.w .main .mainT .mainTr ul li a:last-child::before{
+    display: inline-block;
+    content: "";
+    position: relative;
+    top: 1px;
+    left: -14px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 7px solid #C11424;
+}
+/* main第二部分结束 */
+
+/* main第三部分开始 */
+.w .main .mainTh{
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    margin-top: 15px;
+}
+.w .main .mainTh .mThl{
+    width: 850px;
+}
+.w .main .mainTh .mThl .mThlo{
+    width: 850px;
+    height: 35px;
+}
+.w .main .mainTh .mThl .mThlo span{
+    display: inline-block;
+    font-size: 30px;
+    width: 135px;
+    line-height: 35px;
+    cursor: pointer;
+}
+.w .main .mainTh .mThl .mThlo span:first-child{
+    color: #c30d23;
+    border-right: 2px solid #ccc;
+    
+}
+.w .main .mainTh .mThl .mThlo span:last-child{
+    text-align: right;
+}
+.w .main .mainTh .mThl .mThlt{
+    width: 850px;
+    margin-top: 20px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto{
+    width: 850px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card{
+    width: 850px;
+    height: 170px;
+    display: flex;
+    background-color: #F1F3F4;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    /* box-shadow: 0 0 5px #fff; */
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardL{
+    width: 100px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardL img{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardL p span{
+    display: inline-block;
+    width: 60px;
+    line-height: 25px;
+    border: 1px solid #c30d23;
+    text-align: center;
+    border-radius: 3px;
+    color: #c30d23;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR{
+    padding-top: 30px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p{
+    line-height: 28px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(2){
+    margin-bottom: 10px;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(2) span{
+    color: #ccc;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(3) a{
+    color: #006BA5;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(3) span{
+    display: inline-block;
+    width: 600px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(4) a{
+    color: #006BA5;
+}
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardR p:nth-child(4) span{
+    display: inline-block;
+    width: 600px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.w .main .mainTh .mThl .mThlth{
+    margin: 0 auto;
+    border: 1px solid #c30d23;
+    width: 135px;
+    height: 35px;
+    line-height: 35px;
+    margin-top: 50px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.w .main .mainTh .mThl .mThlth a{
+    font-size: 20px;
+    color: #c30d23;
+    margin-right: 5px;
+}
+.w .main .mainTh .mThl .mThlth a:last-child{
+    /* font-size: 24px; */
+    display: inline-block;
+    width: 20px;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle;
+}
+.w .main .mainTh .mThr{
+    width: 310px;
+}
+.w .main .mainTh .mThr .mThro{
+    width: 310px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #F1F3F4;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+.w .main .mainTh .mThr .mThro span{
+    display: block;
+    font-size: 35px;
+    color: #c30d23;
+}
+.w .main .mainTh .mThr .mThrt{
+    width: 310px;
+}
+.w .main .mainTh .mThr .mThrt .bzcard{
+    width: 310px;
+    height: 85px;
+    /* line-height: 85px; */
+    margin-bottom: 5px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color: #F1F3F4;
+    border-radius: 3px;
+}
+.w .main .mainTh .mThr .mThrt .bzcard img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.w .main .mainTh .mThr .mThrt .bzcard ul li{
+    width: 160px;
+    overflow: hidden;
+    line-height: 25px;
+    font-size: 16px;
+}
+.w .main .mainTh .mThr .mThrt .bzcard ul li:last-child span{
+    color: #ccc;
+}
+.w .main .mainTh .mThr .mThrt .bzcard>span{
+    font-size: 16px;
+    display: block;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #c30d23;
+    border-radius: 3px;
+    text-align: center;
+    color: #c30d23;
+}
+.w .main .mainTh .mThr .mThrth{
+    margin-top: 50px;
+    width: 310px;
+    height: 45px;
+    background-color: #F1F3F4;
+}
+.w .main .mainTh .mThr .mThrth span{
+    display: inline-block;
+    line-height: 45px;
+    font-size: 35px;
+    color: #c30d23;
+    margin-left: 10px;
+}
+.w .main .mainTh .mThr table{
+    width: 310px;
+    text-align: center;
+    margin-top: 10px;
+}
+.w .main .mainTh .mThr table thead{
+    height: 45px;
+    line-height: 45px;
+    background-color: #F1F3F4;
+}
+.w .main .mainTh .mThr table thead tr td span{
+    font-size: 25px;
+}
+.w .main .mainTh .mThr table tbody{
+    background-color: #F1F3F4;
+}
+.w .main .mainTh .mThr table tbody tr td:last-child span{
+    color: #ccc;
+}
+.w .main .mainTh .mThr table tbody tr{
+    line-height: 40px;
+}
+.w .main .mainTh .mThr table tbody tr:first-child td:first-child span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background-color: #FF3351;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #565656;
+}
+.w .main .mainTh .mThr table tbody tr:nth-child(2) td:first-child span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background-color: #F38647;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #565656;
+}
+.w .main .mainTh .mThr table tbody tr:nth-child(3) td:first-child span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: #fff;
+    background-color: #FFC943;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #565656;
+}
+/* main第三部分结束 */
+
+
+/* main结束 */

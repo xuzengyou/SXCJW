@@ -1,0 +1,324 @@
+.w {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: pink;
+  position: relative;
+  background: url(http://img.10xunc.com/备用件/img/bg.jpg) no-repeat center center;
+}
+.w .logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 312px;
+  height: 100px;
+}
+.w .logo a img {
+  width: 80%;
+  height: 80%;
+}
+.w .Box_register {
+  position: absolute;
+  width: 530px;
+  height: 400px;
+  overflow: hidden;
+  background-color: #fff;
+  left: 50%;
+  top: 50%;
+  margin: -225px 0 0 -260px;
+}
+.w .Box_register .title {
+  margin: auto;
+  height: 50px;
+  text-align: center;
+  line-height: 70px;
+  /* color: #c30d23; */
+  font-size: 16px;
+}
+.w .Box_register .title span.ac{
+  color: #c30d23;
+  cursor: pointer;
+}
+.w .Box_register .title span{
+  color: #ccc;
+  cursor: pointer;
+}
+/* 手机注册 */
+.c .shouj .sjuser{
+  width: 350px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+  border-bottom: 1px solid #DCDCDC;
+  padding-top: 10px;
+}
+.c .shouj .sjuser.focus{
+  border-bottom: 1px solid #c30d23;
+}
+.c .shouj .sjuser input{
+  width: 350px;
+  height: 30px;
+  font-size: 16px;
+}
+.c .shouj .sjuser input::-webkit-input-placeholder{
+  color:#DCDCDC;
+}
+.c .shouj .sjuser input::-moz-placeholder{
+  color:#DCDCDC;
+}
+.c .shouj .sjuser input::-moz-placeholder{
+  color:#DCDCDC;
+}
+.c .shouj .sjuser input::-ms-input-placeholder{
+  color:#DCDCDC;
+}
+.w .Box_register .input-body {
+  position: relative;
+  margin: auto;
+  width: 350px;
+}
+.w .Box_register .input-body .input-box {
+  height: 32px;
+  display: flex;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: .32px;
+  padding-top: 25px;
+}
+.w .Box_register .input-body .input-box .input-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  height: 30px;
+}
+.w .Box_register .input-body .input-box .input-content > .password-box {
+  width: 100%;
+}
+.w .Box_register .input-body .input-box .input-content > .password-box .password-eye {
+  position: absolute;
+  bottom: 3px;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -225px -724px;
+}
+.w .Box_register .input-body .input-box .input-content > .password-box .eye-active {
+  background-position: -194px -727px;
+}
+.w .Box_register .input-body .input-box .input-content .input {
+  width: 100%;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  background-color: transparent;
+  z-index: 0;
+  text-align: left;
+  height: 16px;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: .32px;
+  padding: 7px 0;
+}
+.w .Box_register .input-body .input-box .input-content .content {
+  transform-origin: bottom left;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color,bottom,transform;
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95%;
+  height: 30px;
+  line-height: 30px;
+  cursor: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+.w .Box_register .input-body .input-box .button-second {
+  background: #d8d8d8;
+  width: 101px;
+  height: 36px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  line-height: 36px;
+  font-size: 12px;
+  letter-spacing: .24px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 4px;
+  right: 0;
+  cursor: pointer;
+}
+.w .Box_register .input-body .input-box .bottom-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.w .Box_register .input-body .input-box.input-focus .input-content .content {
+  transform: scale(0.75) translateY(-43px);
+  color: #c30d23!important;
+}
+.w .Box_register .input-body .input-box.input-focus .bottom-line-active {
+  transform: scaleX(1);
+  background-color: #c30d23;
+  bottom: 0;
+  height: 1px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+.w .Box_register .input-body .tip-text {
+  font-size: 12px;
+  letter-spacing: .24px;
+  padding-top: 5px;
+}
+.w .Box_register .input-body .err-text {
+  font-size: 12px;
+  letter-spacing: .24px;
+  padding-top: 5px;
+  color: #c30d23;
+}
+.w .Box_register .option-single {
+  font-size: 12px;
+  letter-spacing: .24px;
+  padding-left: 80px;
+  padding-top: 10px;
+  width: 100%;
+  height: 48px;
+}
+.w .Box_register .option-single .option-radio {
+  float: left;
+  display: block;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+  margin: 0 16px 0 4px;
+  background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -116px -731px;
+}
+.w .Box_register .option-single .option-radio-sel {
+  background-position: -137px -731px;
+}
+.w .Box_register .option-single .option-label label .protocol {
+  color: #c30d23;
+  cursor: pointer;
+}
+.w .Box_register .register-button {
+  margin: auto;
+  width: 272px;
+}
+.w .Box_register .register-button .button-style {
+  height: 48px;
+  line-height: 48px;
+  border-radius: 24px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  letter-spacing: .32px;
+  display: inline-block;
+  background: #c30d23;
+}
+.w .Box_register .register-button .btn-none {
+  background: #ffb2bb;
+  color: #e6e6e6;
+}
+/* 邮箱注册 */
+div.yc{
+  display: none;
+}
+
+.youx{
+  width: 530px;height: 310px;
+  text-align: center;
+}
+.youx>div{
+  margin: 0 auto;
+}
+.youx .usern{
+  width: 350px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 1px solid #c30d23;
+  margin-top: 20px;
+}
+.youx .usern input{
+  width: 300px;
+}
+.youx .pwd{
+  width: 350px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 1px solid #c30d23;
+  margin-top: 15px;
+}
+.youx .pwd input{
+  width: 330px;
+}
+.youx .yx{
+  width: 350px;
+  line-height: 40px;
+  text-align: left;
+  border-bottom: 1px solid #c30d23;
+  margin-top: 15px;
+}
+.youx .yx input{
+  width: 300px;
+}
+.youx .option{
+  width: 350px;
+  line-height: 40px;
+  text-align: left;
+  margin-top: 10px;
+}
+.youx .zc{
+  width: 350px;
+  line-height: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+.youx .zc button{
+  display: inline-block;
+  width: 272px;height: 48px;
+  background-color: #c30d23;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 24px;
+}
+.youx .zc button.ac{
+  opacity: .5;
+}
+.youx .ts{
+  width: 350px;
+  text-align: left;
+}
+.youx .ts span{
+  color: #c30d23;
+  font-size: 12px;
+}
+.youx .tsyc{
+  display: none;
+}
+.youx .pwtsyc{
+  width: 350px;
+  text-align: left;
+}
+.youx .pwtsyc span{
+  color: #c30d23;
+  font-size: 12px;
+}
+.youx .pwtsyca{
+  display: none;
+}
+
+

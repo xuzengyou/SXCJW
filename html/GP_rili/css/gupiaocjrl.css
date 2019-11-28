@@ -1,0 +1,351 @@
+﻿/* header头部开始 */
+header{
+    width: 1000px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 115px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 20px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏底部开始 */
+.nav .navBot{
+    display: flex;
+    margin-top: 5px;
+}
+.nav .navBot .navBotl a{
+    display: inline-block;
+    width: 60px;
+    line-height: 30px;
+    font-size: 20px;
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.nav .navBot .navBotl a.ac{
+    background-color: #007DD2;
+}
+.nav .navBot .navBotr{
+    /* width: 150px;height: 20px; */
+    /* margin-top: 5px; */
+    margin-left: 520px;
+    display: flex;
+}
+.nav .navBot .navBotr .navBotro{
+    margin-right: 5px;
+}
+.nav .navBot .navBotr .navBotro span{
+    font-size: 16px;
+    font-weight: bold;
+}
+select{
+    padding: 2px;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+/* 导航栏底部结束 */
+/* 导航栏结束 */
+
+/* main主体开始 */
+.main{
+    width: 1000px;
+    margin-top: 10px;
+}
+.main table{
+    width: 1000px;
+    text-align: center;
+    display: none;
+}
+.main table.ac{
+    display: table;
+}
+.main table tbody tr:hover{
+    background-color: #e6e6e6;
+}
+.main table tr td{
+    border: 1px solid #cdcdcd;
+    line-height: 35px;
+    /* display: inline-block; */
+    /* line-height: 25px; */
+}
+.main table tbody tr td{
+    height: 30px;
+}
+.main table tr td:nth-child(1){
+    width: 130px;
+}
+.main table tr td:nth-child(2){
+    width: 95px;
+}
+.main table tr td:nth-child(3){
+    width: 485px;
+}
+.main table tr td:nth-child(4){
+    width: 120px;
+}
+.main table tr td:nth-child(4){
+    width: 160px;
+}
+.main table thead{
+    background-color: #007DD2;
+    font-size: 16px;
+    line-height: 40px;
+    color: #fff;
+}
+.main table tbody a{
+    /* display: inline-block; */
+    line-height:15px;
+    vertical-align: middle;
+    text-align: left;
+}
+.main table tbody a.glyphicon{
+    color: #007DD2;
+    display: none;
+}
+.main table tbody tr td{
+    /* text-align: left; */
+    padding-left: 3px;
+    cursor: pointer;
+}
+.main table tbody tr td p{
+    line-height: 25px;
+}
+/* main底部结束 */
+
+/* 固定导航栏开始 */
+.mrF{
+    width: 55px;
+    position: fixed;
+    left: 80px;
+    top: 200px;
+}
+.mrF .mrFo{
+    width: 55px;height: 50px;
+    background-color: #007DD2;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    cursor: pointer;
+}
+.mrF .mrFo a{
+    display: block;
+    color: #fff;
+    font-size: 8px;
+    cursor: pointer;
+}
+.mrF .mrFo a:first-child{
+    /* background-color: #007DD2; */
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -310px -519px;
+    width: 37px;
+    height: 29px;
+}
+.mrF .mrFt{
+    cursor: pointer;
+}
+.mrF .mrFt a{
+    display: block;
+    color: #fff;
+    font-size: 8px;
+}
+.mrF .mrFt{
+    width: 55px;height: 50px;
+    background-color: #007DD2;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+    margin-top: 5px;
+}
+.mrF .mrFt a:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -344px -518px;
+    width: 37px;
+    height: 29px;
+}
+
+/* 固定导航栏结束 */
+/* 底部弹框开始 */
+.db{
+    width: 400px;height: 250px;
+    background-color: #EBF8FF;
+    box-shadow: 0 0 5px #007DD2;
+    display: none;
+    position: fixed;
+    top: 650px;
+    left: 1100px;;
+}
+.db .dbo:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.db .dbo span{
+    display: inline-block;
+    float: right;
+    width: 25px;
+    line-height: 25px;
+    background-color: #cdcdcd;
+    text-align: center;
+    color: #fff;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+.db .dbt{
+    margin-left: 20px;
+}
+.db .dbth{
+    text-align: center;
+}
+.db .dbth textarea{
+    display: inline-block;
+    width: 360px;height: 70px;
+}
+.db .dbf{
+    text-align: center;
+}
+.db .dbf input{
+    width: 360px;height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+.db .dbv{
+    margin-left: 20px;
+    width: 360px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+.db .dbv button{
+    font-size: 20px;
+    color: #fff;
+    background-color: #007DD2;
+    line-height: 30px;
+    width: 60px;
+    border-radius: 3px;
+}
+
+/* 底部弹框结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

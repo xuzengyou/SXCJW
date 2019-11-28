@@ -1,0 +1,416 @@
+@mainColor: #c30d23;
+@greenColor: #036eb8;
+
+.w {
+    margin: auto;
+
+    .header {
+        height: 62px;
+        position: relative;
+        border-bottom: 3px solid #be1120;
+        margin-bottom: 10px;
+        .logo {
+            width: 290px;
+            height: 42px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 5px;
+            }
+        }
+
+        .search {
+            position: absolute;
+            top: 16px;
+            left: 362px;
+            width: 450px;
+            height: 32px;
+
+            .query {
+                width: 389px;
+                height: 32px;
+                border: 1px solid #e3e3e3;
+                box-sizing: border-box;
+                padding-left: 1em;
+                line-height: 32px;
+                text-align: left;
+
+                &::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    font-size: 12px;
+                }
+
+                &:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    font-size: 12px;
+                }
+
+                &::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    font-size: 12px;
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                }
+            }
+
+            .btn1 {
+                width: 61px;
+                height: 32px;
+                background-color: #c20e22;
+                float: right;
+
+                i {
+                    color: #ced9c6;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+   
+
+    .main {
+        width: 100%;
+
+        .main_right {
+            width: 617px;
+            height: 100%;
+            float: left;
+
+            .crumbs {
+                height: 25px;
+                line-height: 25px;
+                width: 100%;
+                border-bottom: 1px solid #cdcdcd;
+
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+
+            .main_content {
+                
+                width: 100%;
+
+                ul {
+                    width: 100%;
+                    height: 1320px;
+
+                    li {
+                        height: 110px;
+                        width: 100%;
+                        border-bottom: 1px solid #cdcdcd;
+
+                        .con_pic {
+                            height: 100%;
+                            width: 160px;
+                            padding-top: 10px;
+                            float: left;
+
+                            img {
+                                display: inline-block;
+                                width: 150px;
+                                height: 90px;
+                                background-color: #eee;
+                            }
+                        }
+
+                            .con_txt {
+                                float: right;
+                                width: 457px;
+                                height: 100%;
+                                position: relative;
+                                .txt_top {
+                                    margin-top: 10px;
+                                    height: 47px;
+                                    width: 100%;
+                                    span {
+                                        width: 100%;
+                                        height: 47px;
+                                        display: inline-block;
+                                        font-size: 16px;
+                                        color: @greenColor;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                    }
+                                }
+
+                                .txt_bot {
+                                    font-size: 12px;
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 10px;
+                                    .time{
+                                        margin-left: 5px;
+                                    }
+                                    .link {
+                                        font-size: 12px;
+                                        margin-left: 10px;
+                                        a {
+                                            display: inline-block;
+                                            width: 13px;
+                                            height: 13px;
+                                            border-radius: 100%;
+                                          
+                                            &.wb {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -38px -523px;
+
+                                            }
+
+                                            &.py {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -55px -523px;
+                                            }
+
+                                            &.kj {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -73px -523px;
+                                            }
+
+                                            &.wx {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -91px -523px;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        
+
+                    }
+                }
+            }
+
+            .paging {
+                height: 70px;
+                width: 100%;
+                line-height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        .main_left {
+            width: 363px;
+            height: 100%;
+            float: right;
+
+            .adv1,
+            .adv2 {
+                width: 100%;
+                height: 219px;
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .net_click {
+                height: 227px;
+                width: 100%;
+                margin-top: 10px;
+
+                .net_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .net_con {
+                    ul {
+                        li {
+                            font-size: 12px;
+                            height: 20px;
+                            line-height: 20px;
+
+                            span {
+                                display: inline-block;
+                                font-style: oblique;
+                                font-weight: bold;
+                                vertical-align: top;
+                                width: 15px;
+                                text-align: center;
+                            }
+
+                            a {
+                                display: inline-block;
+                                color: @greenColor;
+                                height: 100%;
+                                width: 90%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration: underline ;
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .special {
+                height: 197px;
+                width: 100%;
+                margin-top: 10px;
+                position: relative;
+
+                .special_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .special_con {
+                    height: 176px;
+                    width: 100%;
+
+                    ul {
+                        li {
+                            font-size: 12px;
+                            height: 22px;
+
+                            span {
+                                vertical-align: top;
+                                height: 100%;
+                                line-height: 22px;
+                                display: inline-block;
+                            }
+
+                            a {
+                                width: 264px;
+                                height: 100%;
+                                line-height: 22px;
+                                display: inline-block;
+                                color: @greenColor;
+                                margin-left: 30px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration: underline ;
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .special_piv {
+                    position: absolute;
+                    top: 26px;
+                    left: 56px;
+                    width: 10px;
+                    height: 176px;
+                    background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -14px -397px;
+                }
+            }
+
+            .essence {
+                height: 428px;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                .essence_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .essence_con {
+                    width: 100%;
+                    height: 402px;
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 2px;
+
+                        li {
+                            height: 80px;
+                            font-size: 13px;
+                            border-bottom: 1px solid #cdcdcd;
+
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+
+                                .es_pic {
+                                    height: 80px;
+                                    width: 90px;
+                                    float: left;
+
+                                    img {
+                                        width: 80px;
+                                        height: 60px;
+                                        margin-top: 10px;
+                                    }
+                                }
+
+                                .es_txt {
+                                    float: right;
+                                    height: 100%;
+                                    width: 273px;
+                                    padding-top: 10px;
+
+                                    span {
+                                        display: inline-block;
+                                        width: 90%;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        p {
+            text-align: center;
+            margin: 9px;
+
+            span {
+                font-size: 13px;
+                padding-left: 5px;
+
+                &.fs {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

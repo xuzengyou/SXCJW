@@ -1,0 +1,350 @@
+﻿/* header头部开始 */
+header{
+    width: 1000px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 115px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 21px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏底部 */
+.nav .navBot{
+    display: flex;
+    background-color: #e6e6e6;
+    margin-top: 10px;
+    box-shadow: 0 0 2px #e6e6e6;
+}
+.nav .navBot .navBoto:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navBot .navBoto ul li{
+    font-size: 18px;
+    width: 90px;
+    float: left;
+    text-align: center;
+    line-height: 26px;
+    cursor: pointer;
+    /* margin-right: 15px; */
+}
+.nav .navBot .navBoto ul li.active{
+    border-top: 2px solid #036eb8;
+    background-color: #fff;
+}
+.nav .navBot .navBott{
+    margin-left: 490px;
+}
+/* 日历插件引入部分 */
+/* .demo1,.demo2,.demo3,.demo4,.demo5,.demo6{
+    margin:0px 0;
+} */
+.demo4 #test1{
+    padding-top: 2px;
+    padding-left: 5px;
+}
+.layinput{
+    height: 22px;
+    line-height: 22px;width: 350px;
+    margin: 0;
+}
+.laydate_body .laydate_top{
+    height: 31px!important;
+}
+.laydate_body .laydate_bottom{
+    height: 30px!important;
+}
+/* nav导航栏结束 */
+
+/* 主体部分开始 */
+.main{
+    width: 1000px;
+    margin-top: 20px;
+}
+.main .mainZ ul{
+    width: 990px;
+    display: none;
+}
+.main .mainZ ul li a{
+    cursor: pointer;
+}
+.main .mainZ ul li a.red{
+    color: #c30d23;
+}
+.main .mainZ ul.ac{
+    display: table;
+}
+.main .mainZ ul li{
+    /* border-top: 1px solid #e6e6e6; */
+    border-bottom: 1px solid #e6e6e6;
+    line-height: 25px;
+}
+.main .mainZ ul li:hover{
+    background-color: #84cdff;
+}
+.main .mainZ ul li:first-child{
+    border-top: 1px solid #e6e6e6;
+}
+.main .mainZ ul li:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.main .mainZ ul li span{
+    display: inline-block;
+    vertical-align: middle;
+    float: left;
+    line-height: 25px;
+    
+}
+.main .mainZ ul li span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -203px -492px;
+    width: 15px;
+    height: 25px;
+}
+.main .mainZ ul li span:nth-child(2){
+    margin-right: 10px;
+}
+.main .mainZ ul li span:nth-child(3) a{
+    display: inline-block;
+    width: 800px;
+}
+.main .mainZ ul li span:nth-child(4){
+    float: right;
+}
+.main .mainZ ul li span:nth-child(4) a{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -223px -490px;
+    width: 25px;
+    height: 25px;
+}
+.main .mainZ ul li span:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.main .mainFy{
+    margin-top: 20px;
+    margin-left: 300px;
+}
+/* 分页引入部分开始 */
+.m-style {
+    position: relative;
+    text-align: center;
+    zoom: 1;
+}
+
+.m-style:before,
+.m-style:after {
+    content: "";
+    display: table;
+}
+
+.m-style:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.m-style span {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style .active {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #e91e63;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #e91e63;
+}
+
+.m-style a {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style a:hover {
+    color: #fff;
+    background: #e91e63;
+}
+
+.m-style .next,
+.m-style .prev {
+    font-family: "Simsun";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.now,
+.count {
+    padding: 0 5px;
+    color: #f00;
+}
+/* 分页引入部分结束 */
+
+/* 点击回顶部 */
+.main .mainHd{
+    width: 40px;height: 42px;
+    background-color: #036eb8;
+    position: fixed;
+    left: 1480px;
+    top: 600px;
+    
+}
+.main .mainHd span{
+    display: none;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.main .mainHd span:first-child{
+    font-size: 36px;
+}
+.main .mainHd span.ac{
+    display: block;
+}
+/* 主体部分结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

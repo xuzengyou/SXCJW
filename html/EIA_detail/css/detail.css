@@ -1,0 +1,325 @@
+.w {
+  margin: auto;
+}
+.w .header {
+  height: 62px;
+  position: relative;
+  border-bottom: 3px solid #be1120;
+}
+.w .header .logo {
+  width: 290px;
+  height: 42px;
+}
+.w .header .logo img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+}
+.w .header .search {
+  position: absolute;
+  top: 16px;
+  left: 362px;
+  width: 450px;
+  height: 32px;
+}
+.w .header .search .query {
+  width: 389px;
+  height: 32px;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  padding-left: 1em;
+  line-height: 32px;
+  text-align: left;
+}
+.w .header .search .query::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  font-size: 12px;
+}
+.w .header .search .query:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 12px;
+}
+.w .header .search .query::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 12px;
+}
+.w .header .search .query:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 12px;
+}
+.w .header .search .btn1 {
+  width: 61px;
+  height: 32px;
+  background-color: #c20e22;
+  float: right;
+}
+.w .header .search .btn1 i {
+  color: #ced9c6;
+  font-size: 18px;
+}
+.w .main {
+  width: 100%;
+}
+.w .main .main_top .title {
+  text-align: center;
+  width: 100%;
+  height: 60px;
+}
+.w .main .main_top .title h2 {
+  font-size: 22px;
+  line-height: 60px;
+  font-weight: bold;
+}
+.w .main .main_top .content {
+  margin: auto;
+  width: 935px;
+  height: 496px;
+  border: 1px solid #d1dbf7;
+  margin-bottom: 10px;
+}
+.w .main .main_top .content .con_head {
+  width: 100%;
+  height: 45px;
+  font-size: 18px;
+  background-color: #edf2ff;
+}
+.w .main .main_top .content .con_head .state {
+  float: left;
+  height: 100%;
+  margin: 0 20px;
+  line-height: 45px;
+}
+.w .main .main_top .content .con_head .state span {
+  color: #036eb8;
+  font-weight: bold;
+}
+.w .main .main_top .content .con_head .newest {
+  float: left;
+  height: 100%;
+  margin-right: 20px;
+  line-height: 45px;
+}
+.w .main .main_top .content .con_head .newest span {
+  color: #036eb8;
+  font-weight: bold;
+}
+.w .main .main_top .content .con_head .predict {
+  float: left;
+  height: 100%;
+  line-height: 45px;
+}
+.w .main .main_top .content .con_head .predict span {
+  color: #036eb8;
+  font-weight: bold;
+}
+.w .main .main_top .content .con_kline {
+  width: 100%;
+  height: 380px;
+}
+.w .main .main_top .content .con_foot {
+  width: 100%;
+  height: 69px;
+  font-weight: bold;
+}
+.w .main .main_top .content .con_foot ul {
+  width: 900px;
+  margin: auto;
+  height: 59px;
+  padding: 0 10px;
+  background-color: #f6f8ff;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #cdcdcd;
+}
+.w .main .main_top .content .con_foot ul li {
+  height: 29px;
+  line-height: 29px;
+  width: 420px;
+  padding-left: 65px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.w .main .main_top .content .con_foot ul li span {
+  color: #ff7700;
+  display: inline-block;
+  height: 100%;
+}
+.w .main .main_top .content .con_foot ul li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #ff7700;
+  display: inline-block;
+  position: absolute;
+  left: 50px;
+  top: 12px;
+  border-radius: 50%;
+}
+.w .main .main_top .describe {
+  margin-left: 40px;
+  width: 927px;
+}
+.w .main .main_top .describe .paraphrase {
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.w .main .main_top .describe .paraphrase h4 {
+  color: #036eb8;
+  padding-left: 15px;
+  position: relative;
+}
+.w .main .main_top .describe .paraphrase h4::before {
+  content: "";
+  width: 3px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #ff7700;
+}
+.w .main .main_top .describe .paraphrase span {
+  font-size: 12px;
+  margin-left: 20px;
+}
+.w .main .main_top .describe .cause {
+  height: 60px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.w .main .main_top .describe .cause h4 {
+  color: #036eb8;
+  padding-left: 15px;
+  position: relative;
+}
+.w .main .main_top .describe .cause h4::before {
+  content: "";
+  width: 3px;
+  height: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  background-color: #ff7700;
+}
+.w .main .main_top .describe .cause span {
+  font-size: 12px;
+  margin-left: 20px;
+}
+.w .main .main_his {
+  width: 935px;
+  margin: auto;
+}
+.w .main .main_his .his_tit {
+  width: 100%;
+  height: 38px;
+}
+.w .main .main_his .his_tit span {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #036eb8;
+  font-weight: bold;
+  position: relative;
+}
+.w .main .main_his .his_tit span i {
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -117px -696px;
+}
+.w .main .main_his .his_con {
+  width: 935px;
+  margin-bottom: 20px;
+}
+.w .main .main_his .his_con table {
+  width: 100%;
+  border: 1px solid #edf2ff;
+}
+.w .main .main_his .his_con table thead tr {
+  font-size: 16px;
+}
+.w .main .main_his .his_con table thead tr th {
+  height: 40px;
+  text-align: center;
+  border: 1px solid #edf2ff;
+  background-color: #edf2ff;
+}
+.w .main .main_his .his_con table tbody tr td {
+  height: 32px;
+  text-align: center;
+  border: 1px solid #edf2ff;
+}
+.w .main .main_pre {
+  width: 935px;
+  margin: auto;
+}
+.w .main .main_pre .pre_tit {
+  width: 100%;
+  height: 38px;
+}
+.w .main .main_pre .pre_tit .txt {
+  margin-left: 30px;
+  font-size: 18px;
+  line-height: 18px;
+  color: #036eb8;
+  font-weight: bold;
+  position: relative;
+}
+.w .main .main_pre .pre_tit .txt i {
+  position: absolute;
+  left: -25px;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -140px -696px;
+}
+.w .main .main_pre .pre_tit .warn {
+  color: #c30d23;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.w .main .main_pre .pre_con {
+  width: 935px;
+  margin-bottom: 20px;
+}
+.w .main .main_pre .pre_con table {
+  width: 100%;
+  border: 1px solid #edf2ff;
+}
+.w .main .main_pre .pre_con table thead tr {
+  font-size: 16px;
+}
+.w .main .main_pre .pre_con table thead tr th {
+  height: 40px;
+  text-align: center;
+  border: 1px solid #edf2ff;
+  background-color: #edf2ff;
+}
+.w .main .main_pre .pre_con table tbody tr td {
+  height: 40px;
+  text-align: center;
+  border: 1px solid #edf2ff;
+}
+.w .footer p {
+  text-align: center;
+  margin: 9px;
+}
+.w .footer p span {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.w .footer p span.fs {
+  font-size: 11px;
+}

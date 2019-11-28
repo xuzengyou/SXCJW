@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>股票财经日历|10讯网</title>
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="10讯财经,股票,外汇,基金,黄金,财经评论,新股,港股。" />
+    <meta name="description" content="10讯财经网,做专业财经资讯领跑者，实时股票行情，提供宏观、股票、外汇等财经领域的报道；讯息快、内容全、角度丰富并怀有全球视野。" />
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="http://img.10xunc.com/备用件/css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/common.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/gupiaocjrl.css">
+    <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
+    <!-- DOM节点加载完后执行 -->
+    <script src="http://img.10xunc.com/备用件/js/gupiaocjrl.js" type="text/javascript" charset="utf-8"></script>
+    <!-- 日历插件 -->
+    <script type="text/javascript" src="http://img.10xunc.com/备用件/js/xrili.js"></script>
+    <base target="_blank">
+</head>
+<body>
+    <div class="w">
+        <!-- header开始 -->
+        <header>
+            <div class="logo">
+                <a href="http://img.10xunc.com/备用件/html/index.html"><img src="http://img.10xunc.com/备用件/img/gupiao.png" alt=""></a>
+            </div>
+            <div class="search">
+                <i class="glyphicon glyphicon-search"></i>
+                <input id="q" name="q" class="query" placeholder="输入代码/名称/拼音">
+                <button class="btn1" href="#">
+                    行情查询
+                </button>
+            </div>
+            <div class="lgin">
+                <a class="dl" style="cursor:pointer">登录</a>
+                <span>|</span>
+                <a href="http://img.10xunc.com/备用件/html/register.html?http://img.10xunc.com/备用件/html/gupiaocjrl.html">注册</a>
+            </div>
+        </header>
+        <!-- header结束 -->
+
+        <!-- nav导航栏开始 -->
+        <div class="nav">
+            <!-- 导航栏头部 -->
+            <div class="navTop">
+                <ul>
+                    <li><a href="http://img.10xunc.com/备用件/html/gupiao.html">首页</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/gupiaoggzx.html">个股资讯</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/gupiaodp.html">大盘评述</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/gupiaokx.html">7*24快讯</a></li>
+                    <li class="active"><a href="http://img.10xunc.com/备用件/html/gupiaocjrl.html">财经日历</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/shichang.html">市场数据</a></li>
+                    <li><a href="#">直播室</a></li>
+                    <li><a href="#">博主</a></li>
+                    <li><a href="#">新手学习</a></li>
+                </ul>
+            </div>
+            <!-- 导航栏头部结束 -->
+
+            <!-- 导航底部开始 -->
+            <div class="navBot">
+                <div class="navBotl">
+                    <a data-id="#one">上月</a>
+                    <a data-id="#two" class="ac">本月</a>
+                    <!-- <a data-id="#three">下月</a> -->
+                </div>
+                <div class="navBotr">
+                    <div class="navBotro"><span>往期回顾</span></div>
+                    <div id="date">
+                        <select name="year" id="year">
+                            <option value="" class="yy">选择年份</option>
+                        </select>
+                        <select name="month" id="month">
+                            <option value="">选择月份</option>
+                        </select>
+                        <!-- <select id="days" class="day">
+                            <option value="">选择日期</option>
+                        </select> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 导航栏底部结束 -->
+        <!-- 导航栏结束 -->
+
+        <!-- main主体部分开始 -->
+        <div class="main">
+           <table id="one">
+               <thead>
+                   <tr>
+                       <td>日期</td>
+                       <td>重要性</td>
+                       <td>事件</td>
+                       <td>影响模块</td>
+                       <td>个股推荐</td>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td rowspan="2" style="background-color: #c3e1f4;">
+                            <p>2019-07-01</p>
+                            <p>星期一</p>
+                       </td>
+                       <td rowspan="2"></td>
+                       <td style="text-align: left">
+                           <a href="#">SFE2019上海国际连锁加盟展览会-北京站SFE2019上海国际连锁加盟展览会-北京站
+                                SFE2019上海国际连锁加盟展览会-
+                           </a>
+                           <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <!-- <td rowspan="2"></td>
+                       <td rowspan="2"></td> -->
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <td rowspan="5" style="background-color: #c3e1f4;">
+                            <p>2019-07-01</p>
+                            <p>星期一</p>
+                       </td>
+                       <td rowspan="5"></td>
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <!-- <td></td> -->
+                       <!-- <td></td> -->
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <!-- <td></td> -->
+                       <!-- <td></td> -->
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <!-- <td></td> -->
+                       <!-- <td></td> -->
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <!-- <td></td> -->
+                       <!-- <td></td> -->
+                       <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                       </td>
+                       <td>零售</td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                        <td rowspan="2" style="background-color: #c3e1f4;">
+                             <p>2019-07-01</p>
+                             <p>星期一</p>
+                        </td>
+                        <td rowspan="2"></td>
+                        <td style="text-align: left">
+                            <a href="#">SFE2019上海国际连锁加盟展览会-北京站SFE2019上海国际连锁加盟展览会-北京站
+                                 SFE2019上海国际连锁加盟展览会-
+                            </a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" style="background-color: #c3e1f4;">
+                             <p>2019-07-01</p>
+                             <p>星期一</p>
+                        </td>
+                        <td rowspan="5"></td>
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                            <td rowspan="2" style="background-color: #c3e1f4;">
+                                 <p>2019-07-01</p>
+                                 <p>星期一</p>
+                            </td>
+                            <td rowspan="2"></td>
+                            <td style="text-align: left">
+                                <a href="#">SFE2019上海国际连锁加盟展览会-北京站SFE2019上海国际连锁加盟展览会-北京站
+                                     SFE2019上海国际连锁加盟展览会-
+                                </a>
+                                <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <!-- <td></td> -->
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" style="background-color: #c3e1f4;">
+                                 <p>2019-07-01</p>
+                                 <p>星期一</p>
+                            </td>
+                            <td rowspan="5"></td>
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <!-- <td></td> -->
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <!-- <td></td> -->
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <!-- <td></td> -->
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <!-- <td></td> -->
+                            <!-- <td></td> -->
+                            <td style="text-align: left">
+                                 <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                                 <a href="#" class="glyphicon glyphicon-search"></a>
+                            </td>
+                            <td>零售</td>
+                            <td></td>
+                        </tr>
+               </tbody>
+           </table>
+           <table id="two" class="ac">
+                <thead>
+                    <tr>
+                        <td>日期</td>
+                        <td>重要性</td>
+                        <td>事件</td>
+                        <td>影响模块</td>
+                        <td>个股推荐</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2" style="background-color: #c3e1f4;">
+                             <p>2019-07-01</p>
+                             <p>星期一</p>
+                        </td>
+                        <td rowspan="2"></td>
+                        <td style="text-align: left">
+                            <a href="#">海国际连锁加盟展览会-北京站
+                                 SFE2019上海国际连锁加盟展览会-
+                            </a>
+                            <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5" style="background-color: #c3e1f4;">
+                             <p>2019-07-01</p>
+                             <p>星期一</p>
+                        </td>
+                        <td rowspan="5"></td>
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <!-- <td></td> -->
+                        <td style="text-align: left">
+                             <a href="#">SFE2019上海国际连锁加盟展览会-北京站</a>
+                             <a href="#" class="glyphicon glyphicon-search"></a>
+                        </td>
+                        <td>零售</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+
+        </div>
+        <!-- main主体部分结束 -->
+
+        <!-- 固定导航栏开始 -->
+        <div class="mrF">
+            <div class="mrFo">
+                <a></a>
+                <a>意见反馈</a>
+            </div>
+            <div class="mrFt">
+                <a></a>
+                <a>回顶部</a>
+            </div>
+        </div>
+        <!-- 固定导航栏结束 -->
+
+        <!-- 底部弹框开始 -->
+            <div class="db">
+                <div class="dbo">
+                    <span>X</span>
+                </div>
+                <div class="dbt">
+                    <span>(0/200字)</span>
+                </div>
+                <div class="dbth">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="欢迎给10讯网留言，提出宝贵意见，谢谢！"></textarea>
+                </div>
+                <div class="dbf">
+                    <input type="text" placeholder="请输入您的联系方式">
+                </div>
+                <div class="dbv">
+                    <button>提交</button>
+                </div>
+            </div>
+        <!-- 底部弹框结束 -->
+
+        <!-- footer区域开始 -->
+    <div class="footer">
+        <p style="text-align: left;margtop:15px">
+            <span class="fs">
+                免责声明：沪深股票、基金、债券、港股、美股、国内期货、外汇、黄金等行情，除有特别标明外，均为实时行情；
+                其他行情至少延时15分钟.10讯财经免费提供的行情数据以及其他资料均来自互联网采集或合作方，仅作为用户获取信息之目的，
+                并不构成投资建议.10讯财经以及其合作机构不为本页面提供的信息错误、残缺、延时或因依靠此信息所采取的任何行动负责.市场有风险，投资需谨慎
+            </span>
+        </p>
+            <p style="text-align: center; margtop:15px">
+                <span>Copyright © 2017 10讯财经 版权所有 </span>
+                <span>粤ICP备17093768号-1</span>
+                <a href="http://img.10xunc.com/备用件/img/网络文化许可副本.jpg">粤网文(2017)8215-2007号</a>
+                <span>联系邮箱：weisihudong@163.com</span>
+            </p>
+            <p style="text-align: center; margtop:15px">
+                <a href="http://img.10xunc.com/备用件/img/增值电信业务经营许可证.jpg">增值电信业务经营许可证粤B2-20171195</a>&nbsp;
+                <a href="http://img.10xunc.com/备用件/img/广播电视节目许可证.jpg">广播电视节目制作经营许可证(粤)字第03379号</a>
+                <span>粤公网安备 44030702001623号</span>
+            </p>
+            <p style="text-align: center; margtop:15px">
+                <span>本网站部分内容来源于互联网，如有侵犯请来信告知，我们将立即处理！</span>
+            </p>
+        </div>
+    <!-- footer区域结束 -->
+
+    </div>
+<!-- 登录注册 -->
+<!-- 遮罩层 -->
+<div class="zzc"></div>
+<!-- 登录 -->
+<div class="logIn yinc">
+    <a style="cursor: pointer" class="close-us">X</a>
+    <div class="logTab">
+        <span class="ac" data-id="#one">账号密码登录</span>
+        <span data-id="#two">手机动态码登录</span>
+    </div>
+
+    <div class="loginCon">
+        <!-- 用户名登录 -->
+        <div class="boxUser acc" id="one">
+            <form>
+                <ul>
+                    <li>
+                        <input type="text" class="user" placeholder="请输入用户名" autofocus>
+                    </li>
+                    <li>
+                        <input type="password" class="pswd" placeholder="请输入密码">
+                    </li>
+                </ul>
+            </form>
+            <div class="tPcode">
+                <input type="text" name="" id="" class="tPcodev" placeholder="请输入验证码">
+                <div class="tPimg">
+                    <img src="" class="imgcode"  width="85%"/>
+                </div>
+            </div>
+            <div class="aulog">
+                <input type="radio" name="" id="xc" class="xc">
+                <label for="xc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/gupiaocjrl.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="yhdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+        <!-- 手机号登录 -->
+        <div class="Mobile" id="two">
+            <div class="errInfo yc">请输入正确的手机号</div>
+            <ul>
+                <li>
+                    <input id='Phone' type="text" class="puser" placeholder="请输入手机号" />
+                </li>
+                <li class="yzhenCode">
+                    <input type="text" class="yzm" placeholder="请输入验证码">
+                    <button class="Getpw">获取验证码</button>
+                </li>
+            </ul>
+            <div class="aulog">
+                <input type="radio" name="" id="xcc" class="xcc">
+                <label for="xcc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/gupiaocjrl.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="sjdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
+</html>

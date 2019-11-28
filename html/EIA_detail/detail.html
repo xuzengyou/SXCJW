@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>10讯外汇</title>
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="10讯财经,股票,外汇,基金,黄金,财经评论,新股,港股。" />
+    <meta name="description" content="10讯财经网,做专业财经资讯领跑者，实时股票行情，提供宏观、股票、外汇等财经领域的报道；讯息快、内容全、角度丰富并怀有全球视野。" />
+    <link rel="shortcut icon" href="http://img.10xunc.com/备用件/css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/pagination.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/common.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/detail.css">
+    <base target="_blank">
+</head>
+<div class="w">
+    <!-- header区域开始 -->
+    <div class="header">
+        <div class="logo">
+            <a href="http://img.10xunc.com/备用件/html/waihui.html"><img src="http://img.10xunc.com/备用件/img/waihui.png" alt=""></a>
+        </div>
+        <div class="search">
+            <input id="q" name="q" class="query" placeholder="输入代码/名称/拼音">
+            <button class="btn1">
+                <i class="glyphicon glyphicon-search"></i>
+            </button>
+        </div>
+    </div>
+    <!-- header区域结束 -->
+
+
+
+    <!-- main区域开始 -->
+    <div class="main">
+         <div class="main_top">
+         </div>
+         <div class="main_his">
+              <div class="his_tit">
+                  <span><i></i> 历史数据</span>
+              </div>
+              <div class="his_con">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th style="width: 288px;">公布时间</th>
+                              <th>指标周期</th>
+                              <th>现值</th>
+                              <th>前值</th>
+                              <th>预测值</th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+              </div>
+         </div>
+         <div class="main_pre">
+             <div class="pre_tit">
+                 <span class="txt"> <i></i> 行情预测</span>
+                 <span class="warn">声明：以上统计以历史数据为基础，所得结论不代表对未来行情的预测</span>
+              </div>
+              <div class="pre_con">
+                  <table>
+                      <thead>
+                          <tr>
+                              <th>参考品种</th>
+                              <th>波幅大小</th>
+                              <th>趋势定向</th>
+                              <th>波动点数</th>
+                          </tr>
+                      </thead>
+                      <tbody></tbody>
+                  </table>
+              </div>
+         </div>
+    </div>
+    <!-- main区域结束 -->
+
+    <!-- footer区域开始 -->
+    <div class="footer clearfix">
+        <p style="text-align: left;">
+            <span class="fs">
+                免责声明：沪深股票、基金、债券、港股、美股、国内期货、外汇、黄金等行情，除有特别标明外，均为实时行情；
+                其他行情至少延时15分钟.10讯财经免费提供的行情数据以及其他资料均来自互联网采集或合作方，仅作为用户获取信息之目的，
+                并不构成投资建议.10讯财经以及其合作机构不为本页面提供的信息错误、残缺、延时或因依靠此信息所采取的任何行动负责.市场有风险，投资需谨慎
+            </span>
+        </p>
+            <p>
+                <span>Copyright © 2017 10讯财经 版权所有 </span>
+                <span>粤ICP备17093768号-1</span>
+                <a href="http://img.10xunc.com/备用件/img/网络文化许可副本.jpg">粤网文(2017)8215-2007号</a>
+                <span>联系邮箱：weisihudong@163.com</span>
+            </p>
+            <p>
+                <a href="http://img.10xunc.com/备用件/img/增值电信业务经营许可证.jpg">增值电信业务经营许可证粤B2-20171195</a>&nbsp;
+                <a href="http://img.10xunc.com/备用件/img/广播电视节目许可证.jpg">广播电视节目制作经营许可证(粤)字第03379号</a>
+                <span>粤公网安备 44030702001623号</span>
+            </p>
+            <p>
+                <span>本网站部分内容来源于互联网，如有侵犯请来信告知，我们将立即处理！</span>
+            </p>
+        </div>
+    <!-- footer区域结束 -->
+
+</div>
+</body>
+
+</html>
+<script src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
+<script src="http://img.10xunc.com/备用件/js/bootstrap.min.js"></script>
+<script src="http://img.10xunc.com/备用件/js/template-web.js"></script>
+<script src="http://img.10xunc.com/备用件/js/echarts.min.js"></script>
+<script src="http://img.10xunc.com/备用件/js/detail.js"></script>
+<!-- 主模板 -->
+<script id="ad" type="text/html">
+    <div class="title"><h2>{{list.title}}</h2></div>
+    <div class="content">
+        <div class="con_head">
+            <div class="state">国家：<span>{{list.country}}</span></div>
+            <div class="newest">最新值：<span>{{list.present_value}}</span></div>
+            <div class="predict">预测值：<span>{{list.predictive_value}}</span></div>
+        </div>
+        <div class="con_kline">
+           <div id="chartmain" style="width:900px; height: 360px;"></div>
+        </div>
+        <div class="con_foot">
+            <ul>
+                <li>
+                    <span>数据影响：&nbsp;</span>{{list.data_impact}}
+                </li>
+                <li>
+                    <span>数据公布机构：&nbsp;</span>{{list.announcement}}
+                </li>
+                <li>
+                    <span>发布频率：&nbsp;</span>{{list.release_frequency}}
+                </li>
+                <li>
+                    <span>下次公布时间：&nbsp;</span>{{list.next_announcement}}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="describe">
+        <div class="paraphrase">
+            <h4>主指标数据释义：</h4>
+            <span>{{list.interpretation}}</span>
+        </div>
+        <div class="cause">
+            <h4>主指标关注原因：</h4>
+            <span>{{list.reason}}</span>
+        </div>
+    </div>
+
+</script>
+<!-- 历史数据模板 -->
+<script id="LS" type="text/html">
+    
+        {{each list value }}
+        <tr>
+            <td>{{value.announcement_time}}</td>
+            <td>{{value.indicator_period}}</td>
+            <td>{{value.present_value}}</td>
+            <td>{{value.former_value}}</td>
+            <td>{{value.predictive_value}}</td>
+        </tr>
+        {{/each}}
+    
+</script>
+<!-- 行情预测模板 -->
+<script id="HQ" type="text/html"> 
+        <tr>
+            <td>{{list.variety}}</td>
+            <td>{{list.amplitude_size}}</td>
+            <td>{{list.trend_trend}}</td>
+            <td>{{list.volatility_points}}</td>
+        </tr>  
+</script>

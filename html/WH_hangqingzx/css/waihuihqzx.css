@@ -1,0 +1,3435 @@
+﻿/* header头部开始 */
+header{
+    width: 1000px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 115px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 15px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏结束 */
+
+/* 主体开始 */
+.main{
+    width: 1000px;
+    margin-top: 10px;
+    display: flex;
+}
+.main table tr td{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+/* 主体左边 */
+.main .mainL{
+    width: 110px;
+    margin-right: 15px;
+}
+.main .mainL ul li{
+    cursor: pointer;
+    border-bottom: 1px solid #cdcdcd;
+    font-size: 16px;
+}
+.main .mainL ul li+li:hover{
+    background-color: #e6e6e6;
+}
+.main .mainL ul li.ac{
+    background-color: #e6e6e6;
+}
+.main .mainL ul li:first-child span{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -218px -593px;
+    width: 115px;
+    height: 47px;
+}
+
+.main .mainL ul li+li{
+    display: inline-block;
+    width: 110px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+}
+/* 主体右边 */
+.main .mainR{
+    width: 875px;
+    /* display: flex;
+    flex-direction: column; */
+}
+td.red{
+    color: #C30D23;
+}
+td.green{
+    color: green;
+}
+td.re{
+    background-color: #ED6464;
+}
+td.gre{
+    background-color: #51B48F;
+}
+span.red{
+    color: #C30D23;
+}
+span.green{
+    color: green;
+}
+/* 导航第一部分 */
+/* 数据中心 */
+.main .mainR>div{
+    display: none;
+}
+.main .mainR>div.ac{
+    display: block;
+}
+/* 热门商品 */
+.main .mainR .one .mRo .mRoo span{
+    font-size: 20px;
+    font-weight: bold;
+}
+.main .mainR .mRo .mRot{
+    width: 875px;
+    line-height: 125px;
+    border-top: 1px solid #cdcdcd;
+    display: flex;
+}
+.main .mainR .mRo .mRot .mRotc{
+    width: 145px;
+    height: 115px;
+    margin-top: 9px;
+}
+.main .mainR .mRo .mRot .mRotc+.mRotc{
+    border-left: 1px solid #cdcdcd;
+}
+.main .mainR .mRo .mRot .mRotc p{
+    line-height: 21px;
+    vertical-align: middle;
+}
+.main .mainR .mRo .mRot .mRotc p:first-child span{
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 113px;
+    height: 18px;
+}
+.main .mainR .mRo .mRot .mRotc p:last-child span{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -214px -652px;
+    width: 140px;
+    height: 52px;
+    margin-left: 0;
+}
+.main .mainR .mRo .mRot .mRotc p:nth-child(2) span{
+    font-weight: bold;
+}
+.main .mainR .mRo .mRot .mRotc p:nth-child(3) span:nth-child(2){
+    line-height: 20px;
+    vertical-align: top;
+}
+.main .mainR .mRo .mRot .mRotc p:nth-child(3) span{
+    font-weight: bold;
+    display: inline-block;
+}
+.main .mainR .mRo .mRot .mRotc p:nth-child(3) span:nth-child(2){
+    font-weight: normal;
+    display: inline-block;
+    color: #CDCDCD;
+}
+/* .main .mainR .mRo .mRot .mRotc p:nth-child(3) span:nth-child(3){
+    width: 90px;
+    overflow: hidden;
+} */
+.main .mainR .mRo .mRot .mRotc p:nth-child(3) span.fs{
+    color: #C2F2C2;
+}
+.main .mainR .mRo .mRot .mRotc p:nth-child(3) span.zs{
+    color: #c30d23;
+}
+.main .mainR .mRo .mRot .mRotc p span{
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    margin-left: 3px;
+}
+/* 国际外汇 */
+.main .mainR .mRt{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRt p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRt p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRt table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRt table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRt table tr{
+    line-height: 35px;
+}
+.main .mainR .mRt table thead tr td:nth-child(1){
+    width: 100px;
+}
+.main .mainR .mRt table thead tr td:nth-child(2){
+    width: 99px;
+}
+.main .mainR .mRt table thead tr td:nth-child(3){
+    width: 99px;
+}
+.main .mainR .mRt table thead tr td:nth-child(4){
+    width: 99px;
+}
+.main .mainR .mRt table thead tr td:nth-child(5){
+    width: 99px;
+}
+.main .mainR .mRt table thead tr td:nth-child(6){
+    width: 99px;
+}
+.main .mainR .mRt table thead tr td:nth-child(7){
+    width: 180px;
+}
+.main .mainR .mRt table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRt table tbody tr td:first-child{
+    text-align: left;
+}
+.main .mainR .mRt table tbody tr:nth-child(1) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+    /* background-color: red; */
+}
+
+.main .mainR .mRt table tbody tr:nth-child(2) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+    /* background-color: red; */
+}
+
+.main .mainR .mRt table tbody tr:nth-child(3) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+    /* background-color: red; */
+}
+
+.main .mainR .mRt table tbody tr:nth-child(4) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+    /* background-color: red; */
+}
+
+.main .mainR .mRt table tbody tr:nth-child(5) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+    /* background-color: red; */
+}
+
+.main .mainR .mRt table tbody tr td:last-child{
+
+    vertical-align: middle;
+}
+.main .mainR .mRt table tbody tr td:last-child:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.main .mainR .mRt table tbody tr td:last-child span{
+    display: inline-block;
+    float: left;
+}
+.main .mainR .mRt table tbody tr:nth-child(1) td:last-child span:first-child{
+    width: 40%;
+    height: 11px;
+    background-color: red;
+}
+.main .mainR .mRt table tbody tr:nth-child(1) td:last-child span:last-child{
+    width: 60%;
+    height: 11px;
+    background-color:green;
+    border-left: 2px solid #fff;
+}
+.main .mainR .mRt table tbody tr:nth-child(2) td:last-child span:first-child{
+    width: 30%;
+    height: 11px;
+    background-color: red;
+}
+.main .mainR .mRt table tbody tr:nth-child(2) td:last-child span:last-child{
+    width: 70%;
+    height: 11px;
+    background-color:green;
+    border-left: 2px solid #fff;
+}
+.main .mainR .mRt table tbody tr:nth-child(3) td:last-child span:first-child{
+    width: 70%;
+    height: 11px;
+    background-color: red;
+}
+.main .mainR .mRt table tbody tr:nth-child(3) td:last-child span:last-child{
+    width: 30%;
+    height: 11px;
+    background-color:green;
+    border-left: 2px solid #fff;
+}
+.main .mainR .mRt table tbody tr:nth-child(4) td:last-child span:first-child{
+    width: 80%;
+    height: 11px;
+    background-color: red;
+}
+.main .mainR .mRt table tbody tr:nth-child(4) td:last-child span:last-child{
+    width: 20%;
+    height: 11px;
+    background-color:green;
+    border-left: 2px solid #fff;
+}
+.main .mainR .mRt table tbody tr:nth-child(5) td:last-child span:first-child{
+    width: 75%;
+    height: 11px;
+    background-color: red;
+}
+.main .mainR .mRt table tbody tr:nth-child(5) td:last-child span:last-child{
+    width: 25%;
+    height: 11px;
+    background-color:green;
+    border-left: 2px solid #fff;
+}
+/* 贵金属 */
+.main .mainR .mRth{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRth p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRth p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRth table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRth table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRth table tr{
+    line-height: 35px;
+}
+.main .mainR .mRth table thead tr td:nth-child(1){
+    width: 100px;
+}
+.main .mainR .mRth table thead tr td:nth-child(2){
+    width: 99px;
+}
+.main .mainR .mRth table thead tr td:nth-child(3){
+    width: 99px;
+}
+.main .mainR .mRth table thead tr td:nth-child(4){
+    width: 99px;
+}
+.main .mainR .mRth table thead tr td:nth-child(5){
+    width: 99px;
+}
+.main .mainR .mRth table thead tr td:nth-child(6){
+    width: 99px;
+}
+.main .mainR .mRth table thead tr td:nth-child(7){
+    width: 180px;
+}
+.main .mainR .mRth table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRth table tbody tr td:first-child{
+    text-align: left;
+}
+.main .mainR .mRth table tbody tr:nth-child(1) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRth table tbody tr:nth-child(2) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRth table tbody tr:nth-child(3) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRth table tbody tr:nth-child(4) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRth table tbody tr:nth-child(5) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRth table tbody tr td:last-child{
+
+    vertical-align: middle;
+}
+.main .mainR .mRth table tbody tr td:last-child:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.main .mainR .mRth table tbody tr td:last-child span{
+    display: inline-block;
+    float: left;
+}
+.main .mainR .mRth table tbody tr:nth-child(1) td:last-child span:first-child{
+    width: 40%;
+    height: 11px;
+    background-color: #F18A3E;
+}
+.main .mainR .mRth table tbody tr:nth-child(1) td:last-child span:last-child{
+    width: 60%;
+    height: 11px;
+    background-color:#CDCDCD;
+    /* border-left: 2px solid #fff; */
+}
+.main .mainR .mRth table tbody tr:nth-child(2) td:last-child span:first-child{
+    width: 30%;
+    height: 11px;
+    background-color: #F18A3E;
+}
+.main .mainR .mRth table tbody tr:nth-child(2) td:last-child span:last-child{
+    width: 70%;
+    height: 11px;
+    background-color:#CDCDCD;
+}
+.main .mainR .mRth table tbody tr:nth-child(3) td:last-child span:first-child{
+    width: 70%;
+    height: 11px;
+    background-color: #F18A3E;
+}
+.main .mainR .mRth table tbody tr:nth-child(3) td:last-child span:last-child{
+    width: 30%;
+    height: 11px;
+    background-color:#CDCDCD;
+}
+.main .mainR .mRth table tbody tr:nth-child(4) td:last-child span:first-child{
+    width: 80%;
+    height: 11px;
+    background-color: #F18A3E;
+}
+.main .mainR .mRth table tbody tr:nth-child(4) td:last-child span:last-child{
+    width: 20%;
+    height: 11px;
+    background-color:#CDCDCD;
+}
+.main .mainR .mRth table tbody tr:nth-child(5) td:last-child span:first-child{
+    width: 75%;
+    height: 11px;
+    background-color: #F18A3E;
+}
+.main .mainR .mRth table tbody tr:nth-child(5) td:last-child span:last-child{
+    width: 25%;
+    height: 11px;
+    background-color:#CDCDCD;
+}
+/* 能源期货 */
+.main .mainR .mRf{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRf p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRf p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRf table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRf table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRf table tr{
+    line-height: 35px;
+}
+.main .mainR .mRf table thead tr td:nth-child(1){
+    width: 140px;
+}
+.main .mainR .mRf table thead tr td:nth-child(2){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(3){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(4){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(5){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(6){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(7){
+    width: 100px;
+}
+.main .mainR .mRf table thead tr td:nth-child(8){
+    width: 100px;
+}
+.main .mainR .mRf table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRf table tbody tr td:first-child{
+    text-align: left;
+}
+.main .mainR .mRf table tbody tr:nth-child(1) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRf table tbody tr:nth-child(2) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRf table tbody tr:nth-child(3) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRf table tbody tr:nth-child(4) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRf table tbody tr:nth-child(5) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+/* 商品指数 */
+.main .mainR .mRv{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRv p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRv p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRv table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRv table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRv table tr{
+    line-height: 35px;
+}
+.main .mainR .mRv table thead tr td:nth-child(1){
+    width: 140px;
+}
+.main .mainR .mRv table thead tr td:nth-child(2){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(3){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(4){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(5){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(6){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(7){
+    width: 100px;
+}
+.main .mainR .mRv table thead tr td:nth-child(8){
+    width: 100px;
+}
+.main .mainR .mRv table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRv table tbody tr td:first-child{
+    text-align: left;
+}
+.main .mainR .mRv table tbody tr:nth-child(1) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRv table tbody tr:nth-child(2) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRv table tbody tr:nth-child(3) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRv table tbody tr:nth-child(4) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+.main .mainR .mRv table tbody tr:nth-child(5) td:first-child img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 11px;
+    height: 15px;
+}
+
+/* 国际券市 */
+.main .mainR .mRs{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRs p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRs p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRs table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRs table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRs table tr{
+    line-height: 35px;
+}
+.main .mainR .mRs table thead tr td:nth-child(1){
+    width: 140px;
+}
+.main .mainR .mRs table thead tr td:nth-child(2){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(3){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(4){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(5){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(6){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(7){
+    width: 100px;
+}
+.main .mainR .mRs table thead tr td:nth-child(8){
+    width: 100px;
+}
+.main .mainR .mRs table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRs table tbody tr:nth-child(1) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRs table tbody tr:nth-child(1) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRs table tbody tr:nth-child(2) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRs table tbody tr:nth-child(2) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRs table tbody tr:nth-child(3) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRs table tbody tr:nth-child(3) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -208px -543px;
+    width: 28px;
+    height: 23px;
+}
+.main .mainR .mRs table tbody tr:nth-child(4) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRs table tbody tr:nth-child(4) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -208px -543px;
+    width: 28px;
+    height: 23px;
+}
+.main .mainR .mRs table tbody tr:nth-child(5) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRs table tbody tr:nth-child(5) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -249px -544px;
+    width: 21px;
+    height: 21px;
+}
+/* 拆借利率 */
+.main .mainR .mRe{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRe p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRe p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRe table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRe table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRe table tr{
+    line-height: 35px;
+}
+.main .mainR .mRe table thead tr td:nth-child(1){
+    width: 140px;
+}
+.main .mainR .mRe table thead tr td:nth-child(2){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(3){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(4){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(5){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(6){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(7){
+    width: 100px;
+}
+.main .mainR .mRe table thead tr td:nth-child(8){
+    width: 100px;
+}
+.main .mainR .mRe table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRe table tbody tr:nth-child(1) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRe table tbody tr:nth-child(1) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRe table tbody tr:nth-child(2) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRe table tbody tr:nth-child(2) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRe table tbody tr:nth-child(3) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRe table tbody tr:nth-child(3) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRe table tbody tr:nth-child(4) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRe table tbody tr:nth-child(4) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 21px;
+    height: 21px;
+}
+.main .mainR .mRe table tbody tr:nth-child(5) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRe table tbody tr:nth-child(5) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -249px -544px;
+    width: 21px;
+    height: 21px;
+}
+/* 银行牌价 */
+.main .mainR .mRg{
+    width: 875px;
+    margin-top: 10px;
+}
+.main .mainR .mRg p span{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.main .mainR .mRg p a{
+    display: inline-block;
+    margin-left: 720px;
+}
+.main .mainR .mRg table{
+    width: 875px;
+    text-align: center;
+    font-size: 16px;
+}
+.main .mainR .mRg table thead{
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+}
+.main .mainR .mRg table tr{
+    line-height: 35px;
+}
+.main .mainR .mRg table thead tr td:nth-child(1){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(2){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(3){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(4){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(5){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(6){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(7){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(8){
+    width: 97px;
+}
+.main .mainR .mRg table thead tr td:nth-child(9){
+    width: 97px;
+}
+.main .mainR .mRg table tbody tr{
+    border-bottom: 1px dashed #cdcdcd;
+}
+.main .mainR .mRg table thead tr td span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table thead tr td:nth-child(2) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(3) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -282px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(4) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -314px -543px;
+    width: 24px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(5) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -246px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(6) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -347px -545px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(7) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -567px;
+    width: 28px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(8) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -243px -567px;
+    width: 28px;
+    height: 28px;
+}
+.main .mainR .mRg table thead tr td:nth-child(9) span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -275px -566px;
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.main .mainR .mRg table tbody tr:nth-child(1) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(1) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(2) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(2) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -282px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(3) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(3) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -314px -543px;
+    width: 24px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(4) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(4) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -246px -543px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(5) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(5) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -347px -545px;
+    width: 22px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(6) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(6) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -215px -567px;
+    width: 28px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(7) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(7) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -243px -567px;
+    width: 28px;
+    height: 28px;
+}
+.main .mainR .mRg table tbody tr:nth-child(8) td:first-child span{
+    display: inline-block;
+    vertical-align: middle;
+}
+.main .mainR .mRg table tbody tr:nth-child(8) td:first-child span:first-child{
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -275px -566px;
+    width: 28px;
+    height: 28px;
+}
+
+/* 导航第二部分 */
+/* 国际外汇 */
+.main .mainR .two{
+    width: 875px;
+}
+.main .mainR .two .tmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .two .tmRo span{
+    margin-right: 5px;
+}
+.main .mainR .two .tmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .two .tmRt{
+    margin-top: 20px;
+}
+.main .mainR .two .tmRt .tmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .two .tmRt .tmRto span{
+    font-size: 24px;
+}
+.main .mainR .two .tmRt .tmRto a{
+    margin-left: 685px;
+}
+.main .mainR .two .tmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .two .tmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 40px;
+}
+.main .mainR .two .tmRt table thead tr{
+    line-height: 40px;
+}
+.main .mainR .two .tmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第二部分 */
+/* 品种热力图 */
+.main .mainR .two .tmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .two .tmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .two .tmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .two .tmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .two .tmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .two .tmRth table tr:hover{
+    border: 1px solid #ccc;
+    /* position: absolute; */
+    /* transform: rotate(1.1) */
+}
+.main .mainR .two .tmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .two .tmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .two .tmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(3){
+    color: #fff;
+    /* background-color: #008405; */
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(4){
+    color: #fff;
+    /* background-color: #C30D23; */
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .two .tmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+/* 第三部分 */
+/* 国际黄金 */
+.main .mainR .three{
+    width: 875px;
+}
+.main .mainR .three .thmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .three .thmRo span{
+    margin-right: 5px;
+}
+.main .mainR .three .thmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .three .thmRt{
+    margin-top: 20px;
+}
+.main .mainR .three .thmRt .thmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .three .thmRt .thmRto span{
+    font-size: 24px;
+}
+.main .mainR .three .thmRt .thmRto a{
+    margin-left: 685px;
+}
+.main .mainR .three .thmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .three .thmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .three .thmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .three .thmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第三部分 */
+/* 品种热力图 */
+.main .mainR .three .thmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .three .thmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .three .thmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .three .thmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .three .thmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .three .thmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .three .thmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .three .thmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .three .thmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .three .thmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第四部分 */
+/* 全球股指 */
+/* 国际外汇 */
+.main .mainR .four{
+    width: 875px;
+}
+.main .mainR .four .fmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .four .fmRo span{
+    margin-right: 5px;
+}
+.main .mainR .four .fmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .four .fmRt{
+    margin-top: 20px;
+}
+.main .mainR .four .fmRt .fmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .four .fmRt .fmRto span{
+    font-size: 24px;
+}
+.main .mainR .four .fmRt .fmRto a{
+    margin-left: 685px;
+}
+.main .mainR .four .fmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .four .fmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .four .fmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .four .fmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第四部分 */
+/* 品种热力图 */
+.main .mainR .four .fmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .four .fmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .four .fmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .four .fmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .four .fmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .four .fmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .four .fmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .four .fmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .four .fmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .four .fmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .four .fmRth table tbody tr td:nth-child(3){
+    color: #ccc;
+    background-color: #008405;
+}
+.main .mainR .four .fmRth table tbody tr td:nth-child(4){
+    color: #ccc;
+    background-color: #C30D23;
+}
+
+/* 导航栏第五部分
+IPE原油 */
+/* 国际外汇 */
+.main .mainR .five{
+    width: 875px;
+}
+.main .mainR .five .vmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .five .vmRo span{
+    margin-right: 5px;
+}
+.main .mainR .five .vmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .five .vmRt{
+    margin-top: 20px;
+}
+.main .mainR .five .vmRt .vmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .five .vmRt .vmRto span{
+    font-size: 24px;
+}
+.main .mainR .five .vmRt .vmRto a{
+    margin-left: 685px;
+}
+.main .mainR .five .vmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .five .vmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .five .vmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .five .vmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第五部分 */
+/* 品种热力图 */
+.main .mainR .five .vmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .five .vmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .five .vmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .five .vmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .five .vmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .five .vmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .five .vmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .five .vmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .five .vmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .five .vmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第六部分
+NYMEX原油 */
+/* 国际外汇 */
+.main .mainR .six{
+    width: 875px;
+}
+.main .mainR .six .smRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .six .smRo span{
+    margin-right: 5px;
+}
+.main .mainR .six .smRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .six .smRt{
+    margin-top: 20px;
+}
+.main .mainR .six .smRt .smRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .six .smRt .smRto span{
+    font-size: 24px;
+}
+.main .mainR .six .smRt .smRto a{
+    margin-left: 660px;
+}
+.main .mainR .six .smRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .six .smRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .six .smRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .six .smRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第六部分 */
+/* 品种热力图 */
+.main .mainR .six .smRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .six .smRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .six .smRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .six .smRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .six .smRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .six .smRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .six .smRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .six .smRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .six .smRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .six .smRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第七部分
+虚拟货币 */
+/* 国际外汇 */
+.main .mainR .seven{
+    width: 875px;
+}
+.main .mainR .seven .qimRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .seven .qimRo span{
+    margin-right: 5px;
+}
+.main .mainR .seven .qimRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .seven .qimRt{
+    margin-top: 20px;
+}
+.main .mainR .seven .qimRt .qimRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .seven .qimRt .qimRto span{
+    font-size: 24px;
+}
+.main .mainR .seven .qimRt .qimRto a{
+    margin-left: 685px;
+}
+.main .mainR .seven .qimRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .seven .qimRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .seven .qimRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .seven .qimRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第七部分 */
+/* 品种热力图 */
+.main .mainR .seven .qimRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .seven .qimRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .seven .qimRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .seven .qimRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .seven .qimRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .seven .qimRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .seven .qimRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .seven .qimRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .seven .qimRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .seven .qimRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第八部分外汇牌价 */
+.main .mainR .whpj{
+    width: 875px;
+}
+.main .mainR .whpj .whpjO{
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .whpj .whpjO span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .whpj .whpjT{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .whpj .whpjT .whpjTt{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.main .mainR .whpj .whpjT .whpjTt:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+.main .mainR .whpj .whpjT .whpjTt ul li{
+    float: left;
+    line-height: 30px;
+    background-color: #E6E6E6;
+    width: 145px;
+    border: 1px solid #ccc;
+    text-align: center;
+    cursor: pointer;
+}
+.main .mainR .whpj .whpjT .whpjTt ul li+li{
+    border-left: none;
+}
+.main .mainR .whpj .whpjT .whpjTt ul li.ac{
+    background-color: #fff;
+    border-bottom: none;
+    border-top: 2px solid #000;
+}
+.main .mainR .whpj .whpjT .whpjTth{
+    width: 875px;
+}
+.main .mainR .whpj .whpjT .whpjTth table{
+    width: 875px;
+    text-align: center;
+    display: none;
+}
+.main .mainR .whpj .whpjT .whpjTth table.ac{
+    display: table;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr{
+    border-bottom: 1px solid #ccc;
+    line-height: 30px;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(1){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(2){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(3){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(4){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(5){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(6){
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table thead tr td:nth-child(7){
+    width: 175px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(1) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(2) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(3) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(4) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(5) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(6) span{
+    display: inline-block;
+    width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td:nth-child(7) span{
+    display: inline-block;
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr{
+    line-height: 30px;
+    border-bottom: 1px dashed #ccc;
+}
+.main .mainR .whpj .whpjT .whpjTth table tbody tr td{
+    line-height: 50px;
+}
+
+
+/* 导航最后一部分 */
+/* 汇率计算器 */
+.main .mainR .jsq{
+    width: 875px;
+}
+.main .mainR .jsq .mainla{
+    width: 875px;
+}
+.main .mainR .jsq .mainla .mainH{
+    line-height: 35px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .jsq .mainla .mainH span{
+    margin-right: 5px;
+    color: #898686;
+}
+.main .mainR .jsq .mainla .mainT{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .jsq .mainla .mainT span:first-child{
+    font-size: 24px;
+}
+.main .mainR .jsq .mainla .mainT a:last-child{
+    margin-left: 690px;
+}
+.main .mainR .jsq .mainla .mainB{
+    width: 875px;
+    height: 725px;
+    background-color: #E5E5E5;
+}
+.main .mainR .jsq .mainla .mainB .mBo{
+    width: 800px;
+    display: flex;
+    margin: 0 auto;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol{
+    width: 350px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt{
+    /* background-color: #fff; */
+    /* margin-left: 5px; */
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolo{
+    margin-top: 30px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto{
+    width: 350px;line-height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto span{
+    display: inline-block;
+    vertical-align: middle;
+}
+/* .main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto .mBolto1 span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -275px -567px;
+    width: 28px;
+    height: 28px;
+} */
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto .mBolto1 img{
+    display: inline-block;
+    width: 28px;height: 28px;
+    background-color: red;
+    border-radius: 50%;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto .mBolto1 span:nth-child(3){
+    margin-left: 180px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto .mBolto1 span:nth-child(2){
+    width: 70px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBolto .mBolto2 span:nth-child(1){
+    margin-left: 10px;
+    color: #ccc;
+    transform:rotate(90deg);
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBoltt{
+    width: 350px;
+    /* line-height: 30px; */
+    height: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 2px;
+    display: none;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBoltt .mBoltto{
+    width: 350px;
+    line-height: 35px;
+    border-bottom: 1px dashed #ccc;
+    margin: 0 auto;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBoltt .mBoltto span:nth-child(2){
+    display: inline-block;
+    width: 70px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBoltt .mBoltto img{
+    display: inline-block;
+    width: 28px;height: 28px;
+    background-color: red;
+    border-radius: 50%;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolt .mBoltt .mBoltto span:last-child{
+    margin-left: 180px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolth{
+    margin-top: 20px;
+    /* margin-bottom: 30px; */
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolth span:last-child{
+    margin-left: 190px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolf input{
+    width: 350px;
+    line-height: 35px;
+    color: #F18A3E;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBol .mBolf{
+    margin-bottom: 40px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBom{
+    margin-top: 40px;
+    width: 100px;
+    text-align: center;
+    
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBom span:nth-child(1){
+    display: inline-block;
+    transform:rotate(-90deg);
+    color: #F18A3F;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBom span:nth-child(2){
+    display: inline-block;
+    transform:rotate(90deg);
+    color: #F18A3F;
+    font-size: 24px;
+    /* position: relative;
+    top: 1px; */
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor{
+    width: 350px;
+    margin-top: 30px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto{
+    width: 350px;
+    line-height: 40px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto span{
+    display: inline-block;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto .mBorto1 img{
+    display: inline-block;
+    width: 28px;height: 28px;
+    background-color: red;
+    border-radius: 50%;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto .mBorto1 span:nth-child(2){
+    display: inline-block;
+    width: 70px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto .mBorto1 span:nth-child(3){
+    margin-left: 180px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorto .mBorto2 span:nth-child(1){
+    margin-left: 10px;
+    color: #ccc;
+    transform:rotate(90deg);
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBortt{
+    width: 350px;
+    height: 180px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 2px;
+    display: none;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBortt .mBortto{
+    width: 350px;
+    line-height: 35px;
+    border-bottom: 1px dashed #ccc;
+    margin: 0 auto;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBortt .mBortto img{
+    display: inline-block;
+    width: 28px;height: 28px;
+    background-color: red;
+    border-radius: 50%;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBortt .mBortto span:nth-child(2){
+    display: inline-block;
+    width: 70px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBortt .mBortto span:last-child{
+    margin-left: 180px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorth{
+    margin-top: 20px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorth span:last-child{
+    margin-left: 200px;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorf{
+    width: 350px;
+    line-height: 35px;
+    background-color: #ccc;
+}
+.main .mainR .jsq .mainla .mainB .mBo .mBor .mBorf input{
+    width: 350px;
+    line-height: 35px;
+    color: #F18A3E;
+}
+.main .mainR .jsq .mainla .mainB .mBt{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.main .mainR .jsq .mainla .mainB .mBt .mBtt{
+    width: 800px;
+    height: 450px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p{
+    margin-left: 10px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(1) span{
+    font-weight: bold;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(2){
+    margin-bottom: 10px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(2) span{
+    font-size: 12px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(3) span:nth-child(3){
+    margin-right: 5px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(3) span:nth-child(4){
+    margin-right: 5px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(4) span:nth-child(3){
+    margin-right: 5px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBtto p:nth-child(4) span:nth-child(4){
+    margin-right: 5px;
+}
+/* 汇率图表开始 */
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt{
+    margin-top: 20px;
+    display: flex;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt p{
+    margin-left: 20px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBttto p span:nth-child(3){
+    margin-left: 110px;
+    color: #ccc;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBttto table{
+    width: 330px;
+    text-align: center;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBttto table thead{
+    background-color: #ccc;
+    line-height: 30px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBttto table tbody tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 40px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBtttc{
+    margin-left: 70px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBtttc p span:nth-child(3){
+    margin-left: 110px;
+    color: #ccc;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBtttc table{
+    width: 330px;
+    text-align: center;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBtttc table thead{
+    background-color: #ccc;
+    line-height: 30px;
+}
+.main .mainR .jsq .mainla .mainB .mBt .mBtt .mBttt .mBtttc table tbody tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 40px;
+}
+/* 导航栏第九部分
+上海金 */
+/* 国际外汇 */
+.main .mainR .shj{
+    width: 875px;
+}
+.main .mainR .shj .shjmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shj .shjmRo span{
+    margin-right: 5px;
+}
+.main .mainR .shj .shjmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .shj .shjmRt{
+    margin-top: 20px;
+}
+.main .mainR .shj .shjmRt .shjmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shj .shjmRt .shjmRto span{
+    font-size: 24px;
+}
+.main .mainR .shj .shjmRt .shjmRto a{
+    margin-left: 685px;
+}
+.main .mainR .shj .shjmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .shj .shjmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .shj .shjmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .shj .shjmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第九部分--上海金 */
+/* 品种热力图 */
+.main .mainR .shj .shjmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .shj .shjmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .shj .shjmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .shj .shjmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .shj .shjmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .shj .shjmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .shj .shjmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .shj .shjmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .shj .shjmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .shj .shjvmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .shj .shjmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十部分
+上海国际能源 */
+/* 国际外汇 */
+.main .mainR .shny{
+    width: 875px;
+}
+.main .mainR .shny .shnymRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shny .shnymRo span{
+    margin-right: 5px;
+}
+.main .mainR .shny .shnymRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .shny .shnymRt{
+    margin-top: 20px;
+}
+.main .mainR .shny .shnymRt .shnymRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shny .shnymRt .shnymRto span{
+    font-size: 24px;
+}
+.main .mainR .shny .shnymRt .shnymRto a{
+    margin-left: 640px;
+}
+.main .mainR .shny .shnymRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .shny .shnymRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .shny .shnymRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .shny .shnymRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十部分--上海国际能源 */
+/* 品种热力图 */
+.main .mainR .shny .shnymRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .shny .shnymRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .shny .shnymRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .shny .shnymRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .shny .shnymRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .shny .shnymRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .shny .shnymRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .shny .shnymRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .shny .shnymRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .shny .shnymRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十一部分
+伦敦金属 */
+/* 国际外汇 */
+.main .mainR .lj{
+    width: 875px;
+}
+.main .mainR .lj .ljmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .lj .ljmRo span{
+    margin-right: 5px;
+}
+.main .mainR .lj .ljmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .lj .ljmRt{
+    margin-top: 20px;
+}
+.main .mainR .lj .ljmRt .ljmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .lj .ljmRt .ljmRto span{
+    font-size: 24px;
+}
+.main .mainR .lj .ljmRt .ljmRto a{
+    margin-left: 685px;
+}
+.main .mainR .lj .ljmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .lj .ljmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .lj .ljmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .lj .ljmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十一部分--伦敦金属 */
+/* 品种热力图 */
+.main .mainR .lj .ljmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .lj .ljmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .lj .ljmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .lj .ljmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .lj .ljmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .lj .ljmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .lj .ljmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .lj .ljmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .lj .ljmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .lj .ljmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十二部分
+纽约金属 */
+/* 国际外汇 */
+.main .mainR .nj{
+    width: 875px;
+}
+.main .mainR .nj .njmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .nj .njmRo span{
+    margin-right: 5px;
+}
+.main .mainR .nj .njmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .nj .njmRt{
+    margin-top: 20px;
+}
+.main .mainR .nj .njmRt .njmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .nj .njmRt .njmRto span{
+    font-size: 24px;
+}
+.main .mainR .nj .njmRt .njmRto a{
+    margin-left: 685px;
+}
+.main .mainR .nj .njmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .nj .njmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .nj .njmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .nj .njmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十二部分--纽约金属 */
+/* 品种热力图 */
+.main .mainR .nj .njmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .nj .njmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .nj .njmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .nj .njmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .nj .njmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .nj .njmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .nj .njmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .nj .njmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .nj .njmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .nj .njmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十三部分
+纸黄金 */
+/* 国际外汇 */
+.main .mainR .zhj{
+    width: 875px;
+}
+.main .mainR .zhj .zhjmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .zhj .zhjmRo span{
+    margin-right: 5px;
+}
+.main .mainR .zhj .zhjmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .zhj .zhjmRt{
+    margin-top: 20px;
+}
+.main .mainR .zhj .zhjmRt .zhjmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .zhj .zhjmRt .zhjmRto span{
+    font-size: 24px;
+}
+.main .mainR .zhj .zhjmRt .zhjmRto a{
+    margin-left: 685px;
+}
+.main .mainR .zhj .zhjmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .zhj .zhjmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .zhj .zhjmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .zhj .zhjmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十三部分--纸黄金 */
+/* 品种热力图 */
+.main .mainR .zhj .zhjmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .zhj .zhjmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .zhj .zhjmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .zhj .zhjmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .zhj .zhjmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .zhj .zhjmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .zhj .zhjmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .zhj .zhjmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .zhj .zhjmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .zhj .zhjmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十四部分
+实物黄金 */
+/* 国际外汇 */
+.main .mainR .swhj{
+    width: 875px;
+}
+.main .mainR .swhj .swhjmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .swhj .swhjmRo span{
+    margin-right: 5px;
+}
+.main .mainR .swhj .swhjmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .swhj .swhjmRt{
+    margin-top: 20px;
+}
+.main .mainR .swhj .swhjmRt .swhjmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .swhj .swhjmRt .swhjmRto span{
+    font-size: 24px;
+}
+.main .mainR .swhj .swhjmRt .swhjmRto a{
+    margin-left: 685px;
+}
+.main .mainR .swhj .swhjmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .swhj .swhjmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .swhj .swhjmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .swhj .swhjmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十四部分--实物黄金 */
+/* 品种热力图 */
+.main .mainR .swhj .swhjmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .swhj .swhjmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .swhj .swhjmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .swhj .swhjmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .swhj .swhjmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .swhj .swhjmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .swhj .swhjmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .swhj .swhjmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .swhj .swhjmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .swhj .swhjmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十五部分
+纽约期货 */
+/* 国际外汇 */
+.main .mainR .nq{
+    width: 875px;
+}
+.main .mainR .nq .nqmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .nq .nqmRo span{
+    margin-right: 5px;
+}
+.main .mainR .nq .nqmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .nq .nqmRt{
+    margin-top: 20px;
+}
+.main .mainR .nq .nqmRt .nqmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .nq .nqmRt .nqmRto span{
+    font-size: 24px;
+}
+.main .mainR .nq .nqmRt .nqmRto a{
+    margin-left: 685px;
+}
+.main .mainR .nq .nqmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .nq .nqmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .nq .nqmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .nq .nqmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十五部分--纽约期货 */
+/* 品种热力图 */
+.main .mainR .nq .nqmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .nq .nqmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .nq .nqmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .nq .nqmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .nq .nqmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .nq .nqmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .nq .nqmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .nq .nqmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .nq .nqmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .nq .nqmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十六部分
+上海期货 */
+/* 国际外汇 */
+.main .mainR .shqh{
+    width: 875px;
+}
+.main .mainR .shqh .shqhmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shqh .shqhmRo span{
+    margin-right: 5px;
+}
+.main .mainR .shqh .shqhmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .shqh .shqhmRt{
+    margin-top: 20px;
+}
+.main .mainR .shqh .shqhmRt .shqhmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .shqh .shqhmRt .shqhmRto span{
+    font-size: 24px;
+}
+.main .mainR .shqh .shqhmRt .shqhmRto a{
+    margin-left: 685px;
+}
+.main .mainR .shqh .shqhmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .shqh .shqhmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .shqh .shqhmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .shqh .shqhmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十六部分--上海期货 */
+/* 品种热力图 */
+.main .mainR .shqh .shqhmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .shqh .shqhmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .shqh .shqhmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .shqh .shqhmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .shqh .shqhmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .shqh .shqhmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .shqh .shqhmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .shqh .shqhmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .shqh .shqhmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .shqh .shqhmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十七部分
+国际债券 */
+/* 国际外汇 */
+.main .mainR .gjzq{
+    width: 875px;
+}
+.main .mainR .gjzq .gjzqmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .gjzq .gjzqmRo span{
+    margin-right: 5px;
+}
+.main .mainR .gjzq .gjzqmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .gjzq .gjzqmRt{
+    margin-top: 20px;
+}
+.main .mainR .gjzq .gjzqmRt .gjzqmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .gjzq .gjzqmRt .gjzqmRto span{
+    font-size: 24px;
+}
+.main .mainR .gjzq .gjzqmRt .gjzqmRto a{
+    margin-left: 685px;
+}
+.main .mainR .gjzq .gjzqmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .gjzq .gjzqmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .gjzq .gjzqmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .gjzq .gjzqmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十七部分--国际债券 */
+/* 品种热力图 */
+.main .mainR .gjzq .gjzqmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .gjzq .gjzqmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .gjzq .gjzqmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .gjzq .gjzqmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .gjzq .gjzqmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .gjzq .gjzqmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .gjzq .gjzqmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .gjzq .gjzqmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .gjzq .gjzqmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+/* 导航栏第十八部分
+商品指数 */
+/* 国际外汇 */
+.main .mainR .spzs{
+    width: 875px;
+}
+.main .mainR .spzs .spzsmRo{
+    width: 875px;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .spzs .spzsmRo span{
+    margin-right: 5px;
+}
+.main .mainR .spzs .spzsmRo span:nth-child(2){
+    color: #ccc;
+}
+.main .mainR .spzs .spzsmRt{
+    margin-top: 20px;
+}
+.main .mainR .spzs .spzsmRt .spzsmRto{
+    border-bottom: 1px solid #ccc;
+}
+.main .mainR .spzs .spzsmRt .spzsmRto span{
+    font-size: 24px;
+}
+.main .mainR .spzs .spzsmRt .spzsmRto a{
+    margin-left: 685px;
+}
+.main .mainR .spzs .spzsmRt table{
+    width: 875px;
+    text-align: center;
+}
+.main .mainR .spzs .spzsmRt table tr{
+    border-bottom: 1px dashed #ccc;
+    line-height: 35px;
+}
+.main .mainR .spzs .spzsmRt table thead tr{
+    line-height: 35px;
+}
+.main .mainR .spzs .spzsmRt table thead tr td:nth-child(1){
+    width: 150px;
+}
+/* 导航第十八部分--商品指数 */
+/* 品种热力图 */
+.main .mainR .spzs .spzsmRth{
+    width: 875px;
+    margin-top: 20px;
+}
+.main .mainR .spzs .spzsmRth table{
+    width: 875px;
+    cursor: pointer;
+}
+.main .mainR .spzs .spzsmRth table td{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.main .mainR .spzs .spzsmRth table tr td:nth-child(1){
+    border-left: none;
+}
+.main .mainR .spzs .spzsmRth table tr td:last-child{
+    border-right: none;
+}
+.main .mainR .spzs .spzsmRth table tr:hover{
+    border: 1px solid #ccc;
+}
+.main .mainR .spzs .spzsmRth table tr td.ac{
+    border-top: 1px solid #F18A3F;
+    border-bottom: 1px solid #F18A3F;
+    
+}
+.main .mainR .spzs .spzsmRth table thead tr{
+    line-height: 40px;
+}
+.main .mainR .spzs .spzsmRth table tbody tr{
+    line-height: 30px;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(2){
+    color: green;
+    background-color: #FFEBEB;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(3){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(4){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(5){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(6){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(7){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(8){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(9){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(10){
+    color: #fff;
+}
+.main .mainR .spzs .spzsmRth table tbody tr td:nth-child(11){
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 主体结束 */
+
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

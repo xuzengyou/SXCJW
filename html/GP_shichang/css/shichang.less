@@ -1,0 +1,419 @@
+@mainColor: #c30d23;
+@greenColor: #036eb8;
+
+.w {
+    margin: auto;
+
+    .header {
+        height: 62px;
+        position: relative;
+        border-bottom: 3px solid #be1120;
+
+        .logo {
+            width: 255px;
+            height: 58px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 5px;
+            }
+        }
+
+        .search {
+            position: absolute;
+            top: 16px;
+            left: 362px;
+            width: 465px;
+            height: 32px;
+
+            .query {
+                width: 389px;
+                height: 32px;
+                border: 1px solid #e3e3e3;
+                box-sizing: border-box;
+                padding-left: 1em;
+                line-height: 32px;
+                text-align: left;
+
+                &::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    font-size: 12px;
+                }
+
+                &:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    font-size: 12px;
+                }
+
+                &::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    font-size: 12px;
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                }
+            }
+
+            .btn1 {
+                width: 76px;
+                height: 32px;
+                background-color: #c20e22;
+                float: right;
+
+            }
+        }
+    }
+    .nav {
+        height: 50px;
+        ul {
+            margin-top: 10px;
+
+            li {
+                float: left;
+               margin-left: 15px;
+                a {
+                    font-size: 24px;
+
+                    &.red {
+                        color: @mainColor;
+                    }
+                }
+
+            }
+        }
+    }
+   
+
+    .main {
+        height: 1330px;
+        width: 100%;
+        margin-top: 10px;
+        
+        .main_right {
+            width: 700px;
+            height: 100%;
+            float: left;
+            padding-right: 5px;
+            border-right: 1px solid #cdcdcd;
+            
+            .crumbs {
+                height: 30px;
+                line-height:20px;
+                width: 100%;
+                border-bottom: 3px solid #0171b8;
+
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-size: 18px;
+                }
+            }
+
+            .main_content {
+                height: 1240px;
+                width: 100%;
+                ul {
+                    width: 100%;
+                    height: 100%;
+
+                    li {
+                        height: 155px;
+                        width: 100%;
+                        border-bottom: 1px solid #cdcdcd;
+                        padding-top: 10px;
+                        a {
+                            width: 100%;
+                            height: 100%;
+                            display: inline-block;
+
+                            .con_pic {
+                                height: 100%;
+                                width: 220px;
+                                float: left;
+
+                                img {
+                                    display: inline-block;
+                                    width: 210px;
+                                    height: 133px;
+                                    background-color: #ccc;
+                                }
+                            }
+
+                            .con_txt {
+                                float: left;
+                                width: 470px;
+                                height: 100%;
+
+                                .txt_top {
+                                    height: 24px;
+                                   
+                                    span {
+                                        height: 24px;
+                                        width: 470px;
+                                        display: inline-block;
+                                        overflow: hidden;
+                                        text-overflow:ellipsis;
+                                        white-space: nowrap;
+                                        font-size: 16px;
+                                        color: @greenColor;
+                                    }
+                                }
+
+                                .txt_mes {
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 4;
+                                    overflow: hidden;
+                                    height: 88px;
+                                        font-size: 14px;
+                                }
+
+                                .txt_bot {
+                                    height: 20px;
+                                    font-size: 13px;
+                                    margin-top: 10px;
+                                    .day{
+                                        float: right;
+                                    }
+                                    .time {
+                                        float: right;
+                                        margin-left: 10px;
+                                        margin-right: 10px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .paging {
+                height: 70px;
+                width: 100%;
+                line-height: 70px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+        }
+
+        .main_left {
+            width: 296px;
+            height: 100%;
+            float: right;
+            
+            .adv1,
+            .adv2 {
+                width: 100%;
+                height: 219px;
+
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .net_click {
+                height: 227px;
+                width: 100%;
+                margin-top: 10px;
+
+                .net_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .net_con {
+                    ul {
+                        li {
+                            font-size: 12px;
+                            height: 20px;
+                            line-height: 20px;
+
+                            span {
+                                display: inline-block;
+                                font-style: oblique;
+                                font-weight: bold;
+                                vertical-align: top;
+                                width: 15px;
+                                text-align: center;
+                            }
+
+                            a {
+                                display: inline-block;
+                                color: @greenColor;
+                                height: 100%;
+                                width: 90%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration: underline ;
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .special {
+                height: 197px;
+                width: 100%;
+                margin-top: 10px;
+                position: relative;
+
+                .special_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .special_con {
+                    height: 176px;
+                    width: 100%;
+
+                    ul {
+                        li {
+                            font-size: 12px;
+                            height: 22px;
+
+                            span {
+                                vertical-align: top;
+                                height: 100%;
+                                line-height: 22px;
+                                display: inline-block;
+                            }
+
+                            a {
+                                width: 220px;
+                                height: 100%;
+                                line-height: 22px;
+                                display: inline-block;
+                                color: @greenColor;
+                                margin-left: 20px;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                                &:hover{
+                                    text-decoration: underline ;
+                                    color: @mainColor;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .special_piv {
+                    position: absolute;
+                    top: 26px;
+                    left: 56px;
+                    width: 10px;
+                    height: 176px;
+                    background: url(http://img.10xunc.com/±¸ÓÃ¼þ/img/tpjh2.png) no-repeat -14px -397px;
+                }
+            }
+
+            .essence {
+                height: 428px;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+
+                .essence_tlt {
+                    border-bottom: 2px solid @greenColor;
+
+                    span {
+                        font-size: 16px;
+                        margin-left: 6px;
+                        font-weight: bold;
+                    }
+                }
+
+                .essence_con {
+                    width: 100%;
+                    height: 402px;
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        margin-top: 2px;
+
+                        li {
+                            height: 80px;
+                            font-size: 13px;
+                            border-bottom: 1px solid #cdcdcd;
+
+                            a {
+                                display: inline-block;
+                                width: 100%;
+                                height: 100%;
+
+                                .es_pic {
+                                    height: 80px;
+                                    width: 90px;
+                                    float: left;
+
+                                    img {
+                                        width: 80px;
+                                        height: 60px;
+                                        margin-top: 10px;
+                                    }
+                                }
+
+                                .es_txt {
+                                    float: right;
+                                    height: 100%;
+                                    width: 206px;
+                                    padding-top: 10px;
+
+                                    span {
+                                        display: inline-block;
+                                        width: 90%;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .footer {
+        p {
+            text-align: center;
+            margin: 9px;
+
+            span {
+                font-size: 13px;
+                padding-left: 5px;
+
+                &.fs {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}

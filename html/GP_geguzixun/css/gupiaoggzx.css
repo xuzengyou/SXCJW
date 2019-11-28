@@ -1,0 +1,477 @@
+﻿/* header头部开始 */
+header{
+    width: 1000px;height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 118px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1000px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 30px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏结束 */
+
+/* main主体开始 */
+.main{
+    width: 1000px;
+    display: flex;
+    margin-top: 10px;
+}
+/* 主体左边开始 */
+.main .mainL{
+    width: 620px;
+}
+/* 主体左边第一部分开始 */
+.main .mainL .mainLo{
+    width: 620px;
+}
+
+/* 主体左边第一部分结束 */
+
+/* 主体左边第二部分图文开始 */
+.main .mainL .mainLt .mainLtc{
+    border-bottom: 1px solid #e6e6e6;
+}
+.main .mainL .mainLt .mainLtc{
+    display: flex;
+    height: 165px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.main .mainL .mainLt .mainLtc .mainLto{
+    width: 240px;height: 145px;
+    margin-right: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.main .mainL .mainLt .mainLtc .mainLto img{
+    width: 100%;height: 100%;
+    border-radius: 5px;
+    transition: all .6s;
+}
+.main .mainL .mainLt .mainLtc .mainLto img:hover{
+    transform: scale(1.2);
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li:nth-child(1){
+    display: inline-block;
+    height: 47px;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li:nth-child(2){
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 370px;height: 63px;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li:nth-child(3){
+    line-height: 20px;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li:nth-child(3) span{
+    display: inline-block;
+    vertical-align: -webkit-baseline-middle;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li:nth-child(1){
+    font-weight: bold;
+    font-size: 16px;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li span{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 2px;
+    /* line-height: 25px; */
+    
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -212px -519px;
+    width: 23px;
+    height: 25px;
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li span:nth-child(3){
+    width: 20px;height: 20px;
+    border-radius: 50%;
+    
+}
+.main .mainL .mainLt .mainLtc .mainLtt ul li span:nth-child(3) img{
+    width: 100%;height: 100%;
+    border-radius: 50%;
+    background-color: #c30d23;
+}
+/* 主体左边第二部分图文结束 */
+
+/* 主体部分左边第三部分分页开始 */
+.main .mainL .mainLth{
+    margin-top: 65px;
+    margin-left: 90px;
+}
+/* 分页引入部分开始 */
+.m-style {
+    position: relative;
+    text-align: center;
+    zoom: 1;
+}
+
+.m-style:before,
+.m-style:after {
+    content: "";
+    display: table;
+}
+
+.m-style:after {
+    clear: both;
+    overflow: hidden;
+}
+
+.m-style span {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style .active {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #e91e63;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #e91e63;
+}
+
+.m-style a {
+    float: left;
+    margin: 0 5px;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    background: #fff;
+    border: 1px solid #ebebeb;
+    color: #bdbdbd;
+    font-size: 14px;
+}
+
+.m-style a:hover {
+    color: #fff;
+    background: #e91e63;
+}
+
+.m-style .next,
+.m-style .prev {
+    font-family: "Simsun";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.now,
+.count {
+    padding: 0 5px;
+    color: #f00;
+}
+/* 分页引入部分结束 */
+/* 主体部分左边第三部分分页结束 */
+/* 主体左边结束 */
+
+/* 主体右边开始 */
+.main .mainR{
+    width: 365px;
+    margin-left: 15px;
+    /* background-color: aquamarine; */
+    /* margin-bottom: 10px; */
+}
+/* 主体右边第一部分 */
+.main .mainR .mainRo{
+    width: 365px;height: 200px;
+}
+.main .mainR .mainRo a img{
+    width: 100%;height: 100%;
+    background-color: #c30d23;
+}  
+
+/* 主体右边第二部分 */
+.main .mainR .mainRt{
+    width: 365px;
+    margin-top: 10px;
+}
+
+.main .mainR .mainRt p span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .mainR .mainRt table{
+    width: 365px;
+    text-align: center;
+}
+.main .mainR .mainRt table thead{
+    border-top: 2px solid #036eb8;
+    border-bottom: 1px solid #036eb8;
+    line-height: 30px;
+}
+.main .mainR .mainRt table tbody{
+    background-color: #DBEAF7;
+    border-bottom: 1px solid #036eb8;
+}
+.main .mainR .mainRt table tbody tr{
+    line-height: 25px;
+}
+
+/* 主体右边第三部分开始 */
+.main .mainR .mainRth{
+    margin-top: 10px;
+}
+.main .mainR .mainRth p:nth-child(1){
+    line-height: 30px;
+    width: 365px;
+}
+.main .mainR .mainRth p:nth-child(1) span{
+    font-size: 16px;
+    font-weight: bold;
+}
+.main .mainR .mainRth ul{
+    width: 365px;
+    background-color: #DBEAF7;
+    border-top: 2px solid #036eb8;
+    border-bottom: 1px solid #036eb8;
+}
+.main .mainR .mainRth ul li{
+    /* color: red; */
+    /* display: inline-block; */
+    line-height: 25px;
+    width: 335px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.main .mainR .mainRth ul li span{
+    display: inline-block;
+    width: 20px;
+    margin-right: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+.main .mainR .mainRth ul li a{
+    color: #036eb8;
+}
+
+/* 主体右边第四部分 */
+.main .mainR .mainRf{
+    margin-top: 10px;
+    width: 365px;
+}
+.main .mainR .mainRf .mainRfo span{
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #5EBAFE;
+    width: 50px;line-height: 25px;
+    font-weight: bold;
+    border-bottom: none;
+    cursor: pointer;
+}
+.main .mainR .mainRf .mainRft{
+    border-top: 1px solid #036eb8;
+    background-color: #DBEAF7;
+}
+/* .main .mainR .mainRf .mainRfo p{
+    position: relative;
+    top: 10px;
+} */
+.main .mainR .mainRf .mainRft .mainRfto{
+    margin-top: 10px;
+}
+.main .mainR .mainRf .mainRfo span+span{
+    border-left: none;
+}
+.main .mainR .mainRf .mainRfo span:first-child{
+    border-right: none;
+}
+.main .mainR .mainRf .mainRfo span.ac{
+    background-color: #fff;
+    position: relative;
+    line-height: 27px;
+    top: 1px;
+    border: 1px solid #036eb8;
+    border-bottom: none;
+}
+.main .mainR .mainRf .mainRft{
+    display: none;
+}
+.main .mainR .mainRf .mainRft.ac{
+    display: block;
+}
+.main .mainR .mainRf .mainRft .mainRfto p span{
+    text-align: center;
+    color: #c30d23;
+    /* background-color: #c30d23; */
+    display: inline-block;
+}
+.main .mainR .mainRf .mainRft .mainRfto p span:nth-child(2){
+    
+    width: 0;
+    height: 0;
+	border-right: 10px solid #c30d23;
+    border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+
+
+}
+.main .mainR .mainRf .mainRft .mainRfto p span:last-child{
+    color: #fff;
+    background-color: #c30d23;
+    border-radius: 3px;
+    width: 70px;
+    line-height: 20px;
+}
+.main .mainR .mainRf .mainRft .mainRfto .mainRftoo{
+    width: 365px;
+    display: flex;
+}
+.main .mainR .mainRf .mainRft .mainRfto .mainRftoo .mainRsg{
+    border-left: 1px solid #c30d23;
+    border-right: 1px solid #c30d23;
+    height: 77px;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+.main .mainR .mainRf .mainRft .mainRfto .mainRftoo .mainRsgr{
+    width: 330px;height: 80px;
+}
+.main .mainR .mainRf .mainRft .mainRfto .mainRftoo .mainRsgr li{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    line-height: 20px;
+}
+
+/* 主体右边第五部分 */
+.main .mainR .mainRv{
+    margin-top: 10px;
+    width: 365px;height: 200px;
+}
+.main .mainR .mainRv img{
+    width: 100%;height: 100%;
+}
+
+/* 主体右边结束 */
+/* main主体结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

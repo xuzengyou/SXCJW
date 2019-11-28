@@ -1,0 +1,353 @@
+﻿.w {
+  margin: auto;
+}
+.w .header {
+  height: 62px;
+  position: relative;
+  border-bottom: 3px solid #be1120;
+}
+.w .header .logo {
+  width: 255px;
+  height: 58px;
+}
+.w .header .logo img {
+  width: 100%;
+  height: 100%;
+  margin-top: 5px;
+}
+.w .header .search {
+  position: absolute;
+  top: 16px;
+  left: 412px;
+  width: 465px;
+  height: 32px;
+}
+.w .header .search .query {
+  width: 389px;
+  height: 32px;
+  border: 1px solid #e3e3e3;
+  box-sizing: border-box;
+  padding-left: 1em;
+  line-height: 32px;
+  text-align: left;
+}
+.w .header .search .query::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  font-size: 12px;
+}
+.w .header .search .query:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  font-size: 12px;
+}
+.w .header .search .query::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  font-size: 12px;
+}
+.w .header .search .query:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-size: 12px;
+}
+.w .header .search .btn1 {
+  width: 76px;
+  height: 32px;
+  background-color: #c20e22;
+  float: right;
+}
+/* 登录注册 */
+.w .header .lgin{
+  position: absolute;
+  left: 890px;
+  top: 18px;
+}
+.w .nav {
+  height: 50px;
+}
+.w .nav ul {
+  margin-top: 10px;
+}
+.w .nav ul li {
+  float: left;
+  margin-left: 24px;
+}
+.w .nav ul li:first-child{
+  margin-left: 0;
+}
+.w .nav ul li a {
+  font-size: 24px;
+}
+.w .nav ul li a.red {
+  color: #c30d23;
+}
+.w .main {
+  height: 1330px;
+  width: 100%;
+  margin-top: 10px;
+}
+.w .main .main_right {
+  width: 700px;
+  height: 100%;
+  float: left;
+  padding-right: 5px;
+  border-right: 1px solid #cdcdcd;
+}
+.w .main .main_right .crumbs {
+  height: 30px;
+  line-height: 20px;
+  width: 100%;
+  border-bottom: 3px solid #0171b8;
+}
+.w .main .main_right .crumbs span {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 18px;
+}
+.w .main .main_right .main_content {
+  height: 1240px;
+  width: 100%;
+}
+.w .main .main_right .main_content ul {
+  width: 100%;
+  height: 100%;
+}
+.w .main .main_right .main_content ul li {
+  height: 155px;
+  width: 100%;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 10px;
+}
+.w .main .main_right .main_content ul li a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.w .main .main_right .main_content ul li a .con_pic {
+  height: 100%;
+  width: 220px;
+  float: left;
+}
+.w .main .main_right .main_content ul li a .con_pic img {
+  display: inline-block;
+  width: 210px;
+  height: 133px;
+  background-color: #ccc;
+}
+.w .main .main_right .main_content ul li a .con_txt {
+  float: left;
+  width: 470px;
+  height: 100%;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_top {
+  height: 24px;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_top span {
+  height: 24px;
+  width: 470px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 16px;
+  color: #036eb8;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_mes {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  height: 88px;
+  font-size: 14px;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_bot {
+  height: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_bot .day {
+  float: right;
+}
+.w .main .main_right .main_content ul li a .con_txt .txt_bot .time {
+  float: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.w .main .main_right .paging {
+  height: 70px;
+  width: 100%;
+  line-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.w .main .main_left {
+  width: 296px;
+  height: 100%;
+  float: right;
+}
+.w .main .main_left .adv1,
+.w .main .main_left .adv2 {
+  width: 100%;
+  height: 219px;
+}
+.w .main .main_left .adv1 a img,
+.w .main .main_left .adv2 a img {
+  width: 100%;
+  height: 100%;
+}
+.w .main .main_left .net_click {
+  height: 227px;
+  width: 100%;
+  margin-top: 10px;
+}
+.w .main .main_left .net_click .net_tlt {
+  border-bottom: 2px solid #036eb8;
+}
+.w .main .main_left .net_click .net_tlt span {
+  font-size: 16px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.w .main .main_left .net_click .net_con ul li {
+  font-size: 12px;
+  height: 20px;
+  line-height: 20px;
+}
+.w .main .main_left .net_click .net_con ul li span {
+  display: inline-block;
+  font-style: oblique;
+  font-weight: bold;
+  vertical-align: top;
+  width: 15px;
+  text-align: center;
+}
+.w .main .main_left .net_click .net_con ul li a {
+  display: inline-block;
+  color: #036eb8;
+  height: 100%;
+  width: 90%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.w .main .main_left .net_click .net_con ul li a:hover {
+  text-decoration: underline ;
+  color: #c30d23;
+}
+.w .main .main_left .special {
+  height: 197px;
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+}
+.w .main .main_left .special .special_tlt {
+  border-bottom: 2px solid #036eb8;
+}
+.w .main .main_left .special .special_tlt span {
+  font-size: 16px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.w .main .main_left .special .special_con {
+  height: 176px;
+  width: 100%;
+}
+.w .main .main_left .special .special_con ul li {
+  font-size: 12px;
+  height: 22px;
+}
+.w .main .main_left .special .special_con ul li span {
+  vertical-align: top;
+  height: 100%;
+  line-height: 22px;
+  display: inline-block;
+}
+.w .main .main_left .special .special_con ul li a {
+  width: 220px;
+  height: 100%;
+  line-height: 22px;
+  display: inline-block;
+  color: #036eb8;
+  margin-left: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.w .main .main_left .special .special_con ul li a:hover {
+  text-decoration: underline ;
+  color: #c30d23;
+}
+.w .main .main_left .special .special_piv {
+  position: absolute;
+  top: 26px;
+  left: 56px;
+  width: 10px;
+  height: 176px;
+  background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -14px -397px;
+}
+.w .main .main_left .essence {
+  height: 428px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.w .main .main_left .essence .essence_tlt {
+  border-bottom: 2px solid #036eb8;
+}
+.w .main .main_left .essence .essence_tlt span {
+  font-size: 16px;
+  margin-left: 6px;
+  font-weight: bold;
+}
+.w .main .main_left .essence .essence_con {
+  width: 100%;
+  height: 402px;
+}
+.w .main .main_left .essence .essence_con ul {
+  width: 100%;
+  height: 100%;
+  margin-top: 2px;
+}
+.w .main .main_left .essence .essence_con ul li {
+  height: 80px;
+  font-size: 13px;
+  border-bottom: 1px solid #cdcdcd;
+}
+.w .main .main_left .essence .essence_con ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.w .main .main_left .essence .essence_con ul li a .es_pic {
+  height: 80px;
+  width: 90px;
+  float: left;
+}
+.w .main .main_left .essence .essence_con ul li a .es_pic img {
+  width: 80px;
+  height: 60px;
+  margin-top: 10px;
+}
+.w .main .main_left .essence .essence_con ul li a .es_txt {
+  float: right;
+  height: 100%;
+  width: 206px;
+  padding-top: 10px;
+}
+.w .main .main_left .essence .essence_con ul li a .es_txt span {
+  display: inline-block;
+  width: 90%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.w .footer p {
+  text-align: center;
+  margin: 9px;
+}
+.w .footer p span {
+  font-size: 13px;
+  padding-left: 5px;
+}
+.w .footer p span.fs {
+  font-size: 11px;
+}

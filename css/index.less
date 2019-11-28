@@ -1,0 +1,1653 @@
+@mainColor: #c30d23;
+
+.Cred {
+    color: #f04343;
+}
+
+.Bred {
+    background-color: #f04343;
+}
+
+.Cgreen {
+    color: #07a168;
+}
+
+.Bgreen {
+    background-color: #07a168;
+}
+
+.text_right {
+    text-align: right;
+}
+
+.new_title {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+
+        width: 44px;
+        height: 100%;
+        font-size: 18px;
+        border-bottom: 2px solid @mainColor;
+    }
+
+    .more {
+        flex: 1;
+        height: 100%;
+        box-sizing: border-box;
+        border-bottom: 2px solid #056bb8;
+
+        a {
+            float: right;
+            font-size: 14px;
+
+            i {
+                font-size: 12px;
+                color: #dedede;
+            }
+        }
+
+    }
+
+}
+
+.new_content {
+    margin-top: 10px;
+
+    ul {
+        position: relative;
+
+        li {
+            height: 20px;
+            line-height: 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            a {
+                font-size: 14px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                background-color: #333333;
+                margin-top: 11px;
+                left: -10px;
+            }
+        }
+    }
+}
+
+.jr_top {
+    border-bottom: 1px solid @mainColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .biaoti {
+        .gang {
+            font-size: 25px;
+            color: @mainColor;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 18px;
+            display: inline-block;
+            color: @mainColor;
+        }
+    }
+
+    .more {
+        flex: 1;
+        height: 100%;
+
+        a {
+            float: right;
+            font-size: 14px;
+
+            i {
+                font-size: 12px;
+                color: #dedede;
+            }
+        }
+    }
+}
+
+.jr_con {
+    width: 348px;
+    height: 182px;
+    ul {
+        margin-left: 12px;
+        position: relative;
+
+        li {
+            height: 26px;
+            line-height: 26px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:nth-child(1) a {
+                font-weight: bold;
+            }
+
+            a {
+                font-size: 12px;
+            }
+
+            &::before {
+                position: absolute;
+                content: "";
+                display: inline-block;
+                width: 3px;
+                height: 3px;
+                background-color: #333333;
+                margin-top: 11px;
+                left: -10px;
+            }
+        }
+    }
+}
+
+
+.w {
+    margin: auto;
+
+    .header {
+        height: 62px;
+        position: relative;
+        border-bottom: 3px solid #be1120;
+
+        .logo {
+            width: 290px;
+            height: 42px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 5px;
+            }
+        }
+
+        .search {
+            position: absolute;
+            top: 16px;
+            left: 362px;
+            width: 450px;
+            height: 32px;
+
+            .query {
+                width: 389px;
+                height: 32px;
+                border: 1px solid #e3e3e3;
+                box-sizing: border-box;
+                padding-left: 1em;
+                line-height: 32px;
+
+                &::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    font-size: 12px;
+                }
+
+                &:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    font-size: 12px;
+                }
+
+                &::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    font-size: 12px;
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                }
+            }
+
+            .btn1 {
+                width: 61px;
+                height: 32px;
+                background-color: #c20e22;
+                float: right;
+
+                i {
+                    color: #ced9c6;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .nav {
+        height: 90px;
+
+        ul {
+            margin-top: 24px;
+
+            li {
+                float: left;
+
+                a {
+                    font-size: 20px;
+
+                    &.red {
+                        color: @mainColor;
+                    }
+                }
+
+                &.line {
+                    width: 1px;
+                    height: 20px;
+                    background-color: #e6e6e6;
+                    margin: 6px 29px 0;
+                }
+
+            }
+        }
+    }
+
+    .main {
+
+        .main_top {
+            height: 1507px;
+            position: relative;
+
+            .tp_left {
+                width: 710px;
+                height: 100%;
+                position: absolute;
+                left: 0;
+
+                .tp_left_top {
+                    height: 595px;
+                    width: 100%;
+                    position: relative;
+
+                    .slides {
+                        width: 250px;
+                        height: 100%;
+
+                        position: absolute;
+                        left: 0;
+
+                        div {
+                            height: 184px;
+
+                            &.slide {
+                                .carousel-inner {
+                                    .item {
+                                        position: relative;
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                        .pivdes{
+                                            position: absolute;
+                                            width: 200px;
+                                            height: 30px;
+                                            left: 50%;
+                                            top: 50%;
+                                            margin: 28px 0px 0px -100px;
+                                            text-align: center;
+                                            line-height: 30px;
+                                            font-size: 16px;
+                                            color: red;
+                                        }
+                                    }
+                                }
+
+                                a {
+                                    background-image: none;
+                                }
+                                .carousel-indicators{
+                                    bottom: 10px;
+                                }
+                            }
+
+                            &.cost {
+                                margin: 10px 0;
+                                .cost_title {
+                                    font-size: 16px;
+                                    height: 32px;
+                                    border: 0;
+                                    line-height: 32px;
+                                    li {
+                                        float: left;
+                                        width: 125px;
+                                        height: 100%;
+                                        margin: 0;
+                                        text-align: center;
+                                        cursor: pointer;
+                                        &.active {
+                                            border-top: 2px solid #076dba;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                }
+
+                                .cost_text {
+
+                                    height: 152px;
+                                    width: 100%;
+
+                                    .fund {
+                                        width: 100%;
+                                        height: 152px;
+                                        display: none;
+                                        ul {
+                                            font-size: 12px;
+                                            height: 24px;
+                                            border: 0;
+                                            line-height: 24px;
+                                            li {
+                                                float: left;
+                                                width: 62.5px;
+                                                height: 100%;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                &.active {
+                                                background-color: #ccc;
+                                                    font-weight: bold;
+                                                }
+                                            }
+
+                                        }
+
+                                        .tablist1 {
+                                            width: 100%;
+                                            height: 128px;
+
+                                            #plateIn,
+                                            #plateOut,
+                                            #shareIn,
+                                            #shareOut {
+                                                display: none;
+                                                width: 100%;
+                                                height: 100%;
+
+                                                table {
+                                                    thead {
+                                                        tr {
+
+                                                            th {
+                                                                padding-top: 2px;
+                                                                padding-left: 22px;
+                                                                font-size: 12px;
+                                                                color: #ccc;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    tbody {
+                                                        tr {
+                                                            font-size: 12px;
+                                                            height: 21px;
+                                                            line-height: 21px;
+                                                            td {
+                                                                margin-top: 5px;
+
+                                                                i {
+                                                                    font-size: 12px;
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+
+                                    .share {
+                                        width: 100%;
+                                        height: 152px;
+                                        display: none;
+                                        ul {
+                                            font-size: 12px;
+                                            height: 24px;
+                                            border: 0;
+                                            line-height: 24px;
+
+                                            li {
+                                                float: left;
+                                                width: 50px;
+                                                height: 100%;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                &.active {
+                                                    background-color: #ccc;
+                                                        font-weight: bold;
+                                                    }
+
+                                            }
+                                        }
+
+                                        .tablist2 {
+                                            height: 128px;
+                                            width: 100%;
+                                               #upList,
+                                               #dropList,
+                                               #rate,
+                                               #increase,
+                                               #outcrease{
+                                                display: none;
+                                                width: 100%;
+                                                height: 100%;
+                                               
+                                                table {
+                                                    thead {
+                                                        tr {
+                                                            th {
+                                                                font-size: 12px;
+                                                                color: #ccc;
+                                                            }
+                                                        }
+                                                    }
+
+                                                    tbody {
+                                                        tr {
+                                                            font-size: 12px;
+                                                            height: 21px;
+                                                            line-height: 21px;
+                                                            td {
+                                                                position: relative;
+                                                                margin-top: 5px;
+                                                                font-size: 12px;
+                                                                i {
+                                                                    position: absolute;
+                                                                    top: 6px;
+                                                                    right: 10px;
+                                                                    font-size: 12px;
+                                                                }
+                                                            }
+
+                                                        }
+                                                    }
+                                                }
+                                             }
+                                            
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.teletext {
+                                .carousel-inner {
+                                    .item {
+                                        img {
+                                            width: 72%;
+                                        }
+
+                                        .carousel-caption {
+                                            background-color: #e3e3e3;
+                                            width: 70px;
+                                            left: 72%;
+                                            height: 100%;
+                                            bottom: 0;
+
+                                            span {
+                                                color: #000;
+                                                font-weight: normal;
+                                                margin: 0px 5px;
+                                                display: inline-block
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .carousel-control {
+
+                                    top: 120px;
+                                    width: 14%;
+
+                                    &.left {
+                                        left: 180px;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .message {
+                        width: 460px;
+                        height: 100%;
+                        position: absolute;
+                        right: 0;
+                        padding-left: 34px;
+
+                        .title {
+                            height: 194px;
+
+                            ul {
+                                position: relative;
+
+                                li {
+                                    height: 24px;
+                                    line-height: 24px;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+
+                                    a {
+                                        font-size: 14px;
+                                    }
+
+                                    &:nth-child(1) a {
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                    }
+
+                                    &:nth-child(4) {
+
+                                        margin-top: 10px;
+
+                                        a {
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                        }
+                                    }
+
+                                    &::before {
+                                        position: absolute;
+                                        content: "";
+                                        display: inline-block;
+                                        width: 3px;
+                                        height: 3px;
+                                        background-color: #333333;
+                                        margin-top: 11px;
+                                        left: -10px;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        .new {
+                            height: 194px;
+
+                            .new_content {
+                                ul {
+                                    margin-top: 5px;
+                                    position: relative;
+
+                                    li {
+                                        height: 22px;
+                                        line-height: 22px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+
+                                        a {
+                                            font-size: 14px;
+                                        }
+
+                                        &::before {
+                                            position: absolute;
+                                            content: "";
+                                            display: inline-block;
+                                            width: 3px;
+                                            height: 3px;
+                                            background-color: #333333;
+                                            margin-top: 11px;
+                                            left: -10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .gupiao {
+                            height: 194px;
+
+                            .gupiao_content {
+                                ul {
+                                    margin-top: 10px;
+                                    position: relative;
+
+                                    li {
+                                        height: 22px;
+                                        line-height: 22px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+
+                                        a {
+                                            font-size: 14px;
+                                        }
+
+                                        &::before {
+                                            position: absolute;
+                                            content: "";
+                                            display: inline-block;
+                                            width: 3px;
+                                            height: 3px;
+                                            background-color: #333333;
+                                            margin-top: 11px;
+                                            left: -10px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .tp_left_con {
+                    height: 400px;
+                    width: 100%;
+
+                    &>div {
+                       float: left;
+                       width: 344px;
+                        height: 175px;
+                    }
+                    .waihui {
+                        margin-right: 16px;
+                    }
+
+                    .jijin {
+                        margin-right: 16px;
+                        margin-top: 22px;
+                    }
+
+                    .huangjin {
+                        margin-top: 22px;
+                    }
+                }
+
+                .tp_left_bot {
+                    height: 495px;
+                    width: 100%;
+                    .jinrong_tit {
+                        height: 43px;
+                        width: 100%;
+                        span {
+                            font-size: 22px;
+                            color: @mainColor;
+                        }
+                    }
+
+                    .jinrong_con {
+                        &>div{
+                            float: left;
+                            width: 346px;
+                            height: 223px;
+                        }
+                        &>div:nth-child(odd){
+                            margin-right: 12px;
+                        }
+                    }
+                }
+            }
+
+            .tp_right {
+                width: 290px;
+                height: 100%;
+                position: absolute;
+                right: 0;
+
+                // 全球指数
+                .metal {
+                    width: 261px;
+                    height: 215px;
+                    margin-left: 29px;
+
+                    .metal_tlt {
+                        height: 30px;
+                        width: 100%;
+                        background-color: #000;
+                        line-height: 30px;
+
+                        span {
+                            color: #fff;
+                            font-size: 15px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .metal_con {
+                        height: 170px;
+
+                        table {
+                            font-size: 12px;
+
+                            thead {
+                                tr {
+                                    width: 261px;
+                                    height: 28px;
+
+                                    th {
+                                        width: 87px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    width: 261px;
+                                    height: 28px;
+
+                                    td {
+                                        width: 87px;
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(odd) {
+                                        background-color: #e6e6e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                // 交易所黄金报价
+                .offer {
+                    width: 261px;
+                    height: 200px;
+                    margin-left: 29px;
+                    margin: 10px 0 20px 29px;
+
+                    .offer_tlt {
+                        height: 30px;
+                        width: 100%;
+                        background-color: #000;
+                        line-height: 30px;
+
+                        span {
+                            color: #fff;
+                            font-size: 15px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .offer_con {
+                        height: 170px;
+
+                        table {
+                            font-size: 12px;
+
+                            thead {
+                                tr {
+                                    width: 261px;
+                                    height: 28px;
+
+                                    th {
+                                        width: 65px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    width: 261px;
+                                    height: 28px;
+
+                                    td {
+                                        width: 65px;
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(odd) {
+                                        background-color: #e6e6e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                // 热门行情走势
+                .trend {
+                    width: 261px;
+                    height: 210px;
+                    margin-left: 29px;
+                    margin-top: 20px;
+
+                    .trend_tlt {
+                        width: 100%;
+                        height: 30px;
+                        border-bottom: 1px solid #cdcdcd;
+                        line-height: 30px;
+
+                        span {
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .trend_con {
+                        table {
+                            font-size: 12px;
+
+                            tbody {
+                                tr {
+                                    
+                                    height: 26px;
+
+                                    td {
+                                        width: 65px;
+                                        text-align: center;
+                                    }
+                                   
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 广告1
+                .adv1 {
+                    width: 261px;
+                    height: 199px;
+                    background-color: @mainColor ;
+                    margin: 40px 0px 35px 29px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                // 24小时热文
+                .rewen {
+                    height: 555px;
+                    width: 263px;
+                    margin-left: 29px;
+
+                    .biaoti {
+                        .gang {
+                            font-size: 25px;
+                            color: @mainColor;
+                            font-weight: bold;
+                        }
+
+                        h2 {
+                            font-size: 18px;
+                            display: inline-block;
+                        }
+                    }
+
+                    .rewen_con {
+                        ul {
+                            li {
+                                margin-bottom: 10px;
+
+                                .media-left {
+                                    padding-right: 2px;
+
+                                    div {
+                                        width: 100px;
+                                        height: 65px;
+
+                                        img {
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+                                }
+
+                                .media-body {
+                                    a {
+                                        font-size: 12px;
+                                        display: block;
+                                        width: 161px;
+                                        height: 54px;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 3;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        
+
+        .main_bot {
+            // height: 1010px;
+
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+
+            .bt_left {
+                width: 270px;
+                height: 100%;
+                float: left;
+
+                // background-color: red;
+                // 专家说
+                .expert {
+                    height: 450px;
+                    width: 100%;
+                    margin-top: 10px;
+
+                    .expert_tlt {
+                        width: 100%;
+                        height: 26px;
+                        border-top: 2px solid #086db4;
+                        position: relative;
+                        margin-left: 5px;
+
+                        .hLine {
+                            position: absolute;
+                            width: 38px;
+                            height: 2px;
+                            background-color: @mainColor;
+                            top: -2px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            color: #086db4;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .expert_con {
+                        height: 424px;
+                        width: 100%;
+
+                        ul {
+                            margin-top: 5px;
+
+                            li {
+                                height: 82px;
+                                background-color: #fff;
+
+                                .p_img {
+                                    width: 68px;
+                                    height: 82px;
+                                    float: left;
+                                    position: relative;
+
+                                    img {
+                                        width: 44px;
+                                        height: 44px;
+                                        position: absolute;
+                                        top: 15px;
+                                        left: 10px;
+                                    }
+                                }
+
+                                .p_txt {
+                                    float: right;
+                                    position: relative;
+                                    background-color: #F1F3FA;
+                                    height: 72px;
+                                    margin-top: 5px;
+                                    border-radius: 10px;
+                                    padding: 8px;
+                                    font-size: 12px;
+
+                                    p {
+                                        width: 180px;
+                                        height: 36px;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                        margin-bottom: 4px;
+                                    }
+
+                                    span {
+                                        color: #056bb8;
+                                    }
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        left: -14px;
+                                        top: 22px;
+                                        border: 7px solid #F1F3FA;
+                                        border-color: transparent #F1F3FA transparent transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 新股申购
+                .subscribe {
+                    height: 296px;
+                    width: 100%;
+
+                    .subscribe_tlt {
+                        width: 100%;
+                        height: 34px;
+                        border-top: 2px solid #086db4;
+                        border-bottom: 1px solid #086db4;
+                        position: relative;
+
+                        .hLine {
+                            position: absolute;
+                            width: 38px;
+                            height: 2px;
+                            background-color: @mainColor;
+                            top: -2px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            color: #086db4;
+                            margin-left: 5px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .subscribe_con {
+                        font-size: 12px;
+
+                        table {
+                            thead {
+                                tr {
+                                    border-bottom: 1px solid #60bcff;
+
+                                    th {
+                                        width: 67px;
+                                        height: 32px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    height: 32px;
+                                    text-align: center;
+
+                                    &:nth-child(even) {
+                                        background-color: #e6e6e6;
+                                    }
+
+                                    td:nth-child(-n+2) {
+                                        color: #056bb8;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 实时解盘
+                .solution {
+                    height: 240px;
+                    width: 100%;
+
+                    .solution_tlt {
+                        width: 100%;
+                        height: 26px;
+                        border-top: 2px solid #086db4;
+                        position: relative;
+
+                        .hLine {
+                            position: absolute;
+                            width: 38px;
+                            height: 2px;
+                            background-color: @mainColor;
+                            top: -2px;
+                        }
+
+                        span {
+                            font-size: 16px;
+                            color: #086db4;
+                            margin-left: 5px;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .solution_con {
+                        ul {
+                            margin-top: 5px;
+                            position: relative;
+
+                            li {
+                                height: 21px;
+                                width: 100%;
+                                background-color: #fff;
+
+                                a {
+                                    font-size: 12px;
+                                    width: 100%;
+                                    height: 100%;
+                                    display: inline-block;
+
+                                    .sp_left {
+                                        float: left;
+                                        display: inline-block;
+                                        height: 100%;
+                                        width: 200px;
+                                        margin-left: 10px;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap
+                                    }
+
+                                    .sp_right {
+                                        float: right;
+                                    }
+                                }
+
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: inline-block;
+                                    width: 3px;
+                                    height: 3px;
+                                    background-color: #333333;
+                                    margin-top: 11px;
+                                    left: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .bt_con {
+                width: 416px;
+                height: 100%;
+                margin: 0 30px 0 20px;
+                float: left;
+
+                .biaoti {
+                    .gang {
+                        font-size: 30px;
+                        color: @mainColor;
+                        font-weight: bold;
+                    }
+
+                    h2 {
+                        font-size: 22px;
+                        display: inline-block;
+                    }
+                }
+
+                .zixun {
+
+                    ul {
+                        li {
+                            margin-top: 10px;
+                            .media-left {
+                                padding-right: 15px;
+
+                                div {
+                                    width: 150px;
+                                    height: 90px;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+
+                            .media-body {
+                                position: relative;
+                                .media-heading {
+                                    a {
+                                        font-size: 13px;
+                                        display: block;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                    }
+                                }
+
+                                .news_tag {
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    .time {
+                                        font-size: 12px;
+                                        line-height: 24px;
+                                        padding-left: 15px;
+                                        border-left: 0px;
+                                    }
+
+                                    .link {
+                                        font-size: 12px;
+
+                                        a {
+                                            display: inline-block;
+                                            width: 13px;
+                                            height: 13px;
+                                            border-radius: 100%;
+
+                                            &.wb {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -38px -523px;
+                                            }
+
+                                            &.py {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -55px -523px;
+                                            }
+
+                                            &.kj {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -73px -523px;
+                                            }
+
+                                            &.wx {
+                                                background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -91px -523px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .loading {
+                    width: 417px;
+                    height: 50px;
+                    margin-top: 20px;
+                    text-align: center;
+                    line-height: 50px;
+
+                    a {
+                        font-size: 25px;
+
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+
+            }
+
+            .bt_right {
+                width: 264px;
+                height: 100%;
+                float: left;
+
+                .adv3 {
+                    width: 262px;
+                    height: 184px;
+                    margin: 10px auto 0px;
+                    background-color: @mainColor;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .tuijian {
+                    width: 263px;
+                    height: 360px;
+
+                    .biaoti {
+                        .gang {
+                            font-size: 30px;
+                            color: @mainColor;
+                            font-weight: bold;
+                        }
+
+                        h2 {
+                            font-size: 22px;
+                            display: inline-block;
+                        }
+                    }
+
+                    .tuijian_con {
+                        ul {
+                            li {
+
+                                .media-left {
+                                    padding-right: 10px;
+
+                                    div {
+                                        width: 47px;
+                                        height: 47px;
+                                        border-radius: 100%;
+
+                                        a {
+                                            display: inline-block;
+                                            width: 47px;
+                                            height: 47px;
+                                            border-radius: 100%;
+                                            overflow: hidden;
+
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .media-body {
+                                    a {
+                                        font-size: 14px;
+                                    }
+
+                                    span {
+                                        font-size: 12px;
+                                        display: block;
+                                        color: #999999;
+                                        width: 206px;
+                                        height: 36px;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        overflow: hidden;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .adv4 {
+                    width: 262px;
+                    height: 184px;
+                    margin: 0px auto 0px;
+                    background-color: @mainColor;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .partner {
+                    width: 263px;
+                    height: 195px;
+                    margin-bottom: 20px;
+
+
+                    .biaoti {
+                        .gang {
+                            font-size: 30px;
+                            color: @mainColor;
+                            font-weight: bold;
+                        }
+
+                        h2 {
+                            font-size: 22px;
+                            display: inline-block;
+                        }
+                    }
+
+                    .partner_list {
+                        padding: 0 15px;
+                        line-height: 22px;
+
+                        a {
+                            font-size: 12px;
+                            display: inline-block;
+                            height: 12px;
+                            line-height: 12px;
+                            margin-right: 7px;
+                            padding-right: 10px;
+                            border-right: 1px solid #e3e7ed;
+                        }
+                    }
+                }
+
+                .relation {
+                    text-align: center;
+                    margin: auto;
+                    font-size: 22px;
+                    height: 71px;
+                    line-height: 55px;
+                    border-top: 1px solid #d0d0d0;
+
+                    a {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+    .main_adv {
+        width: 1000px;
+        height: 120px;
+        border-bottom: 2px solid @mainColor;
+
+        .adv2 {
+            height: 100px;
+            width: 100%;
+            margin-top: 10px;
+            background-color: @mainColor;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .friends {
+
+        width: 100%;
+        height: 162px;
+        border-top: 1px solid @mainColor;
+
+
+        .fr-title {
+            margin: 10px 0;
+
+            h2 {
+                font-size: 22px;
+                font-weight: bold;
+            }
+        }
+
+        .fr-content {
+            ul {
+                li {
+                    float: left;
+                    width: 125px;
+                    text-align: center;
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        p {
+            text-align: center;
+            margin: 9px;
+
+            span {
+                font-size: 13px;
+                padding-left: 5px;
+
+                &.fs {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+.boxShade{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    z-index: 20;
+}
+.us-pop-wrapper{
+    position: fixed;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    overflow: auto;
+    .us-pop{
+    border: 1px #E7E7E7 solid;
+    background: #fff;
+    width: 806px;
+    height: 628px;
+    padding: 0 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -319px 0 40px -403px;
+    border-radius: 6px;
+    z-index: 3;
+    color: #191919;
+     .close-us{
+         position: absolute;
+         right: 10px;
+         top: 10px;
+     }
+     .wrapper{
+         .us-tt{
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            padding-top: 25px;
+              }
+            .box-problem{
+                font-size: 14px;
+                .radio-sel{
+                    font-size: 12px;
+                    li{
+                        height: 30px;
+                        line-height: 30px;
+                        cursor: pointer;
+                        .radio-icon{
+                            position: relative;
+                        }
+                        &.clk .radio-icon::after{
+                            content: "";
+                            position: absolute;
+                            display: block;
+                            width: 6px;
+                            height: 6px;
+                            background: @mainColor;
+                            position: absolute;
+                            top: 3px;
+                            left: 3px;
+                            z-index: 202;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+            .box-need{
+                padding-top: 10px;
+
+                h4 {
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding-bottom: 8px;
+                 }
+                 .write-need{
+                    textarea {
+                        font-size: 12px;
+                        border: 1px #E7E7E7 solid;
+                        color: #999;
+                        line-height: 20px;
+                        padding: 5px 10px;
+                        height: 70px;
+                        width: 664px;
+                        overflow: hidden;
+                        border-radius: 5px;
+                        resize: none;
+                        outline: none;
+                     }
+                 }
+                
+            }
+          .box-pic{
+            padding-top: 10px;
+            height: 40px;
+            .tt{
+                padding-top: 7px;
+                font-size: 14px;
+                line-height: 28px;
+                float: left;
+                width: 102px;
+            }
+            .add-file{
+                overflow: hidden;
+                width: 250px;
+                height: 30px;
+                position: relative;
+                float: left;
+                margin-top: 5px;
+               
+                .myFile{
+                    cursor: pointer;
+                    display: block;
+                    height: 100%;
+                    left: 0;
+                    opacity: 1;
+                    outline: none;
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    
+                }
+            }
+            }
+          .box-mode{
+            padding-top: 10px;
+              .tt{
+                font-size: 14px;
+                line-height: 28px;
+                float: left;
+                width: 102px
+              }
+              .input-mode{
+                border: 1px #E7E7E7 solid;
+                height: 28px;
+                color: #999;
+                width: 572px;
+                padding-left: 10px;
+                border-radius: 5px;
+                line-height: 28px;
+              }
+           }
+           .btns{
+            padding-top: 25px;
+            text-align: center;
+               .us-btn{
+                width: 140px;
+                height: 30px;
+                background: @mainColor;
+                cursor: pointer;
+                border-radius: 3px;
+                color: #fff;
+                display: inline-block;
+               }
+           }
+     }
+    }
+}

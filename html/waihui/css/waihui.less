@@ -1,0 +1,1142 @@
+@mainColor: #c30d23;
+
+.Cred {
+    color: #c30d23;
+}
+
+.Cgreen {
+    color: #07a168;
+}
+
+.w {
+    height: 2000px;
+    margin: auto;
+
+    .header {
+        height: 62px;
+        position: relative;
+        border-bottom: 3px solid #be1120;
+
+        .logo {
+            width: 297px;
+            height: 47px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                margin-top: 5px;
+            }
+        }
+
+        .search {
+            position: absolute;
+            top: 16px;
+            left: 362px;
+            width: 450px;
+            height: 32px;
+
+            .query {
+                width: 389px;
+                height: 32px;
+                border: 1px solid #e3e3e3;
+                box-sizing: border-box;
+                padding-left: 1em;
+                line-height: 32px;
+
+                &::-webkit-input-placeholder {
+                    /* WebKit, Blink, Edge */
+                    font-size: 12px;
+                }
+
+                &:-moz-placeholder {
+                    /* Mozilla Firefox 4 to 18 */
+                    font-size: 12px;
+                }
+
+                &::-moz-placeholder {
+                    /* Mozilla Firefox 19+ */
+                    font-size: 12px;
+                }
+
+                &:-ms-input-placeholder {
+                    /* Internet Explorer 10-11 */
+                    font-size: 12px;
+                }
+            }
+
+            .btn1 {
+                width: 61px;
+                height: 32px;
+                float: right;
+
+                i {
+                    color: #fff;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .nav {
+        height: 58px;
+
+        ul {
+            margin-top: 22px;
+            font-size: 0;
+
+            li {
+                display: inline-block;
+
+                height: 26px;
+                line-height: 26px;
+                text-align: center;
+                margin: 0 11.5px;
+
+                a {
+                    font-size: 20px;
+                    width: 100%;
+                    height: 100%;
+
+                    &.red {
+                        color: @mainColor;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+    .rate {
+        height: 100px;
+        width: 1000px;
+        position: relative;
+        // background-color: pink;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            padding-top: 25px;
+            position: absolute;
+
+            i {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                font-size: 50px;
+                color: #cdcdcd;
+            }
+
+            &.leftarrow {
+                left: -100px;
+            }
+
+            &.rightarrow {
+                right: -100px;
+            }
+        }
+
+        .conarrow {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid #cdcdcd;
+            overflow: hidden;
+            position: absolute;
+
+            ul {
+                width: 2000px;
+                height: 100px;
+                position: absolute;
+                top: 0;
+                left:0;
+
+                .kpanel {
+                    width: 166.4px;
+                    height: 98px;
+                   float: left;
+                   border-right: 1px solid #cdcdcd;
+                   padding: 9px;
+                  
+                   .pn_bar{
+                       .bar_top{
+                           font-size: 14px;
+                           span:last-child{
+                            float: right;
+                            font-weight: bold;
+                           }
+                        
+                       }
+                       .bar_bot{
+                         font-size: 12px;
+                         span:last-child{
+                            margin-left: 30px;
+                           }
+                        
+                       }
+                   }
+                }
+            }
+        }
+
+
+    }
+
+    .main {
+
+        .main_top {
+            width: 980px;
+            height: 500px;
+            margin: 0 10px 10px;
+            font-size: 0;
+
+            .main_top_lf {
+                display: inline-block;
+                width: 320px;
+                height: 100%;
+                vertical-align: top;
+
+                .silders {
+                    width: 320px;
+                    height: 190px;
+                    background-color: @mainColor;
+                    margin-bottom: 15px;
+
+                    .slide {
+                        .carousel-inner {
+                            .item {
+                                width: 320px;
+                                height: 190px;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                                .pivdes{
+                                    position: absolute;
+                                    width: 200px;
+                                    height: 30px;
+                                    left: 50%;
+                                    top: 50%;
+                                    margin: 28px 0px 0px -100px;
+                                    text-align: center;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    color: red;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .itext {
+                    width: 100%;
+                    height: 295px;
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+
+                        li {
+                            float: left;
+                            width: 155px;
+                            height: 147px;
+
+                            a {
+                                display: block;
+                                width: 100%;
+                                height: 100%;
+
+                                img {
+                                    width: 155px;
+                                    height: 100px;
+                                }
+
+                                span {
+                                    display: inline-block;
+                                    width: 155px;
+                                    height: 40px;
+                                    font-size: 12px;
+                                    margin-top: 8px;
+                                    display: -webkit-box;
+                                    -webkit-box-orient: vertical;
+                                    -webkit-line-clamp: 2;
+                                    overflow: hidden;
+                                }
+                            }
+
+                            &:nth-child(2n+1) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_top_cn {
+                display: inline-block;
+                width: 356px;
+                height: 500px;
+                margin-left: 24px;
+                margin-right: 20px;
+                vertical-align: top;
+
+                .currency_title {
+                    width: 100%;
+                    height: 24px;
+                    border-bottom: 5px solid #c30d1f;
+
+                    span {
+                        display: block;
+                        width: 93px;
+                        height: 24px;
+                        background-color: #fff;
+                        font-size: 18px;
+                        border-bottom: 2px solid #c30d1f;
+                        line-height: 14px;
+                        padding-left: 5px;
+                    }
+                }
+
+                .currency_con {
+                    width: 100%;
+                    height: 248px;
+
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        padding-top: 5px;
+
+                        li {
+                            width: 100%;
+                            height: 81px;
+
+                            .bigTitle {
+                                text-align: center;
+                                height: 27px;
+                                
+
+                                a {
+                                    font-size: 18px;
+                                    color: @mainColor;
+                                    display: inline-block;
+                                    width: 275px;
+                                    height: 27px;
+                                    overflow: hidden;
+                                    text-overflow:ellipsis;
+                                    white-space: nowrap;
+                                }
+                            }
+
+                            .smallTitle {
+                                height: 54px;
+                                
+                                div {
+                                    width: 178px;
+                                    height: 14px;
+                                    float: left;
+                                    text-align: center;
+                                    margin-top: 6px;
+
+                                    a {
+                                        display: inline-block;
+                                        height: 14px;
+                                        width: 165px;
+                                        font-size: 12px;
+                                        
+                                        text-overflow: ellipsis;
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        line-height: 14px;
+                                    }
+
+                                    &:nth-child(2n+1) {
+                                        border-right: 1px solid #036eb8;
+
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .recommend {
+                    width: 100%;
+                    height: 228px;
+                    // background-color: pink;
+
+                    .recommend_tit {
+                        height: 19px;
+                        border: 1px solid #cdcdcd;
+                        position: relative;
+
+                        span {
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            font-size: 14px;
+                            background-color: #fff;
+                            color: #d75442;
+                            height: 19px;
+                            width: 55px;
+                            text-align: center;
+                            display: inline-block;
+                            line-height: 19px;
+                            border-top: 2px solid #c30d1f;
+                            border-right: 1px solid #cdcdcd;
+                        }
+                    }
+
+                    .recommend_con {
+                        height: 209px;
+                        width: 100%;
+
+                        ul {
+                            li {
+                                width: 100%;
+                                height: 21px;
+
+                                margin-top: 2px;
+
+                                a {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 100%;
+                                    padding-left: 20px;
+                                    font-size: 14px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    line-height: 21px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_top_rh {
+                display: inline-block;
+                width: 260px;
+                height: 100%;
+                vertical-align: top;
+
+                ul {
+                    li {
+                        width: 100%;
+                        height: 90px;
+                        margin-bottom: 10px;
+
+                        a {
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+
+
+        .main_bot {
+            width: 100%;
+            height: 974px;
+            margin-bottom: 10px;
+            padding-left: 10px;
+            margin-top: 10px;
+
+            .main_bot_lf {
+                width: 320px;
+                height: 100%;
+                float: left;
+
+                // 上海国际能源 
+                .energy {
+                    height: 237px;
+                    width: 100%;
+                    margin-bottom: 5px;
+
+                    .energy_tlt {
+                        height: 34px;
+                        width: 100%;
+                        background-color: #000;
+                        line-height: 34px;
+
+                        span {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .energy_con {
+                        height: 210px;
+
+                        table {
+                            font-size: 12px;
+
+                            thead {
+                                tr {
+                                    width: 320px;
+                                    height: 30px;
+
+                                    th {
+                                        width: 80px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    width: 320px;
+                                    height: 36px;
+
+                                    td {
+                                        width: 80px;
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(odd) {
+                                        background-color: #e6e6e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                // 国际黄金
+                .offer {
+                    width: 100%;
+                    height: 246px;
+                    margin-bottom: 10px;
+
+                    .offer_tlt {
+                        height: 34px;
+                        width: 100%;
+                        background-color: #000;
+                        line-height: 34px;
+
+                        span {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .offer_con {
+                        height: 210px;
+
+                        table {
+                            font-size: 12px;
+
+                            thead {
+                                tr {
+                                    width: 320px;
+                                    height: 30px;
+
+                                    th {
+                                        width: 80px;
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    width: 320px;
+                                    height: 36px;
+
+                                    td {
+                                        width: 80px;
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(odd) {
+                                        background-color: #e6e6e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                // 全球股指
+                .metal {
+                    width: 320px;
+                    height: 246px;
+
+                    .metal_tlt {
+                        height: 34px;
+                        width: 100%;
+                        background-color: #000;
+                        line-height: 34px;
+
+                        span {
+                            color: #fff;
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .metal_con {
+                        height: 210px;
+
+                        table {
+                            font-size: 12px;
+
+                            thead {
+                                tr {
+                                    width: 320px;
+                                    height: 32px;
+
+                                    th {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                tr {
+                                    width: 320px;
+                                    height: 35px;
+
+                                    td {
+                                        width: 107px;
+                                        text-align: center;
+                                    }
+
+                                    &:nth-child(odd) {
+                                        background-color: #e6e6e6;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                // 热门行情走势
+                .trend {
+                    width: 320px;
+                    height: 240px;
+
+                    .trend_tlt {
+                        width: 100%;
+                        height: 34px;
+                        border-bottom: 1px solid #cdcdcd;
+                        line-height: 34px;
+
+                        span {
+                            font-size: 16px;
+                            margin-left: 10px;
+                        }
+                    }
+
+                    .trend_con {
+                        table {
+                            text-align: center;
+                            font-size: 14px;
+
+                            thead {
+                                tr {
+                                    th {
+                                        text-align: center;
+                                    }
+                                }
+                            }
+
+                            tbody {
+                                font-size: 12px;
+                                tr {
+                                    width: 320px;
+                                    height: 30px;
+
+                                    td {
+                                        width: 80px;
+
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+            .main_bot_cn {
+                width: 360px;
+                height: 100%;
+                float: left;
+                margin: 0 20px;
+
+                .analyze,
+                .gold,
+                .exchange,
+                .petroleum {
+                    width: 100%;
+                    height: 243.5px;
+
+                    .bot_title {
+                        height: 28px;
+                        width: 100%;
+                        border: 1px solid #cdcdcd;
+                        position: relative;
+
+                        span {
+                            background-color: #fff;
+                            display: inline-block;
+                            border-top: 1px solid #c30d1f;
+                            border-right: 1px solid #cdcdcd;
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            height: 28px;
+                            width: 80px;
+                            text-align: center;
+                            line-height: 28px;
+                        }
+
+                        a {
+                            position: absolute;
+                            right: 0;
+                            top: 5px;
+                            font-size: 12px;
+                            color: #000;
+                            display: inline-block;
+
+                            i {
+                                font-size: 10px;
+                                color: #cdcdcd;
+                            }
+                        }
+                    }
+
+                    .bot_content {
+                        height: 215.5px;
+                        width: 100%;
+
+                        ul {
+                            li {
+                                width: 95%;
+                                height: 21px;
+
+                                a {
+                                    display: inline-block;
+                                    width: 100%;
+                                    height: 100%;
+                                    font-size: 12px;
+                                    padding-left: 10px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    line-height: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .main_bot_rh {
+                width: 260px;
+                height: 100%;
+                float: left;
+
+                .flash {
+                    height: 244px;
+                    width: 100%;
+
+                    // background-color: skyblue;
+                    .flash_tlt {
+                        height: 28px;
+                        width: 100%;
+                        border: 1px solid #cdcdcd;
+                        position: relative;
+
+                        span {
+                            background-color: #fff;
+                            display: inline-block;
+                            border-top: 1px solid #c30d1f;
+                            border-right: 1px solid #cdcdcd;
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            height: 28px;
+                            width: 50px;
+                            text-align: center;
+                            line-height: 28px;
+                        }
+
+                        .more {
+                            position: absolute;
+                            right: 0;
+                            top: 5px;
+                            font-size: 12px;
+                            color: #000;
+                            display: inline-block;
+
+                            i {
+                                font-size: 10px;
+                                color: #cdcdcd;
+                            }
+                        }
+
+                        
+                    }
+
+                    .flash_con {
+                        ul {
+                            font-size: 0;
+
+                            li {
+                                height: 21px;
+                                font-size: 12px;
+
+                                span {
+                                    line-height: 21px;
+                                    display: inline-block;
+                                    vertical-align: top;
+                                }
+
+                                a {
+                                    display: inline-block;
+                                    width: 220px;
+                                    height: 100%;
+                                    padding-left: 14px;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    line-height: 21px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .blogger {
+                    height: 392px;
+                    width: 100%;
+
+                    .blogger_tlt {
+                        height: 30px;
+                        width: 100%;
+                        border: 1px solid #cdcdcd;
+                        position: relative;
+
+                        span {
+                            background-color: #fff;
+                            display: inline-block;
+                            border-top: 1px solid #c30d1f;
+                            border-right: 1px solid #cdcdcd;
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            height: 30px;
+                            width: 80px;
+                            text-align: center;
+                            line-height: 30px;
+                        }
+
+                    }
+
+                    .blogger_con {
+                        height: 362px;
+                        width: 100%;
+
+                        ul {
+                            li {
+                                height: 72px;
+                                width: 100%;
+
+                                .pic {
+                                    display: inline-block;
+                                    height: 72px;
+                                    width: 50px;
+                                    text-align: center;
+                                    padding-top: 5px;
+
+                                    img {
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+
+                                    span {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .blogger_right {
+                                    width: 205px;
+                                    height: 100%;
+                                    float: right;
+                                    margin-left: 5px;
+                                    font-size: 12px;
+                                    padding-top: 5px;
+
+                                    .star {
+                                        width: 100%;
+                                        height: 15px;
+                                        position: relative;
+
+                                        i {
+                                            vertical-align: top;
+                                            display: inline-block;
+                                            width: 40%;
+                                            height: 15px;
+                                            background: url(http://img.10xunc.com/备用件/img/tpjh2.png) no-repeat -100px -373px;
+                                        }
+
+                                        span {
+                                            position: absolute;
+                                            left: 90px;
+                                            top: -2px;
+                                        }
+                                    }
+
+                                    .num {
+                                        width: 100%;
+                                        height: 15px;
+                                        line-height: 15px;
+                                    }
+
+                                    .detail {
+                                        width: 100%;
+                                        height: 16px;
+                                        line-height: 16px;
+
+                                        span {
+                                            display: block;
+                                            width: 156px;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                            overflow: hidden;
+                                        }
+                                    }
+
+                                    .blogger_btn {
+                                        width: 100%;
+                                        height: 22px;
+
+                                        a {
+                                            font-size: 14px;
+                                            display: inline-block;
+                                            width: 62px;
+                                            height: 18px;
+                                            line-height: 18px;
+                                            margin-top: 3px;
+                                            margin-left: 5px;
+                                            text-align: center;
+                                            color: #fff;
+
+                                            &.qus {
+                                                background-color: @mainColor;
+                                            }
+
+                                            &.buy {
+                                                background-color: #036eb8;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .repertory {
+                    height: 328px;
+                    width: 100%;
+                    // background-color: gold;
+                    margin-top: 10px;
+                    border: 1px solid #cdcdcd;
+
+                    .repertory_tlt {
+                        width: 100%;
+                        height: 30px;
+                        position: relative;
+                        border-bottom: 1px solid #cdcdcd;
+
+                        span {
+                            background-color: #fff;
+                            display: inline-block;
+                            border-top: 1px solid #c30d1f;
+                            border-right: 1px solid #cdcdcd;
+                            position: absolute;
+                            left: 0;
+                            top: -1px;
+                            height: 31px;
+                            width: 80px;
+                            text-align: center;
+                            line-height: 30px;
+                        }
+
+                        a {
+                            position: absolute;
+                            right: 0;
+                            top: 5px;
+                            font-size: 12px;
+                            color: #000;
+                            display: inline-block;
+
+                            i {
+                                font-size: 10px;
+                                color: #cdcdcd;
+                            }
+                        }
+
+                    }
+
+                    .repertory_con {
+                        ul {
+                            padding-left: 5px;
+
+                            li {
+                                height: 99px;
+                                width: 100%;
+                                font-size: 14px;
+
+                                .stop {
+                                    height: 30px;
+                                    width: 100%;
+                                    position: relative;
+                                    line-height: 30px;
+                                    padding-top: 5px;
+
+                                    span.active {
+                                        background-color: #c30d23;
+                                        color: #fff;
+                                    }
+
+                                    .more {
+                                        position: absolute;
+                                        right: 0;
+                                        top: 0;
+                                        font-size: 12px;
+
+                                        i {
+                                            font-size: 10px;
+                                            color: #cdcdcd;
+                                        }
+                                    }
+                                }
+
+                                .change {
+                                    width: 100%;
+                                    height: 44px;
+                                    line-height: 44px;
+
+                                    a {
+                                        color: #036eb8;
+                                        font-weight: bold;
+                                        margin-left: 5px;
+                                    }
+                                }
+
+                                .publish {
+                                    height: 25px;
+                                    color: #036eb8;
+
+                                    span {
+                                        display: inline-block;
+                                        width: 120px;
+                                        height: 100%;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    border-top: 1px dashed #cdcdcd;
+                                    border-bottom: 1px dashed #cdcdcd;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_adv1,
+        .main_adv2 {
+            width: 100%;
+            height: 100px;
+            padding-left: 10px;
+
+            .w320 {
+                width: 320px;
+                height: 100px;
+                float: left;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .w360 {
+                float: left;
+                width: 360px;
+                height: 100px;
+                margin: 0 20px;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+
+            .w260 {
+                float: left;
+                width: 260px;
+                height: 100px;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        p {
+            text-align: center;
+            margin: 9px;
+
+            span {
+                font-size: 13px;
+                padding-left: 5px;
+
+                &.fs {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
