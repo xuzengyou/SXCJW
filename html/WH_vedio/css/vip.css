@@ -107,26 +107,104 @@ header .lgin a:first-child{
     width: 1200px;
     margin-top: 10px;
 }
+/* name */
+.main .name{
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+}
+.main .name span:first-child{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -64px -857px;
+    width: 31px;
+    height: 31px;
+}
+.main .name span{
+    font-size: 20px;
+    vertical-align: middle;
+}
 .main .mTop{
     width: 1200px;
-    height: 460px;
-    /* background-color: #2B2A30; */
-    padding-top: 10px;
-    padding-left: 15px;
+    /* height: 460px; */
+    /* background-color: #e6e6e6; */
     display: flex;
+    border-top: 1px solid #cccccc;
+    padding-top: 10px;
 }
-/* 轮播图引入部分 */
+.main .mTop .slider{
+    position: relative;
+}
+.main .mTop .slider img{
+    display: block;
+    width: 855px;
+    height: 400px;
+}
+.main .mTop .slider .buy{
+    width: 855px;
+    height: 400px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    opacity: .5;
+    padding-top: 140px;
+}
+.main .mTop .slider .buy p span{
+    font-size: 30px;
+    color: #fff;
+}
+.main .mTop .slider .buy a{
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #C20E22;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 3px;
+}
+.main .mTop .slider .Mtitle{
+    width: 855px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #e6e6e6;
+}
+.main .mTop .slider .Mtitle a{
+    color: #fff;
+    font-size: 16px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.main .mTop .news{
+    width: 335px;
+    margin-left: 10px;
+}
+.main .mTop .news .wqhg{
+    height: 30px;
+    font-size: 16px;
+    color: #c30d23;
+    position: relative;
+}
+.main .mTop .news .wqhg span{
+    position:absolute;
+    top: -4px;
+    left: 1px;
+    font-size: 16px;
 
-
-
-/* 轮播图引入结束 */
+}
 
 .main .mTop .news .scroll{
-    width: 450px;
-    height: 340px;
-    margin-left: 10px;
+    width: 335px;
+    height: 360px;
+    margin-bottom: 15px;
     overflow: hidden;
     overflow-y: scroll;
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    /* padding-top: 10px; */
 }
 /*定义滚动条样式（高宽及背景）*/ 
 .scroll::-webkit-scrollbar { 
@@ -148,21 +226,191 @@ header .lgin a:first-child{
     cursor: pointer;
 }
 .main .mTop .news .scroll .new{
-    height: 110px;
+    height: 70px;
     width: 100%;
     display: flex;
-    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding-top: 10px;
 }
 .main .mTop .news .scroll .new img{
     display: inline-block;
-    width: 160px;
-    height: 100px;
+    width: 80px;
+    height: 50px;
+    margin-right: 10px;
+}
+.main .mTop .news .scroll .new ul li:first-child{
+    margin-bottom: 10px;
+}
+.main .mTop .news .scroll .new ul li:first-child a:nth-child(1){
+    margin-right: 5px;
+}
+.main .mTop .news .scroll .new ul li:first-child a{
+    font-weight: bold;
+}
+.main .mTop .news .scroll .new ul li:last-child a{
+    display: inline-block;
+
+}
+.main .mTop .news .scroll .new ul li:last-child a:first-child{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -118px -839px;
+    width: 14px;
+    height: 13px;
+}
+.main .mTop .news .scroll .new ul li:last-child a:last-child{
+    width: 23px;
+    height: 17px;
+    line-height: 18px;
+    color: #fff;
+    background-color: #C20E22;
+}
+.main .mTop .news .buy{
+    height: 45px;
+    line-height: 45px;
+    background-color: #C20E22;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 3px;
+}
+.main .mTop .news .buy a{
+    color: #fff;
+    font-size: 16px;
 }
 /* 个人资料 */
-
-
+.main .intro{
+    width: 1200px;
+    height: 255px;
+    overflow: hidden;
+    margin-top: 30px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.main .intro>span:first-child{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -93px -859px;
+    width: 40px;
+    height: 30px;
+}
+.main .intro>span{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.main .intro .card{
+    width: 1200px;
+    border-top: 1px solid #ccc;
+    margin-top: 8px;
+    display: flex;
+}
+.main .intro .card .L{
+    width: 860px;
+    height: 210px;
+    flex-shrink: 0;
+    border-right: 2px solid #ccc;
+    margin-top: 13px;
+    display: flex;
+    padding-right: 10px;
+}
+.main .intro .card .L img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.main .intro .card .L ul li:first-child{
+    font-size: 20px;
+}
+.main .intro .card .L ul li:last-child{
+    font-size: 16px;
+    text-indent: 30px;
+}
+.main .intro .card .R{
+    padding-left: 10px;
+    margin-top: 10px;
+    padding-right: 15px;
+}
+.main .intro .card .R ul li:first-child{
+    font-size: 20px;
+}
+.main .intro .card .R ul li:last-child{
+    font-size: 16px;
+    text-indent: 30px;
+}
 /* 相关课程 */
-
+.main .course{
+    width: 1200px;
+    margin-top: 20px;
+}
+.main .course>span:first-child{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -93px -859px;
+    width: 40px;
+    height: 30px;
+}
+.main .course>span{
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+.main .Xcards{
+    width: 1200px;
+    border-top: 2px solid #ccc;
+    margin-top: 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-flow:row wrap;
+}
+.main .Xcards .Xcard{
+    width: 280px;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+.main .Xcards .Xcard>a img{
+    display: block;
+    width: 280px;
+    height: 180px;
+}
+.main .Xcards .Xcard .bottom{
+    width: 280px;
+    height: 60px;
+    background-color: #e6e6e6;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+}
+.main .Xcards .Xcard .bottom p:first-child a:first-child{
+    display: inline-block;
+    width: 27px;
+    height: 20px;
+    background-color: #c30d23;
+    color: #fff;
+    margin-right: 5px;
+}
+.main .Xcards .Xcard .bottom p:last-child{
+    margin-top: 2px;
+}
+.main .Xcards .Xcard .bottom p:last-child a:nth-child(1){
+   /* margin-left: -50px; */
+   color: #c30d23;
+}
+.main .Xcards .Xcard .bottom p:last-child a:nth-child(2){
+    margin-right: 50px;
+ }
 /* main主体结束 */
 
 /* footer开始 */
