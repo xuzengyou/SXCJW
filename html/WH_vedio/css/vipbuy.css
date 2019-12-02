@@ -1,0 +1,280 @@
+﻿.w{
+    width: 1200px !important;
+}
+/* header头部开始 */
+header{
+    width: 1200px;
+    height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 300px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1200px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 38px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏结束 */
+
+/* main主体开始 */
+.main{
+    width: 1200px;
+    margin-top: 10px;
+}
+.main>p:nth-child(1){
+    width: 1200px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #c30d23;
+    color: #ffffff;
+    padding-left: 50px;
+}
+.main>p:nth-child(1) span{
+    font-size: 16px;
+    margin-right: 5px;
+}
+.main>p:nth-child(2){
+    text-align: center;
+    margin-top: 30px;
+}
+.main>p:nth-child(2) span{
+    font-size: 28px;
+}
+.main .teacher{
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.main .teacher>span{
+    font-size: 20px;
+}
+.main .teacher .lists{
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.main .teacher .lists .list{
+    border: 1px solid #cccccc;
+    width: 230px;
+    height: 80px;
+    margin-right: 20px;
+    /* overflow: hidden; */
+    display: flex;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.main .teacher .lists .list.ac{
+    border: 1px solid #c30d23;
+}
+.main .teacher .lists .list *{
+    vertical-align: middle;
+}
+.main .teacher .lists .list img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main .teacher .lists .list ul li:nth-child(1){
+    font-size: 20px;
+}
+.main .teacher .lists .list ul li:nth-child(2){
+    font-size: 16px;
+}
+.main .teacher .lists .list ul li:nth-child(3){
+    position: relative;
+}
+.main .teacher .lists .list ul li:nth-child(3) span.ac{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -201px -929px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -21px;
+    left: 126px;
+   
+}
+.main p.three{
+    height: 70px;
+    padding-top: 21px;
+}
+.main p.three span{
+    font-size: 20px;
+}
+.main .cards{
+    border-top: 1px solid #cccccc;
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 10px;
+}
+.main .cards .card{
+    width: 285px;
+    height: 205px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    margin-right: 20px;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+.main .cards .card.ac{
+    border: 1px solid #c30d23;
+    cursor: pointer;
+}
+.main .cards .card:nth-child(4n){
+    margin-right: 0;
+}
+.main .cards .card>a{
+    display: block;
+    width: 265px;
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.main .cards .card>a img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.main .cards .card>p{
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.main .cards .card p:last-child span:nth-child(1){
+    color: #c30d23;
+}
+.main .cards .card p:last-child{
+    position: relative;
+}
+.main .cards .card p:last-child span:nth-child(3){
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -201px -929px;
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: -8px;
+    left: 251px;
+}
+
+
+
+/* main主体结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */

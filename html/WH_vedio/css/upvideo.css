@@ -1,0 +1,282 @@
+﻿.w{
+    width: 1200px !important;
+}
+/* header头部开始 */
+header{
+    width: 1200px;
+    height: 63px;
+    border-bottom: 3px solid #c30d23;
+    display: flex
+}
+header>div.logo{
+    width: 290px;height: 42px;
+    margin-top: 5px;
+}
+header>div.logo>img{
+    width: 100%;height: 100%;
+}
+header>div.search{
+    margin-left: 300px;
+    margin-top: 12px;
+    border: 1px solid #e6e6e6;
+    width: 467px;height: 35px;
+}
+header>div.search:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+header>div.search i{
+   display: inline-block;
+   font-size: 21px;
+   color: #e6e6e6;
+   float: left;
+   margin-left: 10px;
+   margin-top: 5px;
+}
+header>div.search input{
+    float: left;
+    display: inline-block;
+    width: 346px;height: 33px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+}
+header>div.search button.btn1{
+    /* float: left; */
+    width: 78px;height: 34px;
+    background-color: #c30d23;
+    /* margin-left: -5px; */
+}
+/* 登录注册 */
+header .lgin{
+    width: 118px;
+    height: 32px;
+    margin-left: 5px;
+    font-size: 16px;
+    /* background-color: #c30d23; */
+    /* overflow: hidden; */
+    margin-top: 14px;
+}
+header .lgin a:first-child{
+    display: inline-block;
+    width: 55px;
+    line-height: 23px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: right;
+}
+/* header头部结束 */
+
+/* nav导航栏开始 */
+.nav{
+    width: 1200px;
+    margin-top: 10px;
+}
+/* 导航栏头部 */
+.nav .navTop ul:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;width: 0;
+}
+.nav .navTop ul li{
+    cursor: pointer;
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 38px;
+}
+.nav .navTop ul li.active a{
+    color: #c30d23;
+}
+.nav .navTop ul li:last-child{
+    font-size: 24px;
+    /* width: 90px; */
+    float: left;
+    /* text-align: center; */
+    margin-right: 0;
+}
+/* 导航栏结束 */
+
+/* main主体开始 */
+.main{
+    width: 1200px;
+    margin-top: 10px;
+}
+.main p:nth-child(1){
+    width: 1200px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #c30d23;
+    text-align: center;
+    font-size: 16px;
+    color: #cccccc;
+}
+.main p:nth-child(2){
+    text-align: center;
+    margin-top: 50px;
+
+}
+.main p:nth-child(2) a{
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -2px -913px;
+    width: 80px;
+    height: 80px;
+}
+.main p:nth-child(3){
+    text-align: center;
+    font-size: 30px;
+}
+.main p:nth-child(4){
+    text-align: center;
+    font-size: 30px;
+}
+.main p:nth-child(4) a{
+    color: #ccc;
+}
+.main p:nth-child(5){
+    text-align: center;
+    font-size: 18px;
+    margin-top: 100px;
+}
+.main p:nth-child(5) input{
+    width: 18px;
+    height: 18px;
+    margin-top: 1px;
+}
+.main p:nth-child(5) *{
+    vertical-align: middle;
+}
+.main p:nth-child(5) span{
+    color: #ccc;
+}
+.main p:nth-child(5) a{
+    color: #066BB2;
+}
+/* main主体结束 */
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */
+/* 上传视频引入区域 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  .input-control {
+    margin: 5px 0;
+  }
+  .input-control label {
+    font-size: 14px;
+    color: #333;
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  .input-control input {
+    width: 30%;
+    height: 30px;
+    padding: 0 5px;
+  }
+  .upload {
+    padding: 30px 50px;
+  }
+  .progress {
+    font-size: 16px;
+  }
+  .progress i {
+    font-style: normal;
+  }
+  .upload-type {
+    color: #666;
+    font-size: 12px;
+    padding: 10px 0;
+  }
+  .upload-type button {
+    margin: 0 10px 0 20px;
+  }
+  .status {
+    font-size: 14px;
+    margin-left: 30px;
+  }
+  .info {
+    font-size: 14px;
+    padding-left: 30px;
+  }
+  #fileUpload{
+      width: 270px;
+      height: 180px;
+      background-color: red;
+      cursor: pointer;
+      position: absolute;
+      top: 205px;
+      left: 816px;
+      opacity: 0;
+  }
+  .up{
+      text-align: center;
+      font-size: 16px;
+  }
+  .pg span{
+      background-color: #ffffff !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      vertical-align: middle;
+  }
+  .pg span.num{
+      display: inline-block;
+      width: 930px;
+      height: 20px;
+      line-height: 20px;
+      background-color: #e6e6e6 !important;
+  }
+  .pg span.num i{
+      display: inline-block;
+      height: 20px;
+      line-height: 20px;
+      background-color: royalblue;
+      /* width: 100px; */
+  }
+  .upload-type{
+      margin-top: 20px;
+  }
+  .upload-type button{
+      background-color: #066BB2 !important;
+      color: #ffffff;
+      font-size: 16px;
+      width: 100px;
+      height: 40px;
+      line-height: 40px;
+      cursor: pointer;
+  }

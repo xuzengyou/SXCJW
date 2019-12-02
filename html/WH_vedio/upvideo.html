@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>视频10讯网</title>
+    <meta name="robots" content="all" />
+    <meta name="keywords" content="10讯财经,股票,外汇,基金,黄金,财经评论,新股,港股。" />
+    <meta name="description" content="10讯财经网,做专业财经资讯领跑者，实时股票行情，提供宏观、股票、外汇等财经领域的报道；讯息快、内容全、角度丰富并怀有全球视野。" />
+    <!-- 网站图标 -->
+    <link rel="shortcut icon" href="http://img.10xunc.com/备用件/css/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/common.css">
+    <link rel="stylesheet" href="./css/upvideo.css">
+    <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
+    <!-- DOM节点加载完后执行 -->
+    <script src="./js/upvideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/li/aliyun-upload-sdk/aliyun-upload-sdk-1.5.0.min.js"></script>
+    <script src="./js/li/aliyun-upload-sdk/lib/es6-promise.min.js"></script>
+    <script src="./js/li/aliyun-upload-sdk/lib/aliyun-oss-sdk-5.3.1.min.js"></script>
+</head>
+<body>
+    <div class="w">
+        <!-- header开始 -->
+        <header>
+            <div class="logo">
+                <a href="http://img.10xunc.com/备用件/html/index.html">
+                    <img src="http://img.10xunc.com/备用件/img/waihui.png" alt=""></a>
+            </div>
+            <div class="search">
+                <i class="glyphicon glyphicon-search"></i>
+                <input id="q" name="q" class="query" placeholder="输入代码/名称/拼音" style="background-color: #fff;">
+                <button class="btn1" href="#">
+                    行情查询
+                </button>
+            </div>
+            <div class="lgin">
+                <a class="dl" style="cursor:pointer">登录</a>
+                <span>|</span>
+                <a href="http://img.10xunc.com/备用件/html/register.html?http://img.10xunc.com/备用件/html/waihiuyw.html">注册</a>
+            </div>
+        </header>
+        <!-- header结束 -->
+
+        <!-- nav导航栏开始 -->
+        <div class="nav">
+            <!-- 导航栏头部 -->
+            <div class="navTop">
+                <ul>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihui.html">外汇首页</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihiuyw.html">外汇要闻</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuikx.html">7*24快讯</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/cjrili.html">财经日历</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuihqzx.html">行情中心</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuihj.html">黄金</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/waihuisy.html">石油</a></li>
+                    <li><a href="#">直播区</a></li>
+                    <li class="active"><a href="#">视频教学</a></li>
+                    <li><a href="#">新手上路</a></li>
+                </ul>
+            </div>
+            <!-- 导航栏头部结束 -->
+        </div>
+        <!-- 导航栏结束 -->
+
+        <!-- main主体部分开始 -->
+        <div class="main">
+           <p>
+               <span>严禁上传违规违法/色情色诱/低俗/广告等视频内容，违者下架食品封号处理！</span>
+           </p>
+           <p>
+               <a href=""></a>
+           </p>
+           <p>
+               <a href="">选择视频</a>
+           </p>
+           <p>
+               <a href="">或将视频拖放到此处</a>
+               
+           </p>
+           <p>
+               <input type="checkbox" class="selec">
+               <span>我已阅读并同意</span>
+               <a href="">10讯上传服务条款</a>
+           </p>
+        </div>
+        <!-- main主体部分结束 -->
+        <div class="container">
+            <div class="setting" style="display: none;">
+              <div class="input-control">
+                <label for="timeout">请求过期时间（配置项 timeout, 默认 60000）:</label>
+                <input type="text" id="timeout" placeholder="输入过期时间, 单位毫秒">
+              </div>
+        
+              <div class="input-control">
+                <label for="partSize">分片大小（配置项 partSize, 默认 1048576）:</label>
+                <input type="text" class="form-control" id="partSize" placeholder="输入分片大小, 单位bit, 最小100k">
+              </div>
+        
+              <div class="input-control">
+                <label for="parallel">上传分片数（配置项 parallel, 默认 5）:</label>
+                <input type="text" class="form-control" id="parallel" placeholder="输入并行上传分片个数, 默认为5" value="100">100
+              </div>
+        
+              <div class="input-control">
+                <label for="retryCount">网络失败重试次数（配置项 retryCount, 默认 3）:</label>
+                <input type="text" class="form-control" id="retryCount" placeholder="输入网络失败重试次数, 默认为3">
+              </div>
+        
+              <div class="input-control">
+                <label for="retryDuration">网络失败重试间隔（配置项 retryDuration, 默认 2）:</label>
+                <input type="text" class="form-control" id="retryDuration" placeholder="输入网络失败重试间隔, 默认2秒">
+              </div>
+        
+              <div class="input-control">
+                <label for="region">配置项 region, 默认 cn-shanghai:</label>
+                <select id="region">
+                  <option>cn-shanghai</option>
+                  <option>eu-central-1</option>
+                  <option>ap-southeast-1</option>
+                </select>
+              </div>
+        
+              <div class="input-control">
+                <label for="userId">阿里云账号ID:</label>
+                <input type="text" value="1303984639806000" disabled class="form-control" id="userId" placeholder="输入阿里云账号ID">
+                集成产品后需要使用用户自己的账号ID, <a href="https://help.aliyun.com/knowledge_detail/37196.html
+                      -"target="_blank">如何获取帐号ID</a>
+              </div>
+        
+            </div>
+        
+            <div class="upload">
+              <div class="up">
+                <input type="file" id="fileUpload">
+                <label class="status">上传状态: <span id="status"></span></label>
+              </div>
+              <div class="pg">
+                <span class="progress">上传进度: </span>
+                <span class="num">
+                    <i></i>
+                </span>
+                <i id="auth-progress">0</i> %
+              </div>
+              <div class="upload-type">
+                <!-- 上传方式一, 使用 UploadAuth 上传: -->
+                <button id="authUpload" disabled="true">开始上传</button>
+                <button id="pauseUpload" disabled="true">暂停</button>
+                <button id="resumeUpload" disabled="true">恢复上传</button>
+                
+              </div>
+            </div>
+            <!-- <div class="info">uploadAuth及uploadAddress参数请查看<a href="https://help.aliyun.com/document_detail/55407.html" target="_blank">获取上传地址和凭证 </a></div> -->
+        </div>
+        <!-- footer开始 -->
+        <footer>
+            <p style="text-align: left;">
+                <span class="fs">
+                    免责声明：沪深股票、基金、债券、港股、美股、国内期货、外汇、黄金等行情，除有特别标明外，均为实时行情；
+                    其他行情至少延时15分钟.10讯财经免费提供的行情数据以及其他资料均来自互联网采集或合作方，仅作为用户获取信息之目的，
+                    并不构成投资建议.10讯财经以及其合作机构不为本页面提供的信息错误、残缺、延时或因依靠此信息所采取的任何行动负责.市场有风险，投资需谨慎
+                </span>
+            </p>
+            <p>
+                <span>Copyright © 2017 10讯财经 版权所有 </span>
+                <span>粤ICP备17093768号-1</span>
+                <a href="http://img.10xunc.com/备用件/img/网络文化许可副本.jpg">粤网文(2017)8215-2007号</a>
+                <span>联系邮箱：weisihudong@163.com</span>
+            </p>
+            <p>
+                <a href="http://img.10xunc.com/备用件/img/增值电信业务经营许可证.jpg">增值电信业务经营许可证粤B2-20171195</a>&nbsp;
+                <a href="http://img.10xunc.com/备用件/img/广播电视节目许可证.jpg">广播电视节目制作经营许可证(粤)字第03379号</a>
+                <span>粤公网安备 44030702001623号</span>
+            </p>
+            <p>
+                <span>本网站部分内容来源于互联网，如有侵犯请来信告知，我们将立即处理！</span>
+            </p>
+        </footer>
+        <!-- footer结束 -->
+
+    </div>
+<!-- 登录注册 -->
+<!-- 遮罩层 -->
+<div class="zzc"></div>
+<!-- 登录 -->
+<div class="logIn yinc">
+    <a style="cursor: pointer" class="close-us">X</a>
+    <div class="logTab">
+        <span class="ac" data-id="#one">账号密码登录</span>
+        <span data-id="#two">手机动态码登录</span>
+    </div>
+
+    <div class="loginCon">
+        <!-- 用户名登录 -->
+        <div class="boxUser acc" id="one">
+            <form>
+                <ul>
+                    <li>
+                        <input type="text" class="user" placeholder="请输入用户名" autofocus>
+                    </li>
+                    <li>
+                        <input type="password" class="pswd" placeholder="请输入密码">
+                    </li>
+                </ul>
+            </form>
+            <div class="tPcode">
+                <input type="text" name="" id="" class="tPcodev" placeholder="请输入验证码">
+                <div class="tPimg">
+                    <img src="" class="imgcode"  width="85%"/>
+                </div>
+            </div>
+            <div class="aulog">
+                <input type="radio" name="" id="xc" class="xc">
+                <label for="xc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/waihiuyw.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="yhdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+        <!-- 手机号登录 -->
+        <div class="Mobile" id="two">
+            <div class="errInfo yc">请输入正确的手机号</div>
+            <ul>
+                <li>
+                    <input id='Phone' type="text" class="puser" placeholder="请输入手机号" />
+                </li>
+                <li class="yzhenCode">
+                    <input type="text" class="yzm" placeholder="请输入验证码">
+                    <button class="Getpw">获取验证码</button>
+                </li>
+            </ul>
+            <div class="aulog">
+                <input type="radio" name="" id="xcc" class="xcc">
+                <label for="xcc">下次自动登录</label>
+                <a href="http://img.10xunc.com/备用件/html/forget.html?http://img.10xunc.com/备用件/html/waihiuyw.html" target="_blank" class="backpw">找回密码</a>
+            </div>
+            <div class="tjiao">
+                <button type="button" class="sjdl">登录</button>
+            </div>
+            <div class="reges">
+                <a href="http://img.10xunc.com/备用件/html/register.html" target="_blank">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
+<script>
+    //兼容IE11
+   if (!FileReader.prototype.readAsBinaryString) {
+       FileReader.prototype.readAsBinaryString = function (fileData) {
+          var binary = "";
+          var pt = this;
+          var reader = new FileReader();      
+          reader.onload = function (e) {
+              var bytes = new Uint8Array(reader.result);
+              var length = bytes.byteLength;
+              for (var i = 0; i < length; i++) {
+                  binary += String.fromCharCode(bytes[i]);
+              }
+           //pt.result  - readonly so assign binary
+           pt.content = binary;
+           pt.onload()
+       }
+       reader.readAsArrayBuffer(fileData);
+       }
+   }
+   $(document).ready(function () {
+     /** 
+      * 创建一个上传对象
+      * 使用 UploadAuth 上传方式
+      */
+     function createUploader () {
+       var uploader = new AliyunUpload.Vod({
+         timeout: $('#timeout').val() || 60000,
+         partSize: $('#partSize').val() || 1048576,
+         parallel: 100,
+        //  $('#parallel').val() || 5
+         retryCount: $('#retryCount').val() || 3,
+         retryDuration: $('#retryDuration').val() || 2,
+         region: $('#region').val(),
+         userId: $('#userId').val(),
+         // 添加文件成功
+         addFileSuccess: function (uploadInfo) {
+           console.log('addFileSuccess')
+           $('#authUpload').attr('disabled', false)
+           $('#resumeUpload').attr('disabled', false)
+           $('#status').text('添加文件成功, 等待上传...')
+           console.log("addFileSuccess: " + uploadInfo.file.name)
+         },
+         // 开始上传
+         onUploadstarted: function (uploadInfo) {
+           // 如果是 UploadAuth 上传方式, 需要调用 uploader.setUploadAuthAndAddress 方法
+           // 如果是 UploadAuth 上传方式, 需要根据 uploadInfo.videoId是否有值，调用点播的不同接口获取uploadauth和uploadAddress
+           // 如果 uploadInfo.videoId 有值，调用刷新视频上传凭证接口，否则调用创建视频上传凭证接口
+           // 注意: 这里是测试 demo 所以直接调用了获取 UploadAuth 的测试接口, 用户在使用时需要判断 uploadInfo.videoId 存在与否从而调用 openApi
+           // 如果 uploadInfo.videoId 存在, 调用 刷新视频上传凭证接口(https://help.aliyun.com/document_detail/55408.html)
+           // 如果 uploadInfo.videoId 不存在,调用 获取视频上传地址和凭证接口(https://help.aliyun.com/document_detail/55407.html)
+           if (!uploadInfo.videoId) {
+             var createUrl = 'https://demo-vod.cn-shanghai.aliyuncs.com/voddemo/CreateUploadVideo?Title=testvod1&FileName=aa.mp4&BusinessType=vodai&TerminalType=pc&DeviceModel=iPhone9,2&UUID=59ECA-4193-4695-94DD-7E1247288&AppVersion=1.0.0&VideoId=5bfcc7864fc14b96972842172207c9e6'
+             $.get(createUrl, function (data) {
+               var uploadAuth = data.UploadAuth
+               var uploadAddress = data.UploadAddress
+               var videoId = data.VideoId
+               uploader.setUploadAuthAndAddress(uploadInfo, uploadAuth, uploadAddress,videoId)
+             }, 'json')
+             $('#status').text('文件开始上传...')
+             console.log("onUploadStarted:" + uploadInfo.file.name + ", endpoint:" + uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket + ", object:" + uploadInfo.object)
+           } else {
+             // 如果videoId有值，根据videoId刷新上传凭证
+             // https://help.aliyun.com/document_detail/55408.html?spm=a2c4g.11186623.6.630.BoYYcY
+             var refreshUrl = 'https://demo-vod.cn-shanghai.aliyuncs.com/voddemo/RefreshUploadVideo?BusinessType=vodai&TerminalType=pc&DeviceModel=iPhone9,2&UUID=59ECA-4193-4695-94DD-7E1247288&AppVersion=1.0.0&Title=haha1&FileName=xxx.mp4&VideoId=' + uploadInfo.videoId
+             $.get(refreshUrl, function (data) {
+               var uploadAuth = data.UploadAuth
+               var uploadAddress = data.UploadAddress
+               var videoId = data.VideoId
+               uploader.setUploadAuthAndAddress(uploadInfo, uploadAuth, uploadAddress,videoId)
+             }, 'json')
+           }
+         },
+         // 文件上传成功
+         onUploadSucceed: function (uploadInfo) {
+           console.log("onUploadSucceed: " + uploadInfo.file.name + ", endpoint:" + uploadInfo.endpoint + ", bucket:" + uploadInfo.bucket + ", object:" + uploadInfo.object)
+           $('#status').text('文件上传成功!')
+         },
+         // 文件上传失败
+         onUploadFailed: function (uploadInfo, code, message) {
+           console.log("onUploadFailed: file:" + uploadInfo.file.name + ",code:" + code + ", message:" + message)
+           $('#status').text('文件上传失败!')
+         },
+         // 取消文件上传
+         onUploadCanceled: function (uploadInfo, code, message) {
+           console.log("Canceled file: " + uploadInfo.file.name + ", code: " + code + ", message:" + message)
+           $('#status').text('文件上传已暂停!')
+         },
+         // 文件上传进度，单位：字节, 可以在这个函数中拿到上传进度并显示在页面上
+         onUploadProgress: function (uploadInfo, totalSize, progress) {
+           console.log("onUploadProgress:file:" + uploadInfo.file.name + ", fileSize:" + totalSize + ", percent:" + Math.ceil(progress * 100) + "%")
+           var progressPercent = Math.ceil(progress * 100)
+           $('#auth-progress').text(progressPercent);
+           $(".num i").css("width",progressPercent+"%");
+           $('#status').text('文件上传中...')
+         },
+         // 上传凭证超时
+         onUploadTokenExpired: function (uploadInfo) {
+           // 上传大文件超时, 如果是上传方式一即根据 UploadAuth 上传时
+           // 需要根据 uploadInfo.videoId 调用刷新视频上传凭证接口(https://help.aliyun.com/document_detail/55408.html)重新获取 UploadAuth
+           // 然后调用 resumeUploadWithAuth 方法, 这里是测试接口, 所以我直接获取了 UploadAuth
+           $('#status').text('文件上传超时!')
+
+           let refreshUrl = 'https://demo-vod.cn-shanghai.aliyuncs.com/voddemo/RefreshUploadVideo?BusinessType=vodai&TerminalType=pc&DeviceModel=iPhone9,2&UUID=59ECA-4193-4695-94DD-7E1247288&AppVersion=1.0.0&Title=haha1&FileName=xxx.mp4&VideoId=' + uploadInfo.videoId
+           $.get(refreshUrl, function (data) {
+             var uploadAuth = data.UploadAuth
+             uploader.resumeUploadWithAuth(uploadAuth)
+             console.log('upload expired and resume upload with uploadauth ' + uploadAuth)
+           }, 'json')
+         },
+         // 全部文件上传结束
+         onUploadEnd: function (uploadInfo) {
+           $('#status').text('文件上传完毕!')
+           console.log("onUploadEnd: uploaded all the files")
+         }
+       })
+       return uploader
+     }
+
+     var uploader = null
+
+     $('#fileUpload').on('change', function (e) {
+       var file = e.target.files[0]
+       if (!file) {
+         alert("请先选择需要上传的文件!")
+         return
+       }
+       var Title = file.name
+       var userData = '{"Vod":{}}'
+       if (uploader) {
+         uploader.stopUpload()
+         $('#auth-progress').text('0')
+         $('#status').text("")
+       }
+       uploader = createUploader()
+       // 首先调用 uploader.addFile(event.target.files[i], null, null, null, userData)
+       console.log(uploader)
+       uploader.addFile(file, null, null, null, userData)
+       $('#authUpload').attr('disabled', false)
+       $('#pauseUpload').attr('disabled', true)
+       $('#resumeUpload').attr('disabled', true)
+     })
+    //  if($(".selec").prop("checked")){
+         
+     
+        // 第一种方式 UploadAuth 上传 
+        $('#authUpload').on('click', function () {
+            // alert($(".selec").prop("checked"))
+            if($(".selec").prop("checked")){
+                // 然后调用 startUpload 方法, 开始上传
+                if (uploader !== null) {
+                    uploader.startUpload()
+                    $('#authUpload').attr('disabled', true)
+                    $('#pauseUpload').attr('disabled', false)
+                }
+            }else{
+                alert("请勾选10讯服务协议")
+            }
+        })
+
+        // 暂停上传
+        $('#pauseUpload').on('click', function () {
+        if (uploader !== null) {
+            uploader.stopUpload()
+            $('#resumeUpload').attr('disabled', false)
+            $('#pauseUpload').attr('disabled', true)
+        }
+        })
+
+
+        $('#resumeUpload').on('click', function () {
+        if (uploader !== null) {
+            uploader.startUpload()
+            $('#resumeUpload').attr('disabled', true)
+            $('#pauseUpload').attr('disabled', false)
+        }
+        })
+    // }
+
+   })
+ </script>
+</html>
