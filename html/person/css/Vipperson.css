@@ -45,45 +45,40 @@ section .Ml .Lt{
     top: 0;
     left: 0;
 }
-section .Ml .Lt *{
-    display: block;
+section .Ml .Lt{
+    /* display: block; */
     text-align: center;
-    margin: 0 auto;
+    
 }
 section .Ml .Lt img:nth-child(1){
+    display: block;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 5px;
 }
 section .Ml .Lt span:nth-child(2){
     font-size: 16px;
     font-weight: bold;
+    vertical-align: middle;
 }
 section .Ml .Lt span:nth-child(3){
-    font-size: 16px;
-    color: #cccccc;
-}
-section .Ml .Lt span:nth-child(4){
-    width: 90px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #FFFF00;
-    color: #000;
-    text-align: center;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 10px;
-    cursor: pointer;
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -263px -853px;
+    width: 25px;
+    height: 28px;
+    vertical-align: middle;
 }
 section .Ml .Lth{
     width: 230px;
-    height: 85px;
+    height: 165px;
     margin-top: 2px;
 }
-section .Ml .Lth span{
-    display: block;
+section .Ml .Lth>div{
     height: 40px;
     line-height: 40px;
     text-align: center;
@@ -92,12 +87,21 @@ section .Ml .Lth span{
     font-size: 18px;
     margin-bottom: 2px;
 }
-section .Ml .Lth span.ac{
+section .Ml .Lth>div:nth-child(3) span:nth-child(1){
+    display: inline-block;
+    background-image:url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -240px -851px;
+    width: 25px;
+    height: 28px;
+    vertical-align: middle;
+}
+section .Ml .Lth>div.ac{
     border-left: 2px solid #1B7BC0;
     color: #1B7BC0;
 }
 section .Mr{
-    width: 960px;
+    width: 970px;
 }
 section .Mr>p:nth-child(1){
     height: 60px;
@@ -116,6 +120,7 @@ section .Mr>p:nth-child(1) span{
     font-weight: bold;
     
 }
+
 section .Mr .all .contais{
     width: 970px;
     display: flex;
@@ -157,7 +162,7 @@ section .Mr .all div.ac{
 
 /* footer开始 */
 footer{
-    margin-top: 15px;
+    margin-top: 55px;
 }
 footer p span{
     font-size: 14px;
