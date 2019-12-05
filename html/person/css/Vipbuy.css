@@ -1,0 +1,231 @@
+header{
+    width: 1200px;
+    margin-top: 10px;
+}
+header a{
+    display: inline-block;
+    vertical-align: middle;
+}
+header a:nth-child(1){
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+header a:nth-child(1) img{
+    width: 100%;
+    height: 100%;
+}
+header a:nth-child(2){
+    font-size: 18px;
+    /* font-weight: bold; */
+}
+/* section部分开始 */
+section{
+    width: 1200px;
+}
+section p:nth-child(1){
+    margin-top: 10px;
+}
+section p:nth-child(1) span:nth-child(1){
+    display: inline-block;
+    background-image:url(http://img.10xunc.com/备用件/img/logo.png);
+    background-repeat: no-repeat;
+    /* background-position: -263px -853px; */
+    width: 40px;
+    height: 30px;
+    vertical-align: middle;
+    
+    margin-right: 10px;
+    margin-left: 50px;
+}
+section p:nth-child(1) span:nth-child(2){
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #C20D1F;
+}
+section .buy{
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+section .buy .c>div{
+    width: 120px;
+    height: 80px;
+}
+
+section .buy .c{
+    display: flex;
+}
+section .buy .c .one{
+    background-color: #F2F2F2;
+    border: 1px solid #cccccc;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+section .buy .c .ac{
+    border: 1px solid #C20D1F;
+}
+section .buy .c .one span{
+    display: inline-block;
+    font-size: 20px;
+    
+}
+section .buy .c .one span:nth-child(1){
+    display: block;
+    margin-top: 10px;
+}
+section .buy .c .one span:nth-child(2){
+    color: #C20D1F;
+}
+section .buy .c .one span:nth-child(3){
+    color: #C20D1F;
+}
+section .buy .c .two{
+    background-color: #F2F2F2;
+    border: 1px solid #cccccc;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+section .buy .c .ac{
+    border: 1px solid #C20D1F;
+}
+section .buy .c .two span{
+    display: inline-block;
+    font-size: 20px;
+}
+section .buy .c .two span:nth-child(1){
+    display: block;
+    margin-top: 10px;
+}
+section .buy .c .two span:nth-child(2){
+    color: #C20D1F;
+}
+section .buy .c .two span:nth-child(3){
+    color: #C20D1F;
+}
+section .buy .three{
+    width: 65px;
+    height: 80px;
+}
+section .buy .three span{
+    color: #3484C5;
+    font-size: 16px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 58px;
+}
+section p:nth-child(3){
+    padding-left: 50px;
+    font-size: 16px;
+}
+section p:nth-child(4){
+    padding-left: 50px;
+    margin-top: 5px;
+}
+section p:nth-child(4) span:nth-child(1){
+    display: inline-block;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -250px -927px;
+    width: 33px;
+    height: 33px;
+    vertical-align: middle;
+}
+section p:nth-child(4) span:nth-child(2){
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #C7C7C7;
+}
+section p:nth-child(5){
+    display: flex;
+    padding-left: 50px;
+    margin-top: 10px;
+    line-height: 180px;
+}
+section p:nth-child(5) span:nth-child(1){
+    display: inline-block;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -14px -1227px;
+    width: 180px;
+    height: 180px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+section p:nth-child(5) span:nth-child(2){
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+}
+section p:nth-child(5) span:nth-child(3){
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #C20D1F;
+    margin-right: 10px;
+}
+section p:nth-child(6){
+    padding-left: 50px;
+}
+section p:nth-child(6) span:nth-child(1){
+    display: inline-block;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -289px -939px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+section p:nth-child(6) span:nth-child(2){
+    display: inline-block;
+    background-image: url(../../../img/tpjh2.png);
+    background-repeat: no-repeat;
+    background-position: -289px -939px;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+section p:nth-child(6) span:nth-child(3){
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+
+
+/* footer开始 */
+footer{
+    margin-top: 15px;
+}
+footer p span{
+    font-size: 14px;
+    margin-right: 10px;
+}
+footer p{
+    width: 1000px;
+    line-height: 20px;
+    text-align: center;
+}
+footer p:nth-child(2){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(3){
+    text-align: center;
+    margin-top: 10px;
+}
+footer p:nth-child(4){
+    text-align: center;
+    margin-top: 10px;
+}
+/* footer结束 */
