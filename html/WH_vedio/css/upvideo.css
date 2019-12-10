@@ -234,20 +234,22 @@ footer p:nth-child(4){
     font-size: 14px;
     padding-left: 30px;
   }
+  .up{
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+}
   #fileUpload{
       width: 270px;
       height: 180px;
       background-color: red;
       cursor: pointer;
       position: absolute;
-      top: 205px;
-      left: 816px;
-      opacity: 0;
+      top: -335px;
+      left: 400px;
+      opacity: 2;
   }
-  .up{
-      text-align: center;
-      font-size: 16px;
-  }
+  
   .pg span{
       background-color: #ffffff !important;
       border-radius: 0 !important;
