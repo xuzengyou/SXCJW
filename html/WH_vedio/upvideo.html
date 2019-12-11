@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./css/upvideo.css">
     <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
     <script src="./js/plupload.full.min.js"></script>
+    <script src="./js/jquery.plupload.queue.js"></script>
     <!-- DOM节点加载完后执行 -->
     <script src="./js/upvideo.js" type="text/javascript" charset="utf-8"></script>
 </head>
@@ -63,24 +64,24 @@
         <!-- 导航栏结束 -->
 
         <!-- main主体部分开始 -->
-        <div class="main">
+        <div class="main" id="tuozhuai">
            <p>
                <span>严禁上传违规违法/色情色诱/低俗/广告等视频内容，违者下架视频封号处理！</span>
            </p>
            <p>
-               <a href=""></a>
+               <a style="cursor: pointer;"></a>
            </p>
            <p>
-               <a href="">选择视频</a>
+               <a style="cursor: pointer;">选择视频</a>
            </p>
            <p>
-               <a href="">或将视频拖放到此处</a>
+               <a style="cursor: pointer;">或将视频拖放到此处</a>
                
            </p>
            <p>
                <input type="checkbox" class="selec">
                <span>我已阅读并同意</span>
-               <a href="">10讯上传服务条款</a>
+               <a href="http://img.10xunc.com/备用件/img/10讯服务协议.jpg">10讯上传服务条款</a>
            </p>
         </div>
         <!-- main主体部分结束 -->
@@ -96,13 +97,13 @@
                 <span class="num">
                     <i></i>
                 </span>
-                <i id="auth-progress">0</i> %
+                <i id="auth-progress" style="color: red; font-size: 16px; font-weight: bold;" >0</i> %
               </div>
               <div class="upload-type">
                 <!-- 上传方式一, 使用 UploadAuth 上传: -->
                 <button id="authUpload" style="display: none;">开始上传</button>
-                <button id="pauseUpload">暂停</button>
-                <button id="resumeUpload">恢复上传</button>
+                <button id="pauseUpload" onclick="stop()">暂停</button>
+                <button id="startUpload">重新上传</button>
                 
               </div>
             </div>
@@ -207,9 +208,7 @@
 <script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
 <script>
 $(function () {
-  // $(".selec").click(function(){
-  //   console.log($(".selec").prop("checked"));
-  // })
+  
      
 
      
@@ -232,8 +231,10 @@ $(function () {
             },
             chunk_size: "5mb", //分片上传文件时，每片文件被切割成的大小，为数字时单位为字节。也可以使用一个带单位的字符串，如"200kb"。当该值为0时表示不使用分片上传功能
             multi_selection: false, //true:ctrl多文件上传, false 单文件上传
+            drop_element:['tuozhuai'],//拖拽区域
+            
             init: {
-                FilesAdded: function(up, files) { //文件上传前
+               FilesAdded: function(up, files) { //文件上传前
                     plupload.each(files, function (file) {
                         uploader_video.start();
                     });
@@ -241,7 +242,12 @@ $(function () {
                 UploadProgress: function(up, file) { //上传中，显示进度条
                     $('.num i').css('width', file.percent+'%');
                     $("#auth-progress").html(file.percent)
-                    console.log(file.percent+'%')
+                    console.log(file.percent+'%');
+                    $("#startUpload").click(function(){
+                        
+                        uploader_video.start()
+                    })
+                    
                 },
                 FileUploaded: function(up, file, info) { //文件上传成功的时候触发
                     var base = '/static/media/videos/';
@@ -249,6 +255,7 @@ $(function () {
                     console.log(up)
                     console.log(file)
                     console.log(info)
+                    uploader_video.refresh();
                     // if (response.status == 'ok') {
                     //     var url = "http://"+location.host+base + response.name;
                     //     $("#video").show().attr("src", url);
@@ -261,27 +268,54 @@ $(function () {
                     // }
                 },
                 Error: function(up, errObject) { //上传出错的时候触发
-                    alert(errObject.code+errObject.message);
+                    alert("上传失败");
                 }
             }
+            
         });
 
-        
-        
+        uploader_video.init();
 
-        $("#fileUpload").click(function(){
-          
-          if($(".selec").prop("checked")){
-            uploader_video.init();
-          }else{
-            alert("请先阅读10讯协议");
-            window.location.reload()
-          }
-          
-          
-    })    
-        
+       $("#startUpload").click(function(){
+        window.location.reload()
+       })
+                
      
+    
+
+    $(".selec").click(function(){
+    console.log($(".selec").prop("checked"));
+    if($(".selec").prop("checked")){
+            $("#fileUpload").css("z-index",10)
+        }else{
+            $("#fileUpload").css("z-index",-10)
+        }
+
+
+
+    })
+        
+     $(".main p:nth-child(2) a").click(function(){
+        if($(".selec").prop("checked")){
+            $("#fileUpload").css("z-index",10)
+        }else{
+          alert("请先阅读10讯协议");
+        }
+     });
+     $(".main p:nth-child(3) a").click(function(){
+        if($(".selec").prop("checked")){
+            $("#fileUpload").css("z-index",10)
+        }else{
+          alert("请先阅读10讯协议");
+        }
+     });
+     $(".main p:nth-child(4) a").click(function(){
+        if($(".selec").prop("checked")){
+            $("#fileUpload").css("z-index",10)
+        }else{
+          alert("请先阅读10讯协议");
+        }
+     });
       
       
 
