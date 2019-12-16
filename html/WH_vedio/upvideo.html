@@ -107,7 +107,10 @@
                 
               </div>
             </div>
-            <!-- <div class="info">uploadAuth及uploadAddress参数请查看<a href="https://help.aliyun.com/document_detail/55407.html" target="_blank">获取上传地址和凭证 </a></div> -->
+            <!-- 视频简介 -->
+            <div class="intro">
+                <textarea name="texa" id="texa" cols="30" rows="10" placeholder="请输入视频简介..." style="resize: none;"></textarea>
+            </div>
         </div>
         <!-- footer开始 -->
         <footer>
@@ -212,12 +215,12 @@ $(function () {
      
 
      
-
+        
       // if($(".selec").prop("checked")){
         var uploader_video = new plupload.Uploader({//创建实例的构造方法
             runtimes: 'html5,gears,html4,silverlight,flash', //上传插件初始化选用那种方式的优先级顺序
             browse_button: ['fileUpload'], // 上传按钮
-            url: "http://192.168.0.171:8080/WSHD/VideoController/pluploadUpload", //远程上传地址/ajax/upload_video?path=videos
+            url: "http://192.168.0.171:8080/WSHD/VideoController/pluploadUpload?name="+, //远程上传地址/ajax/upload_video?path=videos
             // flash_swf_url: 'js/plugins/plupload/Moxie.swf', //flash文件地址
             // silverlight_xap_url: 'js/plugins/plupload/Moxie.xap', //silverlight文件地址
             filters: {
@@ -279,10 +282,7 @@ $(function () {
        $("#startUpload").click(function(){
         window.location.reload()
        })
-                
-     
     
-
     $(".selec").click(function(){
     console.log($(".selec").prop("checked"));
     if($(".selec").prop("checked")){
@@ -296,24 +296,25 @@ $(function () {
     })
         
      $(".main p:nth-child(2) a").click(function(){
+        
         if($(".selec").prop("checked")){
             $("#fileUpload").css("z-index",10)
         }else{
-          alert("请先阅读10讯协议");
+          alert("请先阅读10讯协议和填写视频简介");
         }
      });
      $(".main p:nth-child(3) a").click(function(){
         if($(".selec").prop("checked")){
             $("#fileUpload").css("z-index",10)
         }else{
-          alert("请先阅读10讯协议");
+          alert("请先阅读10讯协议和填写视频简介");
         }
      });
      $(".main p:nth-child(4) a").click(function(){
         if($(".selec").prop("checked")){
             $("#fileUpload").css("z-index",10)
         }else{
-          alert("请先阅读10讯协议");
+          alert("请先阅读10讯协议和填写视频简介");
         }
      });
       

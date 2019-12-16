@@ -888,6 +888,14 @@
 <script src="http://img.10xunc.com/备用件/js/common.js"></script>
 <script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
 <script>
+    if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // alert("手机");
+        // document.write('手机');
+        window.location.href = 'http://www.10xunc.com/WSHD/static/MbSXCJW/index.html';
+    } else {
+        // alert("PC");
+        // document.write('PC');
+    }
     $(function(){
         //搜索功能
         $(".btn1").click(function(){
