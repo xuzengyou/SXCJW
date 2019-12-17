@@ -143,7 +143,7 @@ header .lgin a:first-child{
 .main p:nth-child(5){
     text-align: center;
     font-size: 18px;
-    margin-top: 150px;
+    margin-top: 300px;
 }
 .main p:nth-child(5) input{
     width: 18px;
@@ -245,7 +245,7 @@ footer p:nth-child(4){
       background-color: red;
       cursor: pointer;
       position: absolute;
-      top: -335px;
+      top: -533px;
       left: 400px;
       opacity: 0;
       z-index: -10;
@@ -285,16 +285,36 @@ footer p:nth-child(4){
   }
   /* 视频简介 */
   .intro{
-      position: relative;
+    position: absolute;  
+    top: 480px;
   }
   .intro textarea{
+      display: block;
       width: 1200px;
       height: 50px;
-      position: absolute;
-      top: -250px;
-      left: 0;
       font-size: 16px;
-      /* padding-left: 10px; */
       overflow: hidden;
-      text-indent: 15px;
+      text-indent: 5px;
   }
+  .intro input:nth-child(1){
+      display: block;
+      border: 1px solid #ccc;
+      width: 250px;
+      height: 35px;
+      margin-bottom: 15px;
+      padding-left: 5px;
+      font-size: 16px;
+  }
+  .intro input:nth-child(3){
+   
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 35px;
+    margin-top: 15px;
+    padding-left: 5px;
+    font-size: 16px;
+}
+.intro span{
+    font-size: 16px;
+    margin-left: 5px;
+}

@@ -109,7 +109,9 @@
             </div>
             <!-- 视频简介 -->
             <div class="intro">
-                <textarea name="texa" id="texa" cols="30" rows="10" placeholder="请输入视频简介..." style="resize: none;"></textarea>
+                <input type="text" placeholder="请输入视频名称" id="Vtitle">
+                <textarea name="texa" id="Vintro" cols="30" rows="10" placeholder="请输入视频简介..." style="resize: none;"></textarea>
+                <input type="text" name="" id="Vprice" placeholder="请输入视频价格"><span>元</span>
             </div>
         </div>
         <!-- footer开始 -->
@@ -211,16 +213,28 @@
 <script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
 <script>
 $(function () {
-  
-     
+    var name,title,intro,price;
 
-     
-        
-      // if($(".selec").prop("checked")){
+    $("#startUpload").click(function(){
+        window.location.reload()
+       })
+    
+    $(".selec").click(function(){
+        console.log($(".selec").prop("checked"));
+        if($(".selec").prop("checked")){
+        }else{
+            $("#fileUpload").css("z-index",-10)
+        }
+
+
+
+    })
+
+    //   if($(".selec").prop("checked")){
         var uploader_video = new plupload.Uploader({//创建实例的构造方法
             runtimes: 'html5,gears,html4,silverlight,flash', //上传插件初始化选用那种方式的优先级顺序
             browse_button: ['fileUpload'], // 上传按钮
-            url: "http://192.168.0.171:8080/WSHD/VideoController/pluploadUpload?name="+, //远程上传地址/ajax/upload_video?path=videos
+            url: "http://192.168.0.171:8080/WSHD/VideoController/pluploadUpload", //远程上传地址/ajax/upload_video?path=videos
             // flash_swf_url: 'js/plugins/plupload/Moxie.swf', //flash文件地址
             // silverlight_xap_url: 'js/plugins/plupload/Moxie.xap', //silverlight文件地址
             filters: {
@@ -229,15 +243,31 @@ $(function () {
                     {title: "files", extensions: "mpg,m4v,mp4,flv,3gp,mov,avi,rmvb,mkv,wmv"}
                 ]
             },
-            multipart_params: {
-                '_xsrf': $("input[name='_xsrf']").val()//上传时的附加参数，以键/值对的形式传入，服务器端可是使用$_POST来获取这些参数(以php为例)
-            },
+            // multipart_params: {
+            //     // '_xsrf': $("input[name='_xsrf']").val()//上传时的附加参数，以键/值对的形式传入，服务器端可是使用$_POST来获取这些参数(以php为例)
+            //     name:"admin",
+            //     title:title,//$("#Vtitle").val().trim()
+            //     intro:intro,//$("#Vintro").val().trim()
+            //     price:price//$("#Vprice").val().trim()
+            // },
             chunk_size: "5mb", //分片上传文件时，每片文件被切割成的大小，为数字时单位为字节。也可以使用一个带单位的字符串，如"200kb"。当该值为0时表示不使用分片上传功能
             multi_selection: false, //true:ctrl多文件上传, false 单文件上传
             drop_element:['tuozhuai'],//拖拽区域
             
             init: {
+                BeforeUpload: function(up, file) {
+                    console.log('[BeforeUpload]', 'File: ', file);
+
+                    //设置参数
+                    uploader_video.setOption("multipart_params", {
+                            name:"admin",
+                            title:$("#Vtitle").val().trim(),//$("#Vtitle").val().trim()
+                            intro:$("#Vintro").val().trim(),//$("#Vintro").val().trim()
+                            price:$("#Vprice").val().trim()//$("#Vprice").val().trim()
+                    });
+                }, 
                FilesAdded: function(up, files) { //文件上传前
+                    console.log($("#Vtitle").val().trim())
                     plupload.each(files, function (file) {
                         uploader_video.start();
                     });
@@ -276,45 +306,42 @@ $(function () {
             }
             
         });
-
+      
         uploader_video.init();
 
-       $("#startUpload").click(function(){
-        window.location.reload()
-       })
-    
-    $(".selec").click(function(){
-    console.log($(".selec").prop("checked"));
-    if($(".selec").prop("checked")){
-            $("#fileUpload").css("z-index",10)
-        }else{
-            $("#fileUpload").css("z-index",-10)
-        }
-
-
-
-    })
+    // }//checked
         
      $(".main p:nth-child(2) a").click(function(){
-        
-        if($(".selec").prop("checked")){
-            $("#fileUpload").css("z-index",10)
+        title=$("#Vtitle").val().trim();
+        intro=$("#Vintro").val().trim();
+        price=$("#Vprice").val().trim();
+        var ch=$(".selec").prop("checked")
+        if(!(ch&&title&&intro&&price)){
+            alert("请先阅读10讯协议和填写完整视频相关信息");
         }else{
-          alert("请先阅读10讯协议和填写视频简介");
+            $("#fileUpload").css("z-index",10);
         }
      });
      $(".main p:nth-child(3) a").click(function(){
-        if($(".selec").prop("checked")){
-            $("#fileUpload").css("z-index",10)
+        title=$("#Vtitle").val().trim();
+        intro=$("#Vintro").val().trim();
+        price=$("#Vprice").val().trim();
+        var ch=$(".selec").prop("checked")
+        if(!(ch&&title&&intro&&price)){
+            alert("请先阅读10讯协议和填写完整视频相关信息");
         }else{
-          alert("请先阅读10讯协议和填写视频简介");
+            $("#fileUpload").css("z-index",10);
         }
      });
      $(".main p:nth-child(4) a").click(function(){
-        if($(".selec").prop("checked")){
-            $("#fileUpload").css("z-index",10)
+        title=$("#Vtitle").val().trim();
+        intro=$("#Vintro").val().trim();
+        price=$("#Vprice").val().trim();
+        var ch=$(".selec").prop("checked")
+        if(!(ch&&title&&intro&&price)){
+            alert("请先阅读10讯协议和填写完整视频相关信息");
         }else{
-          alert("请先阅读10讯协议和填写视频简介");
+            $("#fileUpload").css("z-index",10);
         }
      });
       
