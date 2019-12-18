@@ -19,7 +19,18 @@ $(function(){
         $(this).addClass("ac").siblings().removeClass("ac");
         var id=$(this).attr("data-id");
         $(id).addClass("act").siblings().removeClass("act");
-    })
+    });
+    //确认用户已经登录
+    fhuser=window.sessionStorage.getItem("user");
+    if(fhuser){
+        $(".askButton").attr("disabled",false);
+        
+    }else{
+        $(".askButton").css("color","#fff");
+        $(".askButton").css("cursor","text");
+        $(".askButton").attr("disabled",true);
+        $("#req").attr("disabled",true);
+    }
 
 
 

@@ -256,7 +256,7 @@ $(function () {
             
             init: {
                 BeforeUpload: function(up, file) {
-                    console.log('[BeforeUpload]', 'File: ', file);
+                    // console.log('[BeforeUpload]', 'File: ', file);
 
                     //设置参数
                     uploader_video.setOption("multipart_params", {
@@ -288,7 +288,8 @@ $(function () {
                     console.log(up)
                     console.log(file)
                     console.log(info)
-                    uploader_video.refresh();
+                   alert("上传完毕！");
+                    window.location.reload();
                     // if (response.status == 'ok') {
                     //     var url = "http://"+location.host+base + response.name;
                     //     $("#video").show().attr("src", url);

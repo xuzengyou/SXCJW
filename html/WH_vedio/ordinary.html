@@ -70,8 +70,8 @@
            <!-- 轮播开始 -->
             <div class="mTop">
                 <div class="slider" style="width:710px; height:440px;">
-                    <video autoplay="autoplay" loop="loop" muted="muted" controls="controls">
-                        <source src="../../test3.mp4" type="video/ogg" />
+                    <video autoplay="autoplay" loop="loop" muted="muted" controls="controls" class="video">
+                        <source src="https://outin-019f499b10e611ea849e00163e1c955c.oss-cn-shanghai.aliyuncs.com/sv/2426b597-16f16dd4d42/2426b597-16f16dd4d42.mp4?Expires=1576640228&OSSAccessKeyId=LTAI3DkxtsbUyNYV&Signature=2ltbcwi%2BqKeFOE7%2BVHcaCjhZTD4%3D" type="video/ogg" class="bofang"/>
                     </video>
                 </div>
                 <div class="news">
@@ -287,7 +287,10 @@
 <script src="http://img.10xunc.com/备用件/js/commondl.js"></script>
 <script>
     $(function(){
-        
+        window.location.search;
+        console.log(window.location.search.split("?")[1]);
+        var src=window.location.search.split("?")[1];
+        $(".video").html()
 
 
     })
