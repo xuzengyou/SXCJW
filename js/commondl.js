@@ -1,6 +1,7 @@
 //获取返回的用户名
 fhuser=window.sessionStorage.getItem("user");
 if(fhuser){
+    // window.location.reload();
     var html="";
     html="<a class=yh>"+fhuser+"</a><span>|</span><a class=tchu>退出</a>";
     $("div.lgin").html(html);
@@ -76,7 +77,9 @@ $("button.yhdl").click(function(){
                 success:function(res){
                     console.log(res)
                     if(res.code==200){
+                        window.location.reload();
                         window.sessionStorage.setItem("user",yhuser);
+                        
                         // alert("即将登陆"+$('input.xc').prop("checked"));
                         $("div.logIn").addClass("yinc");
                         $('.zzc').css('display','none'); //隐藏遮罩层

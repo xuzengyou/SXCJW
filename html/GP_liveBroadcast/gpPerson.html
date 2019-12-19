@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="./css/gpPerson.css">
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/bootstrap-table.min.css">
-    <script src="./js/gpPerson.js"></script>
+    
     <!-- 轮播图 -->
     <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
-    
+    <script src="./js/gpPerson.js"></script>
     <base target="_blank">
 </head>
 <body>
@@ -79,30 +79,90 @@
             <div class="mainT">
                 <div class="mainTo">
                     <img src="../../img/test.jpg" alt="">
-                    <p>
-                        <span>我爱小白白</span>
-                    </p>
-                    <p>
+                    <span>我爱小白白</span>
+                    <p class="guanz ac" data-id="#one">
                         <span>❤</span><span>我的关注</span>
                     </p>
-                    <p>
-                        <a href="#"></a><a href="#">我的问答</a>
+                    <p class="change">
+                        <span></span><span>我的问答</span>
                     </p>
+                    <div class="reqAns yinc">
+                        <span data-id="#two">已回答</span>
+                        <span data-id="#three">待回答</span>
+                    </div>
                 </div>
+                
                 <div class="mainTt">
-                    <div class="mainTtl">
-                        <img src="../../img/test.jpg" alt="">
-                        <p><span>已关注</span></p>
-                        <p><span>关注</span><span>449665465</span></p>
+                    <div id="one">
+                        <div class="con">
+                            <div class="mainTtl">
+                                <img src="../../img/test.jpg" alt="">
+                                <p><span>已关注</span></p>
+                                <p><span>关注</span><span>449665465</span></p>
+                            </div>
+                            <div class="mainTtr" style="margin-left: 5px;">
+                                <p><span>常常听老师</span></p>
+                                <p><span>常常听老师常常听老师常常听老师常常听老师常常听老师</span></p>
+                                <p>
+                                    <span>访问</span><span>2308333</span>
+                                    <span>直播数</span><span>2308333</span>
+                                </p>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="mainTtr" style="margin-left: 5px;">
-                        <p><span>常常听老师</span></p>
-                        <p><span>常常听老师常常听老师常常听老师常常听老师常常听老师</span></p>
-                        <p>
-                            <span>访问</span><span>2308333</span>
-                            <span>直播数</span><span>2308333</span>
-                        </p>
+                    <!-- 已回答 -->
+                    <div id="two" class="yinc">
+                        <div class="card">
+                            <p>
+                                <span>问</span><span>老师，被套5个点，怎么办呢？</span>
+                            </p>
+                            <p>
+                                <span>答</span>
+                                <span>哪只</span>
+                            </p>
+                            <p>
+                                <img src="../../img/test.jpg" alt="">
+                                <span>福哥看盘</span>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <p>
+                                <span>问</span><span>老师，被套5个点，怎么办呢？</span>
+                            </p>
+                            <p>
+                                <span>答</span>
+                                <span>哪只</span>
+                            </p>
+                            <p>
+                                <img src="../../img/test.jpg" alt="">
+                                <span>福哥看盘</span>
+                            </p>
+                        </div>
                     </div>
+                    <!-- 未回答 -->
+                    <div id="three" class="yinc">
+                        <div class="bcard">
+                            <p>
+                                <span>问</span><span>老师，被套5个点，怎么办呢？</span>
+                            </p>
+                            <p>
+                                <img src="../../img/test.jpg" alt="">
+                                <span>福哥看盘</span>
+                            </p>
+                        </div>
+                        <div class="bcard">
+                            <p>
+                                <span>问</span><span>老师，被套5个点，怎么办呢？</span>
+                            </p>
+                            <p>
+                                <img src="../../img/test.jpg" alt="">
+                                <span>福哥看盘</span>
+                            </p>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
             <!-- 主体第二部分结束 -->

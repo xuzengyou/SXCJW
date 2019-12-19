@@ -43,7 +43,7 @@ header>div.search i{
    height: 30px;
    background-image: url(../../../img/tpjh2.png);
    background-repeat: no-repeat;
-   background-position: -79px -545px;
+   background-position: -9px -647px;
    float: left;
 }
 header>div.search input{
@@ -159,16 +159,17 @@ header .lgin a:first-child{
     cursor: pointer;
 }
 /* main第一部分结束 */
+
 /* main第二部分开始 */
 .w .main .mainT{
     width: 1200px;
-    height: 360px;    
+    height: 460px;    
     display: flex;
     margin-top: 10px;
 }
 .w .main .mainT .mainTo{
     width: 260px;
-    height: 360px;
+    /* height: 360px; */
     background-color: #F1F3F4;
 }
 .w .main .mainT .mainTo img{
@@ -179,7 +180,8 @@ header .lgin a:first-child{
     margin-top: 50px;
     margin-left: 50px;
 }
-.w .main .mainT .mainTo p:nth-child(2){
+.w .main .mainT .mainTo>span:nth-child(2){
+    display: block;
     width: 260px;
     height: 20px;
     line-height: 20px;
@@ -195,35 +197,87 @@ header .lgin a:first-child{
     height: 50px;
     line-height: 50px;
     text-align: center;
-    color: #fff;
-    background-color: #c30d23;
     font-size: 16px;
     margin-top: 10px;
     border-radius: 3px;
+    cursor: pointer;
 }
-.w .main .mainT .mainTo p:nth-child(3) span{
-    margin-right: 10px;
+.w .main .mainT .mainTo p:nth-child(3) span:first-child{
+    color: #c30d23;
+}
+
+.w .main .mainT .mainTo p:nth-child(3) span:last-child{
+    margin-left: 5px;
 }
 .w .main .mainT .mainTo p:nth-child(4){
     margin-top: 10px;
     text-align: center;
+    cursor: pointer;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 3px;
 }
-.w .main .mainT .mainTo p:nth-child(4) a:first-child{
+.w .main .mainT .mainTo p:nth-child(4) span:first-child{
     display: inline-block;
     width: 25px;
     height: 30px;
     background-image: url(../../../img/tpjh2.png);
     background-repeat: no-repeat;
-    background-position: -7px -792px;
+    background-position: -5px -792px;
     vertical-align: middle;
-    
+    cursor: pointer;
 }
+.w .main .mainT .mainTo p:nth-child(4) span:last-child{
+    cursor: pointer;
+}
+.w .main .mainT .mainTo p.ac{
+    color: #fff;
+    background-color: #c30d23;
+    display: inline-block;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.w .main .mainT .mainTo p.ac span:first-child{
+    color: #fff;
+}
+.w .main .mainT .mainTo .reqAns{
+    width: 260px;
+    height: 100px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.w .main .mainT .mainTo .reqAns span{
+    display: block;
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+.w .main .mainT .mainTo .reqAns span:hover{
+    color: #c30d23;
+    background-color: #F1F3F4;
+}
+/* 我的关注 */
 .w .main .mainT .mainTt{
-    width: 350px;
-    height: 110px;
-    overflow: hidden;
+    width: 930px;
+    height: 460px;
+    overflow-y: scroll;
+    overflow-x: hidden;
     margin-left: 10px;
     background-color: #F1F3F4;
+}
+.w .main .mainT .mainTt .con{
     display: flex;
 }
 .w .main .mainT .mainTt .mainTtl{
@@ -292,7 +346,89 @@ header .lgin a:first-child{
     color: #c30d23;
     margin-left: 5px;
 }
-/* main第二部分结束 */
+/* 已回答 */
+.w .main .mainT .mainTt #two .card{
+    height: 110px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+.w .main .mainT .mainTt #two .card p{
+    margin-bottom: 10px;
+}
+.w .main .mainT .mainTt #two .card p:nth-child(1) span:nth-child(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c30d23;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.w .main .mainT .mainTt #two .card p:nth-child(2) span:nth-child(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #0063A4;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.w .main .mainT .mainTt #two .card p:nth-child(3) img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
 
+}
+/* 未回答 */
+.w .main .mainT .mainTt #three .bcard{
+    height: 110px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+.w .main .mainT .mainTt #three .bcard p{
+    margin-bottom: 15px;
+}
+.w .main .mainT .mainTt #three .bcard p:nth-child(1) span:nth-child(1){
+    display: inline-block;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #c30d23;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.w .main .mainT .mainTt #three .bcard p:nth-child(2) img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 10px;
+
+}
+
+/* main第二部分结束 */
+/* .mainTt>div{
+    display: none;
+} */
 
 /* main结束 */
