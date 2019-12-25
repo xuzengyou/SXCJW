@@ -30,7 +30,54 @@ $(function(){
         $(".askButton").css("cursor","text");
         $(".askButton").attr("disabled",true);
         $("#req").attr("disabled",true);
-    }
+    };
+    //确认登录专家还是普通
+    // var u=window.sessionStorage.getItem("user");
+    // $(".u").html(u)
+    $("button.yhdl").click(function(){
+        // window.location.reload()
+        setTimeout(function(){
+
+            var type=window.sessionStorage.getItem("type");
+            
+            console.log(type=="admin")
+            if(type=="admin"){
+                window.location.href="./gpSpeciaDetail.html";
+            }else{
+                window.location.href="./gpLiveDetail.html";
+            }
+            
+
+        },100)
+
+
+    });
+    
+    //点击发言
+    $(".askButton").click(function(){
+        // alert(123)
+        var askMessage=$("#req").val().trim();
+        
+        // alert(tiwen)
+        if(answerMessage){
+            $.ajax({
+                type:"post",
+                url:"http://192.168.0.171:8080/WSHD/jiekou8/answer",
+                dataType:"json",
+                data:{
+                    id:id,
+                    askMessage:askMessage
+                },
+                success:function(res){
+                    console.log(res)
+                    $("#req").val("")
+                }
+            })
+        }else{
+            alert("信息不能为空")
+        }
+        
+    })
 
 
 

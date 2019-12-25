@@ -207,17 +207,12 @@ $(function(){
                 if(page == Math.ceil(res.sum/num)){
                     $('.Lfour a').css("display","none")
                 }
-    
-
-
-
-
-
-
-
-
 
                 
+    
+
+                
+
     
             }
     

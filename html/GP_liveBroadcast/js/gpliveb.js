@@ -15,8 +15,10 @@ $(function(){
             }
         }
     });
-
     //确认已经登录
+    var type=window.sessionStorage.getItem("type");
+    
+    console.log(type=="admin")
     
 
 

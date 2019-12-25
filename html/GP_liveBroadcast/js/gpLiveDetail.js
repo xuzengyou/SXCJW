@@ -30,7 +30,73 @@ $(function(){
         $(".askButton").css("cursor","text");
         $(".askButton").attr("disabled",true);
         $("#req").attr("disabled",true);
-    }
+    };
+    //确认登录专家还是普通
+    // var u=window.sessionStorage.getItem("user");
+    // $(".u").html(u)
+    $("button.yhdl").click(function(){
+        setTimeout(function(){
+
+            var type=window.sessionStorage.getItem("type");
+            
+            console.log(type=="admin")
+            if(type=="admin"){
+                window.location.href="./gpSpeciaDetail.html";
+            }else{
+                window.location.href="./gpLiveDetail.html";
+            }
+            
+
+        },100)
+
+
+    });
+    //点击个人中心
+    $(".mainOt a").click(function(){
+
+        var type=window.sessionStorage.getItem("type");
+            
+        console.log(type=="admin")
+        if(type=="admin"){
+            console.log("进入专家个人中心")
+            window.location.href="./gpSpePerson.html";
+        }else{
+            console.log("进入普通用户个人中心")
+            window.location.href="./gpPerson.html";
+        }
+
+
+
+
+    })
+    
+    //点击提问
+    $(".askButton").click(function(){
+        // alert(123)
+        var askMessage=$("#req").val().trim();
+        var asker=window.sessionStorage.getItem("user");
+        var answer="admin3";
+        // alert(tiwen)
+        if(askMessage){
+            $.ajax({
+                type:"post",
+                url:"http://192.168.0.171:8080/WSHD/jiekou8/ask",
+                dataType:"json",
+                data:{
+                    asker:asker,
+                    answer:answer,
+                    askMessage:askMessage
+                },
+                success:function(res){
+                    console.log(res)
+                    $("#req").val("")
+                }
+            })
+        }else{
+            alert("信息不能为空")
+        }
+        
+    })
 
 
 

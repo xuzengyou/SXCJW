@@ -1,7 +1,7 @@
 //获取返回的用户名
 fhuser=window.sessionStorage.getItem("user");
 if(fhuser){
-    // window.location.reload();
+
     var html="";
     html="<a class=yh>"+fhuser+"</a><span>|</span><a class=tchu>退出</a>";
     $("div.lgin").html(html);
@@ -77,9 +77,11 @@ $("button.yhdl").click(function(){
                 success:function(res){
                     console.log(res)
                     if(res.code==200){
-                        window.location.reload();
-                        window.sessionStorage.setItem("user",yhuser);
                         
+                        window.sessionStorage.setItem("user",yhuser);
+                        window.sessionStorage.setItem("type",res.type);
+
+
                         // alert("即将登陆"+$('input.xc').prop("checked"));
                         $("div.logIn").addClass("yinc");
                         $('.zzc').css('display','none'); //隐藏遮罩层
@@ -267,6 +269,7 @@ $("button.Getpw").click(function(){
                     console.log(res)
                     if(res.code==200){
                         window.sessionStorage.setItem("user",res.summary);
+                        window.sessionStorage.setItem("type",res.type);
                         // alert("即将登陆"+$('input.xc').prop("checked"));
                         $("div.logIn").addClass("yinc");
                         $('.zzc').css('display','none'); //隐藏遮罩层
@@ -281,7 +284,7 @@ $("button.Getpw").click(function(){
                         });
                     }else{
                         alert("登陆失败");
-                        window.location.reload();
+                        // window.location.reload();
                     }
                 }
             })

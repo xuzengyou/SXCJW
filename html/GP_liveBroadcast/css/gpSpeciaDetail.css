@@ -441,6 +441,7 @@ header .lgin a:first-child{
     height: 60px;
     line-height: 60px;
     border-bottom: 1px solid #ccc;
+    text-align: center;
 }
 .w .main .mainTh .mainThr .title span{
    font-size: 16px;
@@ -453,8 +454,8 @@ header .lgin a:first-child{
     color: #c30d23;
 }
 .w .main .mainTh .mainThr .title span:first-child{
-    margin-left: 60px;
-    margin-right: 125px;
+    /* margin-left: 60px;
+    margin-right: 125px; */
 }
 .w .main .mainTh .mainThr .con{
     width: 380px;
