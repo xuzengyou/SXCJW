@@ -36,7 +36,18 @@ $(function(){
         $(id).removeClass("yinc").siblings().addClass("yinc")
 
 
-    })
+    });
+    //判断是否已经登陆了
+    var type=window.sessionStorage.getItem("type");
+            
+        console.log(type=="admin");
+        if(type){
+            
+
+        }else{
+            alert("请先登录");
+            window.location.href="./gpliveb.html"
+        }
 
 
 

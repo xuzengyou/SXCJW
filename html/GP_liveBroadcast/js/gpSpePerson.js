@@ -39,10 +39,39 @@ $(function(){
     })
     //点击回复和提交
     $(".answer").click(function(){
-        
+        if($(this).parent().next().hasClass("HFYC")){
+            // console.log(this)
+            $(this).parent().next().removeClass("HFYC")
+        }else{
+            // console.log($(this).parent().next())
+            $(this).parent().next().addClass("HFYC")
+        }
 
 
-    })
+    });
+    $(".submit").click(function(){
+        var answerMessage=$(this).prev().val().trim();
+        console.log(answerMessage)
+        if(answerMessage){
+            $(this).parent().addClass("HFYC");
+            $(this).prev().val("");
+        }else{
+            alert("回复内容不能为空")
+        }
+
+
+    });
+    //判断是否已经登陆了
+    var type=window.sessionStorage.getItem("type");
+            
+        console.log(type=="admin");
+        if(type){
+            
+
+        }else{
+            alert("请先登录");
+            window.location.href="./gpliveb.html"
+        }
 
 
 

@@ -20,6 +20,10 @@ $(function(){
         var id=$(this).attr("data-id");
         $(id).addClass("act").siblings().removeClass("act");
     });
+    //获取专家信息
+    var spePerson=window.location.search.split("?")[1];
+    console.log(spePerson)
+    $(".u").html(spePerson)
     //确认用户已经登录
     fhuser=window.sessionStorage.getItem("user");
     if(fhuser){
@@ -68,14 +72,63 @@ $(function(){
 
 
 
+    });
+    //获取所有提问的内容
+    var asker=window.sessionStorage.getItem("user");
+    $.ajax({
+        type:"post",
+        url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+        dataType:"json",
+        data:{
+            asker:asker,
+            page:0,
+            num:10
+        },
+        success:function(res){
+            console.log(res);
+            var html="",imgsrc="../../img/test.jpg";
+            for(var i in res.data){
+                html+="<div class=psCon>";
+                    html+="<div class=Ptech>";
+                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                        html+="<ul>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                            html+="</li>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].answerMessage+"</span>";
+                            html+="</li>";
+                        html+="</ul>";
+                    html+="</div>";
+                    html+="<div class=Pstudent>";
+                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                        html+="<ul>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                            html+="</li>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].askMessage+"</span>";
+                            html+="</li>";
+                        html+="</ul>";
+                    html+="</div>";
+                html+="</div>";
+
+                $("#one").html(html)
+
+
+            }
+
+
+            
+        }
     })
-    
+
     //点击提问
     $(".askButton").click(function(){
         // alert(123)
         var askMessage=$("#req").val().trim();
         var asker=window.sessionStorage.getItem("user");
-        var answer="admin3";
+        var answer=spePerson;
         // alert(tiwen)
         if(askMessage){
             $.ajax({
