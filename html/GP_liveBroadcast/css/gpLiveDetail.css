@@ -354,7 +354,7 @@ header .lgin a:first-child{
     line-height: 60px;
     margin-right: 20px;
     background-color: #c30d23;
-    color: #ccc;
+    color: #fff;
     text-align: center;
     font-size: 16px;
 }
@@ -364,6 +364,9 @@ header .lgin a:first-child{
 }
 .w .main .mainTh .mainThl .liveShow .lsts{
     width: 800px;
+    /* height: 592px;
+    overflow-y: scroll;
+    overflow-x: hidden; */
     border-left: 1px solid #2c9eff;
     margin-left: 20px;
 }
@@ -395,6 +398,9 @@ header .lgin a:first-child{
     border-radius: 9px;
     background: #2c9eff;
     border: 3px solid #fff;
+    /* position: relative;
+    top: 1px;
+    left: 1px; */
 }
 .w .main .mainTh .mainThl .liveShow .lsts .lst .contain{
     width: 770px;
@@ -558,6 +564,7 @@ header .lgin a:first-child{
     /* height: 60px; */
     align-items: top;
     overflow: hidden;
+    margin-top: 5px;
 
 }
 .w .main .mainTh .mainThr .con .pson .psCon .Ptech img{

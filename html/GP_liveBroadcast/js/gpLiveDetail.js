@@ -73,55 +73,140 @@ $(function(){
 
 
     });
-    //获取所有提问的内容
-    var asker=window.sessionStorage.getItem("user");
+    //获取我的问答的内容
+    function myanswer(){
+        var asker=window.sessionStorage.getItem("user");
+        $.ajax({
+            type:"post",
+            url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+            dataType:"json",
+            data:{
+                asker:asker,
+                page:0,
+                num:100
+            },
+            success:function(res){
+                console.log(res);
+                var html="",imgsrc="../../img/test.jpg";
+                for(var i in res.data){
+                    var style=res.data[i].answerMessage.trim()?"flex":"none";
+                    html+="<div class=psCon>";
+                        html+="<div class=Ptech style=display:"+style+">";
+                            html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                            html+="<ul>";
+                                html+="<li>";
+                                    html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                                html+="</li>";
+                                html+="<li>";
+                                    html+="<span>"+res.data[i].answerMessage+"</span>";
+                                html+="</li>";
+                            html+="</ul>";
+                        html+="</div>";
+                        html+="<div class=Pstudent>";
+                            html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                            html+="<ul>";
+                                html+="<li>";
+                                    html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                                html+="</li>";
+                                html+="<li>";
+                                    html+="<span>"+res.data[i].askMessage+"</span>";
+                                html+="</li>";
+                            html+="</ul>";
+                        html+="</div>";
+                    html+="</div>";
+
+                    $("#one").html(html)
+
+
+                }
+
+
+                
+            }
+        })
+
+
+
+
+    }
+    myanswer()
+    
+
+
+    //获取某个专家全部问答
+    var speAllanswer=spePerson,speAllimg="../../img/test.jpg";
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+        url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
         dataType:"json",
         data:{
-            asker:asker,
+            answer:speAllanswer,
             page:0,
-            num:10
+            num:5
         },
         success:function(res){
-            console.log(res);
-            var html="",imgsrc="../../img/test.jpg";
+            console.log(res)
+            var html="",htmlL="";
             for(var i in res.data){
-                html+="<div class=psCon>";
-                    html+="<div class=Ptech>";
-                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
-                        html+="<ul>";
-                            html+="<li>";
-                                html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
-                            html+="</li>";
-                            html+="<li>";
-                                html+="<span>"+res.data[i].answerMessage+"</span>";
-                            html+="</li>";
-                        html+="</ul>";
-                    html+="</div>";
-                    html+="<div class=Pstudent>";
-                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
-                        html+="<ul>";
-                            html+="<li>";
-                                html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
-                            html+="</li>";
-                            html+="<li>";
-                                html+="<span>"+res.data[i].askMessage+"</span>";
-                            html+="</li>";
-                        html+="</ul>";
-                    html+="</div>";
-                html+="</div>";
 
-                $("#one").html(html)
+                html+="<div class=reCard>";
+                html+="<div class=tech>";
+                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                    html+="<ul>";
+                        html+="<li>";
+                            html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                        html+="</li>";
+                        html+="<li>";
+                            html+="<span>"+res.data[i].answerMessage+"</span>";
+                        html+="</li>";
+                    html+="</ul>";
+                html+="</div>";
+                html+="<div class=student>";
+                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                    html+="<ul>";
+                        html+="<li>";
+                            html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                        html+="</li>";
+                        html+="<li>";
+                            html+="<span>"+res.data[i].askMessage+"</span>";
+                        html+="</li>";
+                    html+="</ul>";
+                html+="</div>";
+            html+="</div>";
+
+            $("#two").html(html)    
+
+            }
+            //左边问答列表
+            for(var i in res.data){
+                htmlL+="<div class=lst>";
+                    htmlL+="<p>";
+                        htmlL+="<span>今天"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                    htmlL+="</p>";
+                    htmlL+="<div class=contain>";
+                        htmlL+="<p>";
+                            htmlL+="<span>网友提问：</span>";
+                            htmlL+="<span>"+res.data[i].askMessage+"</span>";
+                        htmlL+="</p>";
+                        htmlL+="<p>";
+                            htmlL+="<span>老师回复：</span>";
+                            htmlL+="<span>"+res.data[i].answerMessage+"</span>";
+                        htmlL+="</p>";
+                    htmlL+="</div>";
+                htmlL+="</div>";
+
+                $(".lsts").html(htmlL)
 
 
             }
 
 
             
+
         }
+
     })
+
 
     //点击提问
     $(".askButton").click(function(){
@@ -131,6 +216,7 @@ $(function(){
         var answer=spePerson;
         // alert(tiwen)
         if(askMessage){
+            $("#req").val("")
             $.ajax({
                 type:"post",
                 url:"http://192.168.0.171:8080/WSHD/jiekou8/ask",
@@ -142,7 +228,7 @@ $(function(){
                 },
                 success:function(res){
                     console.log(res)
-                    $("#req").val("")
+                    myanswer();
                 }
             })
         }else{

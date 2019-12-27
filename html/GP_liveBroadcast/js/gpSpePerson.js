@@ -72,6 +72,63 @@ $(function(){
             alert("请先登录");
             window.location.href="./gpliveb.html"
         }
+    //获取登录账号
+    var yonghu=window.sessionStorage.getItem("user");
+    //专家已回答
+        var answerName=yonghu;
+        $.ajax({
+            type:"post",
+            url:"http://192.168.0.171:8080/WSHD/jiekou8/Answered",
+            dataType:"json",
+            data:{
+                answerName:answerName,
+                page:0,
+                num:200
+            },
+            success:function(res){
+                console.log(res)
+                var html="",imgsrc="../../img/test.jpg";
+                for(var i in res.data){
+                    html+="<div class=card>";
+                        html+="<p>";
+                            html+="<span>问</span><span>"+res.data[i].askMessage+"</span>";
+                        html+="</p>";
+                        html+="<p>";
+                            html+="<span>答</span>";
+                            html+="<span>"+res.data[i].answerMessage+"</span>";
+                        html+="</p>";
+                        html+="<p>";
+                            html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                            html+="<span>"+res.data[i].senderId+"</span>";
+                        html+="</p>";
+                    html+="</div>";
+
+                    $("#two").html(html)
+
+                }
+                
+
+            }
+        });
+    //专家待回答
+        $.ajax({
+            type:"post",
+            url:"http://192.168.0.171:8080/WSHD/jiekou8/AnswerNot",
+            dataType:"json",
+            data:{
+                answerName:answerName,
+                page:0,
+                num:200
+            },
+            success:function(res){
+                console.log(res)
+
+
+
+            }
+
+
+        })
 
 
 
