@@ -98,7 +98,7 @@ $(function(){
                             html+="</p>";
                         html+="</div>";
                         html+="<div class=cardR>";
-                            html+="<p><span>"+res.data[i].senderId+"</span></p>";
+                            html+="<p><span>"+res.data[i].answerId+"</span></p>";
                             html+="<p><span>今天"+res.data[i].answerTime.split(" ")[1]+"</span></p>";
                             html+="<p><a href="+href+res.data[i].answerId+">网友提问：</a><span>"+res.data[i].askMessage+"</span></p>";
                             html+="<p><a href="+href+res.data[i].answerId+">老师回复：</a><span>"+res.data[i].answerMessage+"</span></p>";

@@ -135,6 +135,63 @@ $(function(){
 
     //获取某个专家全部问答
     var speAllanswer=spePerson,speAllimg="../../img/test.jpg";
+    function allanswer(page){
+        
+        $.ajax({
+            type:"post",
+            url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+            dataType:"json",
+            data:{
+                answer:speAllanswer,
+                page:page,
+                num:4
+            },
+            success:function(res){
+                console.log(res)
+                var html="",htmlL="";
+                for(var i in res.data){
+    
+                    html+="<div class=reCard>";
+                    html+="<div class=tech>";
+                        html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                        html+="<ul>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                            html+="</li>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].answerMessage+"</span>";
+                            html+="</li>";
+                        html+="</ul>";
+                    html+="</div>";
+                    html+="<div class=student>";
+                        html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                        html+="<ul>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                            html+="</li>";
+                            html+="<li>";
+                                html+="<span>"+res.data[i].askMessage+"</span>";
+                            html+="</li>";
+                        html+="</ul>";
+                    html+="</div>";
+                html+="</div>";
+    
+                $("#two").html(html)    
+    
+                }
+                
+    
+            }
+    
+        });
+
+
+
+    }
+
+    allanswer(0);
+
+    //左边全部内容
     $.ajax({
         type:"post",
         url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
@@ -142,41 +199,11 @@ $(function(){
         data:{
             answer:speAllanswer,
             page:0,
-            num:5
+            num:100000
         },
         success:function(res){
-            console.log(res)
-            var html="",htmlL="";
-            for(var i in res.data){
-
-                html+="<div class=reCard>";
-                html+="<div class=tech>";
-                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
-                    html+="<ul>";
-                        html+="<li>";
-                            html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
-                        html+="</li>";
-                        html+="<li>";
-                            html+="<span>"+res.data[i].answerMessage+"</span>";
-                        html+="</li>";
-                    html+="</ul>";
-                html+="</div>";
-                html+="<div class=student>";
-                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
-                    html+="<ul>";
-                        html+="<li>";
-                            html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
-                        html+="</li>";
-                        html+="<li>";
-                            html+="<span>"+res.data[i].askMessage+"</span>";
-                        html+="</li>";
-                    html+="</ul>";
-                html+="</div>";
-            html+="</div>";
-
-            $("#two").html(html)    
-
-            }
+            var htmlL="";
+            
             //左边问答列表
             for(var i in res.data){
                 htmlL+="<div class=lst>";
@@ -207,7 +234,6 @@ $(function(){
 
     })
 
-
     //点击提问
     $(".askButton").click(function(){
         // alert(123)
@@ -235,7 +261,75 @@ $(function(){
             alert("信息不能为空")
         }
         
-    })
+    });
+    //全部问答滚动条触底触发事件
+    if($("#two").hasClass("act")){
+        $(".con").scroll(function(){
+            // alert(123)
+            var h1=$(this).height(),h2=$(this).scrollTop(),h3=$("#two").height();
+            // console.log(h1+" "+h2+" "+h3)
+            if(h1+h2>=h3){
+                var page=parseInt($("#two").attr("data-id"));
+                $.ajax({
+                    type:"post",
+                    url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+                    dataType:"json",
+                    data:{
+                        answer:speAllanswer,
+                        page:page,
+                        num:4
+                    },
+                    success:function(res){
+                        console.log(res);
+                        $("#two").attr("data-id",page+1);
+                        console.log(page)
+                        var html="",htmlL="";
+                        for(var i in res.data){
+            
+                            html+="<div class=reCard>";
+                            html+="<div class=tech>";
+                                html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                                html+="<ul>";
+                                    html+="<li>";
+                                        html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                                    html+="</li>";
+                                    html+="<li>";
+                                        html+="<span>"+res.data[i].answerMessage+"</span>";
+                                    html+="</li>";
+                                html+="</ul>";
+                            html+="</div>";
+                            html+="<div class=student>";
+                                html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                                html+="<ul>";
+                                    html+="<li>";
+                                        html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                                    html+="</li>";
+                                    html+="<li>";
+                                        html+="<span>"+res.data[i].askMessage+"</span>";
+                                    html+="</li>";
+                                html+="</ul>";
+                            html+="</div>";
+                        html+="</div>";
+            
+                        $("#two").append(html)    
+            
+                        }
+                        if(page >= Math.ceil(res.sum/4)){
+                            $("#two").attr("data-id",Math.ceil(res.sum/4)+1);
+                        }
+            
+                    }
+            
+                });
+
+            }
+
+
+    
+        })
+
+    }
+    
 
 
 

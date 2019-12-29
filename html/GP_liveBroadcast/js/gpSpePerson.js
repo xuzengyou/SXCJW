@@ -37,30 +37,7 @@ $(function(){
 
 
     })
-    //点击回复和提交
-    $(".answer").click(function(){
-        if($(this).parent().next().hasClass("HFYC")){
-            // console.log(this)
-            $(this).parent().next().removeClass("HFYC")
-        }else{
-            // console.log($(this).parent().next())
-            $(this).parent().next().addClass("HFYC")
-        }
-
-
-    });
-    $(".submit").click(function(){
-        var answerMessage=$(this).prev().val().trim();
-        console.log(answerMessage)
-        if(answerMessage){
-            $(this).parent().addClass("HFYC");
-            $(this).prev().val("");
-        }else{
-            alert("回复内容不能为空")
-        }
-
-
-    });
+    
     //判断是否已经登陆了
     var type=window.sessionStorage.getItem("type");
             
@@ -122,6 +99,71 @@ $(function(){
             },
             success:function(res){
                 console.log(res)
+                var html="",imgsrc="../../img/test.jpg",cla="HFYC";
+                for(var i in res.data){
+                    html+="<div class=bcard>";
+                        html+="<p>";
+                            html+="<span>问</span><span>"+res.data[i].askMessage+"</span><button type=button class=answer>回复</button>";
+                        html+="</p>";
+                        html+="<p class="+cla+">";
+                            html+="<textarea name=huiF id=huiF placeholder=请输入回复内容></textarea><button type=button class=submit data-id="+res.data[i].mid+">提交</button>";
+                        html+="</p>";
+                        html+="<p>"
+                            html+="<img src="+imgsrc+" alt=加载失败>";
+                            html+="<span>"+res.data[i].senderId+"</span>";
+                        html+="</p>";
+                        
+                    html+="</div>";
+
+                    $("#three").html(html)
+
+                }
+                //点击回复和提交
+                $(".answer").click(function(){
+                    if($(this).parent().next().hasClass("HFYC")){
+                        // console.log(this)
+                        $(this).parent().next().removeClass("HFYC")
+                    }else{
+                        // console.log($(this).parent().next())
+                        $(this).parent().next().addClass("HFYC")
+                    }
+
+
+                });
+                $(".submit").click(function(){
+                    var answerMessage=$(this).prev().val().trim();
+                    var id=$(this).attr("data-id");
+                    console.log(answerMessage)
+                    if(answerMessage){
+                        $(this).parent().addClass("HFYC");
+                        
+
+                        $.ajax({
+                            type:"post",
+                            url:"http://192.168.0.171:8080/WSHD/jiekou8/answer",
+                            dataType:"json",
+                            data:{
+                                id:id,
+                                answerMessage:answerMessage
+                            },
+                            success:function(res){
+                                console.log(res);
+                                $(this).prev().val("");
+                            }
+
+                        })
+
+
+
+
+
+                    }else{
+                        alert("回复内容不能为空")
+                    }
+
+
+                });
+
 
 
 
