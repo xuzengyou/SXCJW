@@ -70,9 +70,89 @@ $(function(){
         }
 
 
-
-
     });
+    //判斷是否已经关注
+        var attentionId=window.sessionStorage.getItem("user");
+        var attentionedId=spePerson;
+        console.log(attentionId+attentionedId)
+        $.ajax({
+            type:"post",
+            url:"http://192.168.0.171:8080/WSHD/jiekou8/whetherAtt",
+            dataType:"json",
+            data:{
+                attentionId:attentionId,
+                attentionedId:attentionedId
+            },
+            success:function(res){
+                console.log(res.data);
+                window.sessionStorage.setItem("isFllow",res.data);
+
+            }
+
+
+
+
+        });
+    //点击关注取消关注功能
+    $(".guanzhu").click(function(){
+        
+        var attentionId=window.sessionStorage.getItem("user");
+        var attentionedId=$(this).prev().html().trim();
+        console.log(attentionId+attentionedId)
+        if(attentionId&&attentionedId){
+            
+            var isFllow=window.sessionStorage.getItem("isFllow");
+            console.log(isFllow)
+            if(!isFllow){
+                $(this).removeClass("ygz");
+                $(this).html("+关注");
+                $.ajax({
+                    type:"post",
+                    url:"http://192.168.0.171:8080/WSHD/jiekou8/unfollow",
+                    dataType:"json",
+                    data:{
+                        attentionId:attentionId,
+                        attentionedId:attentionedId
+                    },
+                    success:function(res){
+                        console.log(res)
+                        
+
+                    }
+
+                });
+            }else{
+                $(this).addClass("ygz");
+                $(this).html("已关注");
+                $.ajax({
+                    type:"post",
+                    url:"http://192.168.0.171:8080/WSHD/jiekou8/attention",
+                    dataType:"json",
+                    data:{
+                        attentionId:attentionId,
+                        attentionedId:attentionedId
+                    },
+                    success:function(res){
+                        console.log(res)
+                        
+
+                    }
+
+                });
+            
+                
+            }
+
+        }else{
+            alert("请先登录")
+        }
+            
+
+
+        
+    });
+
+
     //获取我的问答的内容
     function myanswer(){
         var asker=window.sessionStorage.getItem("user");
@@ -83,7 +163,7 @@ $(function(){
             data:{
                 asker:asker,
                 page:0,
-                num:100
+                num:10
             },
             success:function(res){
                 console.log(res);
@@ -263,72 +343,145 @@ $(function(){
         
     });
     //全部问答滚动条触底触发事件
-    if($("#two").hasClass("act")){
+    
         $(".con").scroll(function(){
-            // alert(123)
-            var h1=$(this).height(),h2=$(this).scrollTop(),h3=$("#two").height();
-            // console.log(h1+" "+h2+" "+h3)
-            if(h1+h2>=h3){
-                var page=parseInt($("#two").attr("data-id"));
-                $.ajax({
-                    type:"post",
-                    url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
-                    dataType:"json",
-                    data:{
-                        answer:speAllanswer,
-                        page:page,
-                        num:4
-                    },
-                    success:function(res){
-                        console.log(res);
-                        $("#two").attr("data-id",page+1);
-                        console.log(page)
-                        var html="",htmlL="";
-                        for(var i in res.data){
-            
-                            html+="<div class=reCard>";
-                            html+="<div class=tech>";
-                                html+="<img src="+speAllimg+" alt="+"加载失败"+">";
-                                html+="<ul>";
-                                    html+="<li>";
-                                        html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
-                                    html+="</li>";
-                                    html+="<li>";
-                                        html+="<span>"+res.data[i].answerMessage+"</span>";
-                                    html+="</li>";
-                                html+="</ul>";
+            if($("#two").hasClass("act")){
+                var h1=$(this).height(),h2=$(this).scrollTop(),h3=$("#two").height();
+                // console.log(h1+" "+h2+" "+h3)
+                if(h1+h2>=h3){
+                    var page=parseInt($("#two").attr("data-id"));
+                    $.ajax({
+                        type:"post",
+                        url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+                        dataType:"json",
+                        data:{
+                            answer:speAllanswer,
+                            page:page,
+                            num:4
+                        },
+                        success:function(res){
+                            console.log(res);
+                            $("#two").attr("data-id",page+1);
+                            console.log(page)
+                            var html="",htmlL="";
+                            for(var i in res.data){
+                
+                                html+="<div class=reCard>";
+                                html+="<div class=tech>";
+                                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                                    html+="<ul>";
+                                        html+="<li>";
+                                            html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                                        html+="</li>";
+                                        html+="<li>";
+                                            html+="<span>"+res.data[i].answerMessage+"</span>";
+                                        html+="</li>";
+                                    html+="</ul>";
+                                html+="</div>";
+                                html+="<div class=student>";
+                                    html+="<img src="+speAllimg+" alt="+"加载失败"+">";
+                                    html+="<ul>";
+                                        html+="<li>";
+                                            html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                                        html+="</li>";
+                                        html+="<li>";
+                                            html+="<span>"+res.data[i].askMessage+"</span>";
+                                        html+="</li>";
+                                    html+="</ul>";
+                                html+="</div>";
                             html+="</div>";
-                            html+="<div class=student>";
-                                html+="<img src="+speAllimg+" alt="+"加载失败"+">";
-                                html+="<ul>";
-                                    html+="<li>";
-                                        html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
-                                    html+="</li>";
-                                    html+="<li>";
-                                        html+="<span>"+res.data[i].askMessage+"</span>";
-                                    html+="</li>";
-                                html+="</ul>";
-                            html+="</div>";
-                        html+="</div>";
-            
-                        $("#two").append(html)    
-            
+                
+                            $("#two").append(html)    
+                
+                            }
+                            if(page >= Math.ceil(res.sum/4)){
+                                $("#two").attr("data-id",Math.ceil(res.sum/4)+1);
+                            }
+                
                         }
-                        if(page >= Math.ceil(res.sum/4)){
-                            $("#two").attr("data-id",Math.ceil(res.sum/4)+1);
+                
+                    });
+
+                }
+
+
+            }//if
+            //我的问答
+            if($("#one").hasClass("act")){
+                var h1=$(this).height(),h2=$(this).scrollTop(),h3=$("#one").height();
+                console.log(h1+" "+h2+" "+h3)
+                if(h1+h2>=h3){
+                    var page=parseInt($("#one").attr("data-id"));
+                    var asker=window.sessionStorage.getItem("user");
+                    $.ajax({
+                        type:"post",
+                        url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+                        dataType:"json",
+                        data:{
+                            asker:asker,
+                            page:page,
+                            num:10
+                        },
+                        success:function(res){
+                            console.log(res);
+                            $("#one").attr("data-id",page+1);
+                            console.log(page)
+                            var html="",imgsrc="../../img/test.jpg";
+                            for(var i in res.data){
+                                var style=res.data[i].answerMessage.trim()?"flex":"none";
+                                html+="<div class=psCon>";
+                                    html+="<div class=Ptech style=display:"+style+">";
+                                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                                        html+="<ul>";
+                                            html+="<li>";
+                                                html+="<span>"+res.data[i].answerId+"</span><span>"+res.data[i].answerTime.split(" ")[1]+"</span>";
+                                            html+="</li>";
+                                            html+="<li>";
+                                                html+="<span>"+res.data[i].answerMessage+"</span>";
+                                            html+="</li>";
+                                        html+="</ul>";
+                                    html+="</div>";
+                                    html+="<div class=Pstudent>";
+                                        html+="<img src="+imgsrc+" alt="+"加载失败"+">";
+                                        html+="<ul>";
+                                            html+="<li>";
+                                                html+="<span>"+res.data[i].senderId+"</span><span>"+res.data[i].askTime.split(" ")[1]+"</span>";
+                                            html+="</li>";
+                                            html+="<li>";
+                                                html+="<span>"+res.data[i].askMessage+"</span>";
+                                            html+="</li>";
+                                        html+="</ul>";
+                                    html+="</div>";
+                                html+="</div>";
+
+                                $("#one").append(html)
+
+
+                            }
+                            if(page >= Math.ceil(res.sum/10)){
+                                $("#one").attr("data-id",Math.ceil(res.sum/10)+1);
+                            }
+
+                            
                         }
-            
-                    }
-            
-                });
+                    })
+
+                }
+
+
+
+
+
 
             }
 
 
-    
+
+
+
         })
 
-    }
+    
     
 
 

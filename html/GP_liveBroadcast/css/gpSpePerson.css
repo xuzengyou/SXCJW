@@ -275,10 +275,12 @@ header .lgin a:first-child{
     overflow-y: scroll;
     overflow-x: hidden;
     margin-left: 10px;
-    background-color: #F1F3F4;
+    
 }
 .w .main .mainT .mainTt .con{
     display: flex;
+    background-color: #F1F3F4;
+    margin-bottom: 10px;
 }
 .w .main .mainT .mainTt .mainTtl{
     width: 100px;

@@ -206,6 +206,11 @@ header .lgin a:first-child{
     border-radius: 3px;
     color: #c30d23;
     margin-right: 30px;
+    cursor: pointer;
+}
+.w .main .mainT .mainTl ul li:first-child span.ygz{
+    border: 1px solid #ccc;
+    color: #ccc;
 }
 .w .main .mainT .mainTl ul li:first-child span:nth-child(3){
     color: #c30d23;

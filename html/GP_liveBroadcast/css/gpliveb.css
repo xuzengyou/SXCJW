@@ -394,6 +394,10 @@ header .lgin a:first-child{
     margin-left: 25px;
     margin-top: 10px;
 }
+.w .main .mainTh .mThl .mThlt .mThlto .card .cardL p span.ygz{
+    border: 1px solid #ccc;
+    color: #cccc;
+}
 .w .main .mainTh .mThl .mThlt .mThlto .card .cardR{
     padding-top: 30px;
 }

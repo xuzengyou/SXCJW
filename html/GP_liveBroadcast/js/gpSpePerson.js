@@ -51,6 +51,45 @@ $(function(){
         }
     //获取登录账号
     var yonghu=window.sessionStorage.getItem("user");
+    $(".myname").html(yonghu);
+    //我的关注
+    $.ajax({
+        type:"post",
+        url:"http://192.168.0.171:8080/WSHD/jiekou8/attentionNum",
+        dataType:"json",
+        data:{
+            memberId:yonghu
+        },
+        success:function(res){
+            console.log(res.attentionId)
+            var html="",imgsrc="../../img/test.jpg";
+            for(var i in res.attentionId.slice(1,10000000000)){
+                html+="<div class=con>";
+                    html+="<div class=mainTtl>";
+                        html+="<img src="+imgsrc+" alt=加载失败>";
+                        html+="<p><span>已关注</span></p>";
+                        html+="<p><span>关注</span><span>449665465</span></p>";
+                    html+="</div>";
+                    html+="<div class=mainTtr style=margin-left: 5px;>";
+                        html+="<p><span>"+res.attentionId.slice(1,10000000000)[i]+"</span></p>";
+                        html+="<p><span>常常听老师常常听老师常常听老师常常听老师常常听老师</span></p>";
+                        html+="<p>";
+                            html+="<span>访问</span><span>2308333</span>";
+                            html+="<span>直播数</span><span>2308333</span>";
+                        html+="</p>";
+                    html+="</div>";
+                html+="</div>";
+
+                $("#one").html(html);
+
+            }
+
+
+
+        }
+
+
+    });
     //专家已回答
         var answerName=yonghu;
         $.ajax({
