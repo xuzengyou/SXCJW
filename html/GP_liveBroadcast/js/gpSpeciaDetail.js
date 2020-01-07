@@ -42,9 +42,9 @@ $(function(){
             
             console.log(type=="admin")
             if(type=="admin"){
-                window.location.href="./gpSpeciaDetail.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpSpeciaDetail.html";
             }else{
-                window.location.href="./gpLiveDetail.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpLiveDetail.html";
             }
             
 
@@ -52,6 +52,7 @@ $(function(){
 
 
     });
+    
     
     //点击发言
     $(".askButton").click(function(){
@@ -62,7 +63,7 @@ $(function(){
         if(answerMessage){
             $.ajax({
                 type:"post",
-                url:"http://192.168.0.171:8080/WSHD/jiekou8/answer",
+                url:"http://www.10xunc.com/WSHD/jiekou8/answer",
                 dataType:"json",
                 data:{
                     id:id,

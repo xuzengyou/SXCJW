@@ -25,11 +25,11 @@ $(function(){
         console.log($(this).height());
         console.log($("div#two").height());
         if($(this).scrollTop()+$(this).height()>=$("div#two").height()){
-            alert(123);
+            // alert(123);
             // $(html).insertAfter($(".elem").last());
         };
         if($(this).scrollTop()+$(this).height()>=$("div#one").height()){
-            alert(123);
+            // alert(123);
             // $(html).insertAfter($(".elem").last());
         }
     })

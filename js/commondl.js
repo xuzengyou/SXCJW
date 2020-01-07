@@ -129,23 +129,16 @@ $("input.pswd").blur(function(){
     if(yhuser&&yhpw){
         console.log(123)
         $("div.tPimg img").attr("src","http://www.10xunc.com/WSHD/register/secretLoginCode?username="+yhuser+"&password="+yhpw);
-        //http://192.168.0.171:8080/WSHD/register/secretLoginCode?username=双方都&password=123
-
-        // $.ajax({
-        //     type:"post",
-        //     url:"http://192.168.0.171:8080/WSHD/register/secretLoginCode",
-        //     data:{
-        //         username:yhuser,
-        //         password:yhpw
-        //     },
-        //     dataType:"json",
-        //     success:function(res){
-        //         console.log(123)
-        //         console.log(res)
-        //     }
-        // })
+        
     }
 
+
+});
+$(".imgcode").click(function(){
+    $("div.tPcode").addClass("ac");
+    var yhuser=$("form ul li:first-child input").val();
+    var yhpw=$("form ul li:last-child input").val();
+    $("div.tPimg img").attr("src","http://www.10xunc.com/WSHD/register/secretLoginCode?username="+yhuser+"&password="+yhpw);
 
 })
 //点击下次自动登录

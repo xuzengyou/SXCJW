@@ -12,12 +12,12 @@
     <link rel="shortcut icon" href="http://img.10xunc.com/备用件/css/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/common.css">
-    <link rel="stylesheet" href="./css/upvideo.css">
+    <link rel="stylesheet" href="http://img.10xunc.com/备用件/css/upvideo.css">
     <script type="text/javascript" src="http://img.10xunc.com/备用件/js/jquery-3.3.1.min.js"></script>
-    <script src="./js/plupload.full.min.js"></script>
-    <script src="./js/jquery.plupload.queue.js"></script>
+    <script src="http://img.10xunc.com/%E5%A4%87%E7%94%A8%E4%BB%B6/js/plupload.full.min.js"></script>
+    <script src="http://img.10xunc.com/%E5%A4%87%E7%94%A8%E4%BB%B6/js/jquery.plupload.queue.js"></script>
     <!-- DOM节点加载完后执行 -->
-    <script src="./js/upvideo.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://img.10xunc.com/备用件/js/upvideo.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <div class="w">
@@ -54,8 +54,8 @@
                     <li><a href="http://img.10xunc.com/备用件/html/waihuihqzx.html">行情中心</a></li>
                     <li><a href="http://img.10xunc.com/备用件/html/waihuihj.html">黄金</a></li>
                     <li><a href="http://img.10xunc.com/备用件/html/waihuisy.html">石油</a></li>
-                    <li><a href="#">直播区</a></li>
-                    <li class="active"><a href="#">视频教学</a></li>
+                    <li><a href="http://img.10xunc.com/备用件/html/gpliveb.html">直播区</a></li>
+                    <li class="active"><a href="http://img.10xunc.com/备用件/html/vedio.html">视频教学</a></li>
                     <li><a href="#">新手上路</a></li>
                 </ul>
             </div>
@@ -234,7 +234,7 @@ $(function () {
         var uploader_video = new plupload.Uploader({//创建实例的构造方法
             runtimes: 'html5,gears,html4,silverlight,flash', //上传插件初始化选用那种方式的优先级顺序
             browse_button: ['fileUpload'], // 上传按钮
-            url: "http://192.168.0.171:8080/WSHD/VideoController/pluploadUpload", //远程上传地址/ajax/upload_video?path=videos
+            url: "http://www.10xunc.com/WSHD/VideoController/pluploadUpload", //远程上传地址/ajax/upload_video?path=videos
             // flash_swf_url: 'js/plugins/plupload/Moxie.swf', //flash文件地址
             // silverlight_xap_url: 'js/plugins/plupload/Moxie.xap', //silverlight文件地址
             filters: {
@@ -260,7 +260,7 @@ $(function () {
 
                     //设置参数
                     uploader_video.setOption("multipart_params", {
-                            personName:"admin",
+                            personName:window.sessionStorage.getItem("user"),
                             title:$("#Vtitle").val().trim(),//$("#Vtitle").val().trim()
                             intro:$("#Vintro").val().trim(),//$("#Vintro").val().trim()
                             price:$("#Vprice").val().trim()//$("#Vprice").val().trim()
@@ -285,11 +285,11 @@ $(function () {
                 FileUploaded: function(up, file, info) { //文件上传成功的时候触发
                     var base = '/static/media/videos/';
                     var response = $.parseJSON(info.response);
-                    console.log(up)
-                    console.log(file)
-                    console.log(info)
-                   alert("上传完毕！");
-                    window.location.reload();
+                //     console.log(up)
+                //     console.log(file)
+                //     console.log(info)
+                //    alert("上传完毕！");
+                    // window.location.reload();
                     // if (response.status == 'ok') {
                     //     var url = "http://"+location.host+base + response.name;
                     //     $("#video").show().attr("src", url);

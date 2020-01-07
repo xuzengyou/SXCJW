@@ -123,7 +123,7 @@ header .lgin a:first-child{
 }
 .main p:nth-child(2) a{
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -2px -913px;
     width: 80px;
@@ -170,7 +170,7 @@ footer p span{
     margin-right: 10px;
 }
 footer p{
-    width: 1000px;
+    width: 1200px;
     line-height: 20px;
     text-align: center;
 }

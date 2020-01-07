@@ -25,7 +25,7 @@ $(function(){
     //获取视频列表
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou9/VideoFree",
+        url:"http://www.10xunc.com/WSHD/jiekou9/VideoFree",
         dataType:"json",
         data:{
             page:0,
@@ -33,7 +33,7 @@ $(function(){
         },
         success:function(res){
             console.log(res.data);
-            var html="",html2="",html3="",htmlR="",lj="./ordinary.html?";
+            var html="",html2="",html3="",htmlR="",lj="http://img.10xunc.com/备用件/html/ordinary.html?";
 
                 html+="<a href="+lj+res.data[1].videoId+">"+res.data[1].vName+"</a>";
                 html+="<a href="+lj+res.data[1].videoId+"></a>";
@@ -128,14 +128,14 @@ $(function(){
     //名家学习
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou9/VideoPrice",
+        url:"http://www.10xunc.com/WSHD/jiekou9/VideoPrice",
         dataType:"json",
         data:{
             page:0,
             num:10
         },
         success:function(res){
-            var htmlFa="",lj="./ordinary.html?";
+            var htmlFa="",lj="http://img.10xunc.com/备用件/html/ordinary.html?";
             for(var i in res.data.slice(1,9)){
               
                 htmlFa+="<div class=Locl>";
@@ -170,7 +170,7 @@ $(function(){
         console.log(page)
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou9/VideoPrice",
+            url:"http://www.10xunc.com/WSHD/jiekou9/VideoPrice",
             dataType:"json",
             data:{
                 page:page,
@@ -178,7 +178,7 @@ $(function(){
             },
             success:function(res){
                 console.log(res)
-                var add="",lj="./ordinary.html?";
+                var add="",lj="http://img.10xunc.com/备用件/html/ordinary.html?";
                 for(var i in res.data.slice(1,9)){
                   
                     add+="<div class=Locl>";

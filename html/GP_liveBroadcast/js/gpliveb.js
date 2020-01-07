@@ -23,9 +23,9 @@ $(function(){
         console.log(type=="admin");
         if(type){
             if(type=="admin"){
-                window.location.href="./gpSpePerson.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpSpePerson.html";
             }else{
-                window.location.href="./gpPerson.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpPerson.html";
             }
         }else{
             alert("请先登录")
@@ -36,7 +36,7 @@ $(function(){
     //图文直播列表
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+        url:"http://www.10xunc.com/WSHD/jiekou8/answerByTime",
         dataType:"json",
         data:{
             page:0,
@@ -44,7 +44,7 @@ $(function(){
         },
         success:function(res){
             console.log(res);
-            var html="",href="./gpLiveDetail.html?",TPsrc="../../img/test.jpg";
+            var html="",href="http://img.10xunc.com/备用件/html/gpLiveDetail.html?",TPsrc="../../img/test.jpg";
             for(var i in res.data){
 
                 html+="<div class=card>";
@@ -79,7 +79,7 @@ $(function(){
                         $(this).html("+关注");
                         $.ajax({
                             type:"post",
-                            url:"http://192.168.0.171:8080/WSHD/jiekou8/unfollow",
+                            url:"http://www.10xunc.com/WSHD/jiekou8/unfollow",
                             dataType:"json",
                             data:{
                                 attentionId:attentionId,
@@ -97,7 +97,7 @@ $(function(){
                         $(this).html("已关注");
                         $.ajax({
                             type:"post",
-                            url:"http://192.168.0.171:8080/WSHD/jiekou8/attention",
+                            url:"http://www.10xunc.com/WSHD/jiekou8/attention",
                             dataType:"json",
                             data:{
                                 attentionId:attentionId,
@@ -135,7 +135,7 @@ $(function(){
         
             $.ajax({
                 type:"post",
-                url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+                url:"http://www.10xunc.com/WSHD/jiekou8/answerByTime",
                 dataType:"json",
                 data:{
                     page:page,
@@ -143,7 +143,7 @@ $(function(){
                 },
                 success:function(res){
                     console.log(res)
-                    var html="",href="./gpLiveDetail.html?",TPsrc="../../img/test.jpg";
+                    var html="",href="http://img.10xunc.com/备用件/html/gpLiveDetail.html?",TPsrc="../../img/test.jpg";
                     for(var i in res.data){
 
                         html+="<div class=card>";

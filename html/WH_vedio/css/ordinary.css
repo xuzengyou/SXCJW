@@ -162,7 +162,7 @@ header .lgin a:first-child{
 }
 .main .mTop .news .new a:nth-child(2){
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -363,7 +363,7 @@ footer p span{
     margin-right: 10px;
 }
 footer p{
-    width: 1000px;
+    width: 1200px;
     line-height: 20px;
     text-align: center;
 }

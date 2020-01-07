@@ -22,6 +22,7 @@ $(function(){
     });
     //获取专家信息
     var spePerson=window.location.search.split("?")[1];
+    if(!spePerson){window.location.href="./gpliveb.html";}
     console.log(spePerson)
     $(".u").html(spePerson)
     //确认用户已经登录
@@ -36,8 +37,7 @@ $(function(){
         $("#req").attr("disabled",true);
     };
     //确认登录专家还是普通
-    // var u=window.sessionStorage.getItem("user");
-    // $(".u").html(u)
+    
     $("button.yhdl").click(function(){
         setTimeout(function(){
 
@@ -45,9 +45,9 @@ $(function(){
             
             console.log(type=="admin")
             if(type=="admin"){
-                window.location.href="./gpSpeciaDetail.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpSpeciaDetail.html";
             }else{
-                window.location.href="./gpLiveDetail.html";
+                window.location.href="http://img.10xunc.com/备用件/html/gpLiveDetail.html";
             }
             
 
@@ -55,6 +55,12 @@ $(function(){
 
 
     });
+    if(spePerson==fhuser){
+        $(".askButton").attr("disabled",true);
+        $("#req").attr("disabled",true);
+    }
+
+
     //点击个人中心
     $(".mainOt a").click(function(){
 
@@ -63,10 +69,10 @@ $(function(){
         console.log(type=="admin")
         if(type=="admin"){
             console.log("进入专家个人中心")
-            window.location.href="./gpSpePerson.html";
+            window.location.href="http://img.10xunc.com/备用件/html/gpSpePerson.html";
         }else{
             console.log("进入普通用户个人中心")
-            window.location.href="./gpPerson.html";
+            window.location.href="http://img.10xunc.com/备用件/html/gpPerson.html";
         }
 
 
@@ -77,7 +83,7 @@ $(function(){
         console.log(attentionId+attentionedId)
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou8/whetherAtt",
+            url:"http://www.10xunc.com/WSHD/jiekou8/whetherAtt",
             dataType:"json",
             data:{
                 attentionId:attentionId,
@@ -86,6 +92,28 @@ $(function(){
             success:function(res){
                 console.log(res.data);
                 window.sessionStorage.setItem("isFllow",res.data);
+                if(res.data){
+                    $(".guanzhu").addClass("ygz");
+                    $(".guanzhu").html("已关注");
+                }else{
+                    $(".guanzhu").removeClass("ygz");
+                    $(".guanzhu").html("+关注");
+                }
+                //查看某人被关注了多少次
+                var memberId=spePerson;
+                $.ajax({
+                    type:"post",
+                    url:"http://www.10xunc.com/WSHD/jiekou8/attentionNum",
+                    dataType:"json",
+                    data:{
+                        memberId:memberId 
+                    },
+                    success:function(res){
+                        console.log(res);
+                        $(".attentionedNum").html(res.data.attentionedNum)
+                    }
+                })
+
 
             }
 
@@ -101,14 +129,14 @@ $(function(){
         console.log(attentionId+attentionedId)
         if(attentionId&&attentionedId){
             
-            var isFllow=window.sessionStorage.getItem("isFllow");
+            var isFllow=$(this).hasClass("ygz");
             console.log(isFllow)
-            if(!isFllow){
+            if(isFllow){
                 $(this).removeClass("ygz");
                 $(this).html("+关注");
                 $.ajax({
                     type:"post",
-                    url:"http://192.168.0.171:8080/WSHD/jiekou8/unfollow",
+                    url:"http://www.10xunc.com/WSHD/jiekou8/unfollow",
                     dataType:"json",
                     data:{
                         attentionId:attentionId,
@@ -117,16 +145,16 @@ $(function(){
                     success:function(res){
                         console.log(res)
                         
-
+                        
                     }
 
                 });
             }else{
-                $(this).addClass("ygz");
-                $(this).html("已关注");
+                $(".guanzhu").addClass("ygz");
+                $(".guanzhu").html("已关注");
                 $.ajax({
                     type:"post",
-                    url:"http://192.168.0.171:8080/WSHD/jiekou8/attention",
+                    url:"http://www.10xunc.com/WSHD/jiekou8/attention",
                     dataType:"json",
                     data:{
                         attentionId:attentionId,
@@ -152,13 +180,13 @@ $(function(){
         
     });
 
-
+    //
     //获取我的问答的内容
     function myanswer(){
         var asker=window.sessionStorage.getItem("user");
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+            url:"http://www.10xunc.com/WSHD/jiekou8/Allask",
             dataType:"json",
             data:{
                 asker:asker,
@@ -219,7 +247,7 @@ $(function(){
         
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+            url:"http://www.10xunc.com/WSHD/jiekou8/answerByTime",
             dataType:"json",
             data:{
                 answer:speAllanswer,
@@ -274,7 +302,7 @@ $(function(){
     //左边全部内容
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+        url:"http://www.10xunc.com/WSHD/jiekou8/answerByTime",
         dataType:"json",
         data:{
             answer:speAllanswer,
@@ -325,7 +353,7 @@ $(function(){
             $("#req").val("")
             $.ajax({
                 type:"post",
-                url:"http://192.168.0.171:8080/WSHD/jiekou8/ask",
+                url:"http://www.10xunc.com/WSHD/jiekou8/ask",
                 dataType:"json",
                 data:{
                     asker:asker,
@@ -352,7 +380,7 @@ $(function(){
                     var page=parseInt($("#two").attr("data-id"));
                     $.ajax({
                         type:"post",
-                        url:"http://192.168.0.171:8080/WSHD/jiekou8/answerByTime",
+                        url:"http://www.10xunc.com/WSHD/jiekou8/answerByTime",
                         dataType:"json",
                         data:{
                             answer:speAllanswer,
@@ -415,7 +443,7 @@ $(function(){
                     var asker=window.sessionStorage.getItem("user");
                     $.ajax({
                         type:"post",
-                        url:"http://192.168.0.171:8080/WSHD/jiekou8/Allask",
+                        url:"http://www.10xunc.com/WSHD/jiekou8/Allask",
                         dataType:"json",
                         data:{
                             asker:asker,

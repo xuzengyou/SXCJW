@@ -47,7 +47,7 @@ $(function(){
 
         }else{
             alert("请先登录");
-            window.location.href="./gpliveb.html"
+            window.location.href="http://img.10xunc.com/备用件/html/gpliveb.html"
         }
     //获取登录账号
     var yonghu=window.sessionStorage.getItem("user");
@@ -55,7 +55,7 @@ $(function(){
     //我的关注
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/attentionNum",
+        url:"http://www.10xunc.com/WSHD/jiekou8/attentionNum",
         dataType:"json",
         data:{
             memberId:yonghu
@@ -94,7 +94,7 @@ $(function(){
         var answerName=yonghu;
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou8/Answered",
+            url:"http://www.10xunc.com/WSHD/jiekou8/Answered",
             dataType:"json",
             data:{
                 answerName:answerName,
@@ -129,7 +129,7 @@ $(function(){
     //专家待回答
         $.ajax({
             type:"post",
-            url:"http://192.168.0.171:8080/WSHD/jiekou8/AnswerNot",
+            url:"http://www.10xunc.com/WSHD/jiekou8/AnswerNot",
             dataType:"json",
             data:{
                 answerName:answerName,
@@ -175,11 +175,11 @@ $(function(){
                     console.log(answerMessage)
                     if(answerMessage){
                         $(this).parent().addClass("HFYC");
-                        
+                        $(this).prev().val("");
 
                         $.ajax({
                             type:"post",
-                            url:"http://192.168.0.171:8080/WSHD/jiekou8/answer",
+                            url:"http://www.10xunc.com/WSHD/jiekou8/answer",
                             dataType:"json",
                             data:{
                                 id:id,
@@ -187,7 +187,7 @@ $(function(){
                             },
                             success:function(res){
                                 console.log(res);
-                                $(this).prev().val("");
+                               
                             }
 
                         })

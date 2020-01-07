@@ -16,7 +16,7 @@ header>div.logo>img{
     width: 100%;height: 100%;
 }
 header>div.search{
-    margin-left: 300px;
+    margin-left: 200px;
     margin-top: 12px;
     border: 1px solid #e6e6e6;
     width: 467px;height: 35px;
@@ -51,7 +51,7 @@ header>div.search button.btn1{
 }
 /* 登录注册 */
 header .lgin{
-    width: 118px;
+    width: 235px;
     height: 32px;
     margin-left: 5px;
     font-size: 16px;
@@ -118,7 +118,7 @@ header .lgin a:first-child{
 /* 轮播图引入部分 */
 .img a:nth-child(2){
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -271,7 +271,7 @@ header .lgin a:first-child{
 }
 .main .mTop .news .new a:nth-child(2){
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -348,7 +348,7 @@ header .lgin a:first-child{
 }
 .main .vedio .left .Lone .Loc .Locl p:nth-child(1) a:last-child{
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -381,7 +381,7 @@ header .lgin a:first-child{
     color: #ccc;
 }
 .main .vedio .left .Lone .Loc .Locl p:nth-child(3) span:nth-child(1){
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position:-95px -837px;
     width: 20px;
@@ -445,7 +445,7 @@ header .lgin a:first-child{
 }
 .main .vedio .left .Ltwo .Loc .Locl p:nth-child(1) a:last-child{
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -478,7 +478,7 @@ header .lgin a:first-child{
     color: #ccc;
 }
 .main .vedio .left .Ltwo .Loc .Locl p:nth-child(3) span:nth-child(1){
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position:-95px -837px;
     width: 20px;
@@ -542,7 +542,7 @@ header .lgin a:first-child{
 }
 .main .vedio .left .Lthree .Loc .Locl p:nth-child(1) a:last-child{
     display: inline-block;
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position: -8px -832px;
     width: 60px;
@@ -575,7 +575,7 @@ header .lgin a:first-child{
     color: #ccc;
 }
 .main .vedio .left .Lthree .Loc .Locl p:nth-child(3) span:nth-child(1){
-    background-image:url(../../../img/tpjh2.png);
+    background-image:url(http://img.10xunc.com/备用件/img/tpjh2.png);
     background-repeat: no-repeat;
     background-position:-95px -837px;
     width: 20px;

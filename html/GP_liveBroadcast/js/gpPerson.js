@@ -46,7 +46,7 @@ $(function(){
 
         }else{
             alert("请先登录");
-            window.location.href="./gpliveb.html"
+            window.location.href="http://img.10xunc.com/备用件/html/gpliveb.html"
         }
     //获取登录账号
     var yonghu=window.sessionStorage.getItem("user");
@@ -55,7 +55,7 @@ $(function(){
     //我的关注
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/attentionNum",
+        url:"http://www.10xunc.com/WSHD/jiekou8/attentionNum",
         dataType:"json",
         data:{
             memberId:yonghu
@@ -96,7 +96,7 @@ $(function(){
     var askerName=yonghu;
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/AskNot",
+        url:"http://www.10xunc.com/WSHD/jiekou8/AskNot",
         dataType:"json",
         data:{
             askerName:askerName,
@@ -130,7 +130,7 @@ $(function(){
     //普通用户已回答
     $.ajax({
         type:"post",
-        url:"http://192.168.0.171:8080/WSHD/jiekou8/Asked",
+        url:"http://www.10xunc.com/WSHD/jiekou8/Asked",
         dataType:"json",
         data:{
             askerName:askerName,
